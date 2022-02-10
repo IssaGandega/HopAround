@@ -11,7 +11,13 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform groundCheckPos;
     [SerializeField] private float speed;
     [SerializeField] private float jumpForce;
+    private Tongue tongue;
     private float xAxisAccel;
+
+    private void OnEnable()
+    {
+        tongue = gameObject.GetComponent<Tongue>();
+    }
 
     private void FixedUpdate()
     {
@@ -20,11 +26,16 @@ public class Player : MonoBehaviour
         {
             rb.velocity = Vector3.zero;
         }
-        rb.velocity = new Vector3(xAxisAccel * speed, rb.velocity.y, 0);
+
+        if (!tongue.isGrabing)
+        {
+            rb.velocity = new Vector3(xAxisAccel * speed, rb.velocity.y, 0);
+        }
+
 
         if (Input.touchCount > 0)
         {
-            if (isGrounded)
+            if ((isGrounded) && (tongue.isGrabing))
             {
                 rb.AddForce(Vector3.up*jumpForce);
             }
