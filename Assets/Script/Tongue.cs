@@ -29,10 +29,8 @@ public class Tongue : MonoBehaviour
                 point.z = 0;
             
                 RaycastHit2D hit = Physics2D.Raycast(transform.position, point-transform.position,range,layer);
-                Debug.DrawRay(transform.position,point-transform.position,Color.green);
                 if (hit.collider != null)
                 {
-                    Debug.Log(hit.collider);
                     if (hit.collider.GetComponent<Rigidbody2D>())
                     {
                         pointCanMove = true;
