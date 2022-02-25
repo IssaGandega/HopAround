@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -67,11 +65,10 @@ public class Player : MonoBehaviour
                     }
                 }
             }
-         
-            if (isTouched == false)
-            {
-                Jump();
-            }
+        }
+        if ((isTouched == false) && (isGrounded))
+        {
+            Jump();
         }
             
         if (Input.GetTouch(0).phase == TouchPhase.Ended)

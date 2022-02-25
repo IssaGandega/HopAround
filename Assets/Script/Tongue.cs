@@ -10,11 +10,14 @@ public class Tongue : MonoBehaviour
     private Vector3 newPoint;
     public bool isGrabing;
     [SerializeField] private float range = 10;
+    [SerializeField] private float offsetFromPoint = 10;
     [SerializeField] private LineRenderer line;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float speed;
     [SerializeField] private Camera cam;
     [SerializeField] private LayerMask layer;
+    [SerializeField] private Transform pointTr;
+    private bool tongueReachedPoint;
     private bool pointCanMove;
     private float distance;
     void Update()
@@ -41,6 +44,7 @@ public class Tongue : MonoBehaviour
                         distance = 999;
                         isGrabing = true;
                         point = hit.point;
+                        pointTr.position = gameObject.transform.position;
                     }
                 }
             }
@@ -48,31 +52,53 @@ public class Tongue : MonoBehaviour
             if (Input.GetTouch(0).phase == TouchPhase.Ended)
             {
                 isGrabing = false;
+                rb.gravityScale = 1f;
             }
         }
         
         if (isGrabing)
         {
-            if (pointCanMove)
-            {
-                //point + objectMovePoint;
-            }
             line.gameObject.SetActive(true);
-            line.SetPosition(0, transform.position);
-            line.SetPosition(1, point);
-            transform.right = point - transform.position;
-            if (distance > 0)
+            if (tongueReachedPoint)
             {
+                if (pointCanMove)
+                {
+                    //point + objectMovePoint;
+                } 
                 distance = Vector3.Distance(transform.position, point);
-                transform.up = point - transform.position;
-                rb.AddForce(transform.up*speed);
+                line.SetPosition(0, transform.position);
+                line.SetPosition(1, point);
+                transform.right = point - transform.position;
+                if (distance > offsetFromPoint)
+                {
+                    transform.up = point - transform.position;
+                    rb.AddForce(transform.up*speed);
+                }
+                else
+                {
+                    rb.velocity = Vector2.zero;
+                    rb.gravityScale = 0;
+                }
             }
+            else
+            {
+                line.SetPosition(0, transform.position);
+                line.SetPosition(1, pointTr.position);
+                pointTr.DOMove(point, 0.2f);
+                StartCoroutine(WaitForTongue());
+            }
+
         }
         else
         {
             line.gameObject.SetActive(false);
+            tongueReachedPoint = false;
         }
-        
-        
+    }
+
+    private IEnumerator WaitForTongue()
+    {
+        yield return new WaitForSeconds(0.2f);
+        tongueReachedPoint = true;
     }
 }

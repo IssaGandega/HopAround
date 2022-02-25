@@ -8,6 +8,8 @@ public class LVLManager : MonoBehaviour
 {
     public static LVLManager instance;
     public int currentToad;
+    public int currentCoins;
+    private int tempCoins;
     public GameObject winCanvas;
 
     public void Start()
@@ -20,10 +22,22 @@ public class LVLManager : MonoBehaviour
         currentToad++;
     }
 
+    public void AddCoin()
+    {
+        currentCoins++;
+    }
+
     public void Win()
     {
+        Debug.Log("currentcoin : "+ currentCoins + "Saved coins" + PlayerPrefs.GetInt("Coins"));
+        tempCoins = PlayerPrefs.GetInt("Coins") + currentCoins;
+        PlayerPrefs.SetInt("Coins", tempCoins);
         PlayerPrefs.SetInt(SceneManager.GetActiveScene().name+"Clear",1);
-        PlayerPrefs.SetInt(SceneManager.GetActiveScene().name+"Toad",currentToad);
+        Debug.Log("CoinsAftersave" + PlayerPrefs.GetInt("Coins"));
+        if (PlayerPrefs.GetInt(SceneManager.GetActiveScene().name+"Toad") < currentToad)
+        {
+            PlayerPrefs.SetInt(SceneManager.GetActiveScene().name+"Toad",currentToad);
+        }
         winCanvas.SetActive(true);
     }
 }
