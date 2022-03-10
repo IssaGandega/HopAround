@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -20938,6 +20938,26 @@ PrefabInstance:
         type: 3}
       propertyPath: offsetFromPoint
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 978449559491475704, guid: af91097a6259da24f8055902aaa14a2d,
+        type: 3}
+      propertyPath: speed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 978449559491475704, guid: af91097a6259da24f8055902aaa14a2d,
+        type: 3}
+      propertyPath: curentSpeed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 978449559491475704, guid: af91097a6259da24f8055902aaa14a2d,
+        type: 3}
+      propertyPath: speedMinMax.x
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 978449559491475704, guid: af91097a6259da24f8055902aaa14a2d,
+        type: 3}
+      propertyPath: speedMinMax.y
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3705289844060961321, guid: af91097a6259da24f8055902aaa14a2d,
         type: 3}

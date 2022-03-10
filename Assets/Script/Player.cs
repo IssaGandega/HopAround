@@ -8,9 +8,10 @@ public class Player : MonoBehaviour
     private Camera cam;
     private Vector3 point;
     [SerializeField] private bool isTouched;
-    [SerializeField] private float groundCheckLength;
     [SerializeField] private LayerMask layer;
     [SerializeField] private float speed;
+    [SerializeField] private float curentSpeed;
+    [SerializeField] private Vector2 speedMinMax;
     [SerializeField] private float jumpForce;
     [SerializeField] private List<Collider2D> collider;
     private Tongue tongue;
@@ -25,17 +26,26 @@ public class Player : MonoBehaviour
     private void FixedUpdate()
     {
         xAxisAccel = Mathf.Clamp(Input.acceleration.x, -0.5f, 0.5f);
-        if ((xAxisAccel < -0.2f && xAxisAccel > 0.2f) || (isTouched))
+        if ((xAxisAccel < -0.3f && xAxisAccel > 0.3f) || (isTouched))
         {
             rb.velocity = Vector3.zero;
+            
         }
 
         if ((!tongue.isGrabing) && (!isTouched))
         {
-            rb.velocity = new Vector3(xAxisAccel * speed, rb.velocity.y, 0);
+            if (curentSpeed == 0)
+            {
+                curentSpeed = 0.1f;
+            }
+
+            curentSpeed += xAxisAccel * speed;
+            Mathf.Clamp(curentSpeed,speedMinMax.x,speedMinMax.y);
+            //rb.velocity = new Vector3(xAxisAccel * speed, rb.velocity.y, 0);
+            rb.velocity = new Vector3(curentSpeed, rb.velocity.y, 0);
         }
 
-        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, groundCheckLength,layer);
+        isGrounded = Physics2D.OverlapCircle(transform.position, 0.4f, layer);
     }
 
     private void Update()
