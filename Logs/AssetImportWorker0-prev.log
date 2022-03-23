@@ -15,11 +15,11 @@ C:/Users/l.lafontaine/Documents/HopAround
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61754
+55353
 Successfully changed project path to: C:/Users/l.lafontaine/Documents/HopAround
 C:/Users/l.lafontaine/Documents/HopAround
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 58.21 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 56.32 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.27f1 (e759542391ea)
 [Subsystems] Discovering subsystems at path C:/Users/l.lafontaine/Desktop/2020.3.27f1/Editor/Data/Resources/UnitySubsystems
@@ -35,74 +35,74 @@ Initialize mono
 Mono path[0] = 'C:/Users/l.lafontaine/Desktop/2020.3.27f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Users/l.lafontaine/Desktop/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Users/l.lafontaine/Desktop/2020.3.27f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56044
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56384
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Users/l.lafontaine/Desktop/2020.3.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001518 seconds.
+Registered in 0.001424 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 58.73 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 52.65 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.567 seconds
+- Completed reload, in  0.506 seconds
 Domain Reload Profiling:
-	ReloadAssembly (567ms)
-		BeginReloadAssembly (57ms)
+	ReloadAssembly (506ms)
+		BeginReloadAssembly (52ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (443ms)
-			LoadAssemblies (55ms)
+		EndReloadAssembly (393ms)
+			LoadAssemblies (50ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (144ms)
+			SetupTypeCache (124ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (177ms)
+			SetupLoadedEditorAssemblies (158ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (59ms)
+				RefreshPlugins (53ms)
 				BeforeProcessingInitializeOnLoad (7ms)
-				ProcessInitializeOnLoadAttributes (79ms)
-				ProcessInitializeOnLoadMethodAttributes (28ms)
+				ProcessInitializeOnLoadAttributes (70ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003710 seconds.
+Registered in 0.005106 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 74.95 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 54.26 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.149 seconds
+- Completed reload, in  1.033 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1150ms)
-		BeginReloadAssembly (141ms)
+	ReloadAssembly (1034ms)
+		BeginReloadAssembly (131ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (948ms)
-			LoadAssemblies (94ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (849ms)
+			LoadAssemblies (87ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (315ms)
+			SetupTypeCache (276ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (386ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (344ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (75ms)
-				BeforeProcessingInitializeOnLoad (82ms)
-				ProcessInitializeOnLoadAttributes (212ms)
+				RefreshPlugins (54ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (200ms)
 				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
@@ -110,14 +110,14 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3296 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 148.5 MB.
 System memory in use after: 148.6 MB.
 
 Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 3717.
-Total: 4.699700 ms (FindLiveObjects: 0.270900 ms CreateObjectMapping: 0.123600 ms MarkObjects: 4.222400 ms  DeleteObjects: 0.081800 ms)
+Total: 4.732000 ms (FindLiveObjects: 0.236400 ms CreateObjectMapping: 0.116600 ms MarkObjects: 4.292700 ms  DeleteObjects: 0.085600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,184 +131,280 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/LOUIS/001_MESH/E_Pusher_KEY alone.fbx
-  artifactKey: Guid(1771e9294524a884dbf3f6bf66541dcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/001_MESH/E_Pusher_KEY alone.fbx using Guid(1771e9294524a884dbf3f6bf66541dcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '402cd2a656946b64b973eb3fe7937dc2') in 0.238375 seconds 
-  Import took 0.242842 seconds .
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx
+  artifactKey: Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx using Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b9806b8f7f766c2d19f354d68e8faf2') in 0.241526 seconds 
+  Import took 0.246319 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000228 seconds.
+  Time since last request: 4.718165 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx
+  artifactKey: Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx using Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04d1ab2821d6ee1b1325efde0e499c60') in 0.025152 seconds 
+  Import took 0.029804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 106.404487 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx
+  artifactKey: Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx using Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '578cf2e5a51ae12aacea1a2ed11d46af') in 0.021951 seconds 
+  Import took 0.026943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.865861 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx
+  artifactKey: Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx using Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c5f98799287ebfb0777fe345c74fc11') in 0.026467 seconds 
+  Import took 0.031297 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.112702 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx
+  artifactKey: Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx using Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8774140503f332ef0c9937ad2193920') in 0.025260 seconds 
+  Import took 0.030614 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.506099 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx
+  artifactKey: Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx using Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '695cca8f0c31d1ed4dd3c8dc29cc64f7') in 0.026146 seconds 
+  Import took 0.030692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.459049 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx
+  artifactKey: Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx using Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa05941f4113009a96d6e06130e75837') in 0.021897 seconds 
+  Import took 0.026997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.991936 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx
+  artifactKey: Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx using Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6255769f087c0d8463bdf75156dfd6ae') in 0.023666 seconds 
+  Import took 0.028277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 590.664107 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx
+  artifactKey: Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx using Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc9a7eb2d14555b41c81ef58345a8b1c') in 0.029153 seconds 
+  Import took 0.034519 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.148945 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx
+  artifactKey: Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx using Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a90c369f1b8cc9a3e2f86b98230c3e3') in 0.022390 seconds 
+  Import took 0.027333 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 110.846244 seconds.
   path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
   artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8582460ad69e14bfc759bd39acea98ee') in 0.022600 seconds 
-  Import took 0.026747 seconds .
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6ab6ee8bb24d94fa0e4f17f4d3439f9') in 0.040569 seconds 
+  Import took 0.045283 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 186.635756 seconds.
-  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
-  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eeb5c4c41837265a101b60e2581977e') in 0.016902 seconds 
-  Import took 0.022535 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 173.483428 seconds.
-  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
-  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7c77c8369cb0a0c9ca208f4368bcfd8') in 0.016100 seconds 
-  Import took 0.020927 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 44.494076 seconds.
-  path: Assets/LOUIS/002_TEXTURES/E_pusher
-  artifactKey: Guid(278582befce74854c92aa43c0b124469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/002_TEXTURES/E_pusher using Guid(278582befce74854c92aa43c0b124469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dda8ed36ab56ace1793f48bc8a9a9b19') in 0.004382 seconds 
-  Import took 0.008942 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 30.321217 seconds.
-  path: Assets/LOUIS/004_MATERIALS/MATERIAL_C_Tadpole_L_bleu 1.mat
-  artifactKey: Guid(8e8a8b7305e961d4381aec00e81451c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/004_MATERIALS/MATERIAL_C_Tadpole_L_bleu 1.mat using Guid(8e8a8b7305e961d4381aec00e81451c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe0cf1b8766c8a2d3571bc9de3495d73') in 0.031601 seconds 
-  Import took 0.036463 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 39.551541 seconds.
-  path: Assets/LOUIS/004_MATERIALS/MATERIAL_MC_Frog_L 2.mat
-  artifactKey: Guid(367494ad08f25744f9ecd925871b6f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/004_MATERIALS/MATERIAL_MC_Frog_L 2.mat using Guid(367494ad08f25744f9ecd925871b6f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88f4a48329d97b723ad932fb390dc965') in 0.025798 seconds 
-  Import took 0.030911 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 23.732361 seconds.
+  Time since last request: 27.333991 seconds.
   path: Assets/LOUIS/004_MATERIALS/Material_E_Pusher.mat
   artifactKey: Guid(367494ad08f25744f9ecd925871b6f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/004_MATERIALS/Material_E_Pusher.mat using Guid(367494ad08f25744f9ecd925871b6f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cf84cee6c50010effeffd5ccc2ced41') in 0.011718 seconds 
-  Import took 0.020651 seconds .
+Start importing Assets/LOUIS/004_MATERIALS/Material_E_Pusher.mat using Guid(367494ad08f25744f9ecd925871b6f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07f3c4c6c61b28fdaee1059e31e855c4') in 0.017692 seconds 
+  Import took 0.022359 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.757078 seconds.
-  path: Assets/LOUIS/002_TEXTURES/E_pusher/DefaultMaterial_Base_color.png
-  artifactKey: Guid(aca4efd21ac4e3d488503d991a4764c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/002_TEXTURES/E_pusher/DefaultMaterial_Base_color.png using Guid(aca4efd21ac4e3d488503d991a4764c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '673cb3c10f1f8124fa3fa2c4909c08cf') in 0.027617 seconds 
-  Import took 0.032011 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/LOUIS/002_TEXTURES/E_pusher/DefaultMaterial_Roughness.png
-  artifactKey: Guid(5da5854121609ed4eb18c3fd1de6f915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/002_TEXTURES/E_pusher/DefaultMaterial_Roughness.png using Guid(5da5854121609ed4eb18c3fd1de6f915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd3da8fc9a30c55b7572dbdda1aa8b5a') in 0.008341 seconds 
-  Import took 0.012287 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000259 seconds.
-  path: Assets/LOUIS/002_TEXTURES/E_pusher/DefaultMaterial_Normal.png
-  artifactKey: Guid(54d1241d2ebc06f419a7d247ee99e202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/002_TEXTURES/E_pusher/DefaultMaterial_Normal.png using Guid(54d1241d2ebc06f419a7d247ee99e202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6997973fe57413e67d64bd364fb1c869') in 0.008361 seconds 
-  Import took 0.012504 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000225 seconds.
-  path: Assets/LOUIS/002_TEXTURES/E_pusher/DefaultMaterial_Height.png
-  artifactKey: Guid(263b9b30dfe1fdb4898c1219088a6e71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/002_TEXTURES/E_pusher/DefaultMaterial_Height.png using Guid(263b9b30dfe1fdb4898c1219088a6e71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cabdb0f594132fe2bfee7c710f619efc') in 0.010205 seconds 
-  Import took 0.014984 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/LOUIS/002_TEXTURES/E_pusher/DefaultMaterial_Normal_OpenGL.png
-  artifactKey: Guid(231aed811df9ab146a0e59703b543cab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/002_TEXTURES/E_pusher/DefaultMaterial_Normal_OpenGL.png using Guid(231aed811df9ab146a0e59703b543cab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b66eaf4df62a12b06d9e9923cb39845e') in 0.011534 seconds 
-  Import took 0.016933 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000199 seconds.
-  path: Assets/LOUIS/002_TEXTURES/E_pusher/DefaultMaterial_Metallic.png
-  artifactKey: Guid(5d0853af28a70454b911fe76adf2aef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/002_TEXTURES/E_pusher/DefaultMaterial_Metallic.png using Guid(5d0853af28a70454b911fe76adf2aef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ed66012ccb3028c78e4ce8ddcfa0594') in 0.009880 seconds 
-  Import took 0.014829 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/LOUIS/002_TEXTURES/E_pusher/DefaultMaterial_Mixed_AO.png
-  artifactKey: Guid(e59782e610e969d4c88c286394c17a31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/002_TEXTURES/E_pusher/DefaultMaterial_Mixed_AO.png using Guid(e59782e610e969d4c88c286394c17a31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ed9dc8729b2ae1f286476feae3e5663') in 0.010849 seconds 
-  Import took 0.015434 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 23.870958 seconds.
+  Time since last request: 53.778093 seconds.
   path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
   artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6ef02b8f884032dee4d37ee65ea3539') in 0.014939 seconds 
-  Import took 0.019554 seconds .
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c55bd275d5bc52193d6c63f38f4556ed') in 0.028300 seconds 
+  Import took 0.032748 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 18.207729 seconds.
+  Time since last request: 153.532152 seconds.
   path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
   artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e4eaed4c497db7c4bec7612011fbdf5') in 0.019915 seconds 
-  Import took 0.024889 seconds .
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee81f13893879d2897a52f62bd0926f3') in 0.023081 seconds 
+  Import took 0.028630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.515330 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f68138b2e5311c0ff8adf1939e135591') in 0.026478 seconds 
+  Import took 0.030867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.380491 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62f805cbc4f44e1a70e4b9dfde4e211f') in 0.020688 seconds 
+  Import took 0.025615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.513478 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '359778b898ff956c32e88099d0517e68') in 0.028458 seconds 
+  Import took 0.033279 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.419241 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc479b46478f0ffa4480a3e938f750a4') in 0.027670 seconds 
+  Import took 0.032373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.709252 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b493a6fe5ba982a38bc6c7983e6e16c') in 0.025197 seconds 
+  Import took 0.029742 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 716.968192 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd38f6f550c09047f9fc21173bacaa8cd') in 0.020479 seconds 
+  Import took 0.025922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 932.149626 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba3f1e8bc13b6d8daabe3ca15d56d633') in 0.021705 seconds 
+  Import took 0.027101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 81.056215 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c65582420bb52593f6b91b188486a9f0') in 0.025968 seconds 
+  Import took 0.030882 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003581 seconds.
+Registered in 0.003571 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.975 seconds
+Domain Reload Profiling:
+	ReloadAssembly (976ms)
+		BeginReloadAssembly (127ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (798ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (287ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (279ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (202ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3162 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 144.5 MB.
+System memory in use after: 144.7 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 3800.
+Total: 4.813900 ms (FindLiveObjects: 0.245800 ms CreateObjectMapping: 0.143100 ms MarkObjects: 4.349300 ms  DeleteObjects: 0.074400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003611 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.981 seconds
+- Completed reload, in  0.937 seconds
 Domain Reload Profiling:
-	ReloadAssembly (981ms)
-		BeginReloadAssembly (121ms)
+	ReloadAssembly (937ms)
+		BeginReloadAssembly (104ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (806ms)
-			LoadAssemblies (83ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (783ms)
+			LoadAssemblies (82ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (284ms)
+			SetupTypeCache (272ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (283ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (282ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (202ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (204ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (12ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3162 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 144.5 MB.
-System memory in use after: 144.6 MB.
+System memory in use before: 144.6 MB.
+System memory in use after: 144.7 MB.
 
 Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 3802.
-Total: 4.235700 ms (FindLiveObjects: 0.239500 ms CreateObjectMapping: 0.123600 ms MarkObjects: 3.804100 ms  DeleteObjects: 0.067300 ms)
+Total: 4.691100 ms (FindLiveObjects: 0.238700 ms CreateObjectMapping: 0.114500 ms MarkObjects: 4.264900 ms  DeleteObjects: 0.071900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -322,26 +418,913 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 2939.984353 seconds.
-  path: Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx
-  artifactKey: Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx using Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f999d1c17a7365a8cdfe6174fbb87c2') in 0.169026 seconds 
-  Import took 0.173726 seconds .
+  Time since last request: 2038.775983 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60cbc9f2f34e89b0f10749caed579a50') in 0.175472 seconds 
+  Import took 0.180304 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 66.808870 seconds.
-  path: Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx
-  artifactKey: Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx using Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90d8f2970dd0abaacd61919bb0571067') in 0.020503 seconds 
-  Import took 0.026167 seconds .
+  Time since last request: 3001.788053 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da074237c90bbe088772628e28c4c65a') in 0.020209 seconds 
+  Import took 0.025456 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.704263 seconds.
+  Time since last request: 41.934442 seconds.
   path: Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx
   artifactKey: Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx using Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf0e0ee00f56820c1d2db8ae7f497147') in 0.018799 seconds 
-  Import took 0.023587 seconds .
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone 1.fbx using Guid(40119423195ec5d4a8ddbf3d37151c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '277563763fd49bdc19901902be1eb286') in 0.023271 seconds 
+  Import took 0.028158 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 1974.830449 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce79aad8f922b41230b48d960de40623') in 0.027790 seconds 
+  Import took 0.033148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.267565 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b60e46331a6739bebff38264e9a76f6d') in 0.025199 seconds 
+  Import took 0.029660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.224685 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e16d09afa2d81fe9fb423a3eb6155b4') in 0.027521 seconds 
+  Import took 0.032247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.714882 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6dfe5ddb053f65a4344739e06e7d01d') in 0.026776 seconds 
+  Import took 0.031419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.207744 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54d680abf0c48b003c8aaceed3c921ff') in 0.025352 seconds 
+  Import took 0.029994 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.706611 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '902814f88e597bc531ba55260b613013') in 0.029336 seconds 
+  Import took 0.034091 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.208750 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a03757a5c6679246f68d916b82f6da87') in 0.025145 seconds 
+  Import took 0.029738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.706005 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99af2bd1cbacd8d1e836dc5c58ef016a') in 0.023193 seconds 
+  Import took 0.027804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.367086 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e73954794b71e2c41a63421490133fd') in 0.024363 seconds 
+  Import took 0.028975 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 106.129352 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a55cae7d306d42ace9667a4c4d0402f6') in 0.029184 seconds 
+  Import took 0.034422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 65.357716 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81275074d52c2927e82592ae10a6a3ac') in 0.020660 seconds 
+  Import took 0.025387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 80.284826 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4848e02ca070d91e1298256ec16217d1') in 0.023403 seconds 
+  Import took 0.028052 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3837.960879 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '968997327f1ab0632e757314e5caee03') in 0.031332 seconds 
+  Import took 0.037200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.893979 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7918becf083499535822b4c7b14db38f') in 0.020287 seconds 
+  Import took 0.024742 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.376405 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34528d06476c10eccb3d6d92b565cf8c') in 0.024195 seconds 
+  Import took 0.028983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 91.124098 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a0d85e90a67ccfe5a5c27bf8a9cc376') in 0.022175 seconds 
+  Import took 0.027088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 68.395208 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42ae840c5d22890e2103e078f3e38c12') in 0.027397 seconds 
+  Import took 0.031991 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 114.924892 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa8b0a4217d22233d60647dbad3521ad') in 0.022793 seconds 
+  Import took 0.027772 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.230561 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e51fe28eff8543b20c45720dcc15727') in 0.026243 seconds 
+  Import took 0.031142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.052213 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2719f090f4c8da962d82aa213dda1318') in 0.026596 seconds 
+  Import took 0.031355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.251374 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4fae657d644ac0105978f15dd88de64') in 0.023115 seconds 
+  Import took 0.027707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.832144 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dde75657a5e25be3c3d2269dc7dfafc1') in 0.030469 seconds 
+  Import took 0.034830 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.789513 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7750214d02d1db4b23ffbdcada9c6671') in 0.024413 seconds 
+  Import took 0.028912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.073011 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e8773b3fafc4829481eedb92bb0b370') in 0.020179 seconds 
+  Import took 0.024892 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.788490 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd59c944ecef71b55bd0aaac7d9034b8c') in 0.027175 seconds 
+  Import took 0.032086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.251561 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebfc59305d84a62c7dd242107c93f4dc') in 0.026259 seconds 
+  Import took 0.030979 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.815423 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1570d0524f7ecdf91131eb74162e0fea') in 0.024902 seconds 
+  Import took 0.029417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.479829 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11dc85e549550aa9b42c8653d19fc9bd') in 0.024541 seconds 
+  Import took 0.029056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.821504 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c357b0e9b7989c8720f8d4a9596fe394') in 0.024257 seconds 
+  Import took 0.029001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.313485 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f09b719c9c319d44b4767cd8388f2d2') in 0.025619 seconds 
+  Import took 0.030065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.139788 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '672b1d974aab899925cb588d3aa1a8a9') in 0.023358 seconds 
+  Import took 0.027901 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 436.937226 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2901c37ef25744b623419f03d9b54c96') in 0.020633 seconds 
+  Import took 0.025851 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1005.836998 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9bbda27fc35b738812d5656c672a3b6') in 0.030512 seconds 
+  Import took 0.036242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.157187 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33cd3b2b2a34526ef7469b31f080c7b9') in 0.021055 seconds 
+  Import took 0.026235 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 368.708020 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bfd658892fa0c652d3c415a0f132c8b') in 0.023259 seconds 
+  Import took 0.028294 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.102314 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03127be9a80e6ed059d095530ad8c0dc') in 0.022670 seconds 
+  Import took 0.027650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.311327 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82c50bfc39338fd9cbbf459394eb0ad1') in 0.021618 seconds 
+  Import took 0.026557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.734236 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4986f0ec384c555a2df0e5680f0b8b24') in 0.021667 seconds 
+  Import took 0.026457 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.342886 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f64d1287a444421e385286e832c43b7') in 0.022611 seconds 
+  Import took 0.027298 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 456.843324 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef8f5a041cb58ca528742ec6f46c0f8b') in 0.025918 seconds 
+  Import took 0.031362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.681679 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bce164c32277bb7c0018e1f16e23c67') in 0.027114 seconds 
+  Import took 0.032041 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.736382 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9e8a80a39ed9403c70c964bf6fac73c') in 0.024975 seconds 
+  Import took 0.029555 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.409476 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8618a346ef5efb81ff40e44c305e7133') in 0.023638 seconds 
+  Import took 0.028153 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.995246 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '852297aeb3b13f9f8c97362ee66e1a89') in 0.022787 seconds 
+  Import took 0.027579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.225232 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15e63adc56506b44a03dc5f07e6b003a') in 0.019486 seconds 
+  Import took 0.024414 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 219.119782 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa97550ee109987d7668eaf8ac26bc64') in 0.018952 seconds 
+  Import took 0.024067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 146.418675 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca89bb38265ae6b427ea70978bf641c6') in 0.024094 seconds 
+  Import took 0.028953 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.540968 seconds.
+  path: Assets/LOUIS/001_MESH/E_Launcher_Morph_bodyalone.fbx
+  artifactKey: Guid(425bcb9c9e31f3848956286bc6416bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Launcher_Morph_bodyalone.fbx using Guid(425bcb9c9e31f3848956286bc6416bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55be3a60df9f018f016f4b3825a5781e') in 0.016216 seconds 
+  Import took 0.021008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 126.776575 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab12fe56b3a361e60b8b1ab072f4151e') in 0.030676 seconds 
+  Import took 0.035380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.542646 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba1e3398a508e22227a211f4deccec16') in 0.020152 seconds 
+  Import took 0.024784 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 96.718740 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12568fc573019327bf194b3a8dcad858') in 0.022615 seconds 
+  Import took 0.027987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2063.813854 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bd4d5e89adca63cd4f764bcd450aea1') in 0.028931 seconds 
+  Import took 0.034416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.711950 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec5bc26019c2c23b12a3319cc37942e7') in 0.027379 seconds 
+  Import took 0.032000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 97.045337 seconds.
+  path: Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx
+  artifactKey: Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/001_MESH/E_Pusher_body alone.fbx using Guid(45b6f141008613449870c62d0bcbeebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec733c31b7c3c9ae2913137838f1ae48') in 0.025454 seconds 
+  Import took 0.031190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 909.903716 seconds.
+  path: Assets/LOUIS/007_ANIM/E_PUSHER
+  artifactKey: Guid(cb6710966b760fd469ab66979641bba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/007_ANIM/E_PUSHER using Guid(cb6710966b760fd469ab66979641bba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f37a2269a9c9b765eb1290721d5cb277') in 0.006018 seconds 
+  Import took 0.011714 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003954 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.975 seconds
+Domain Reload Profiling:
+	ReloadAssembly (975ms)
+		BeginReloadAssembly (108ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (816ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (279ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (293ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (211ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3162 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 144.8 MB.
+System memory in use after: 145.0 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 3840.
+Total: 4.723000 ms (FindLiveObjects: 0.267900 ms CreateObjectMapping: 0.143900 ms MarkObjects: 4.244500 ms  DeleteObjects: 0.065800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3630.739024 seconds.
+  path: Assets/LOUIS/007_ANIM/E_PUSHER/000_Idle.anim
+  artifactKey: Guid(d3450e87c2fed214482d436b8afe914e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/007_ANIM/E_PUSHER/000_Idle.anim using Guid(d3450e87c2fed214482d436b8afe914e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.360084 seconds  code(4) message(Build asset version error: assets/louis/007_anim/e_pusher/000_idle.anim in SourceAssetDB has modification time of '2022-03-23T14:53:34.191643Z' while content on disk has modification time of '0001-01-01T00:00:00Z' with error code 2
+Stacktrace:
+0x00007ff7e6969bac (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7e6970fa9 (Unity) StackWalker::ShowCallstack
+0x00007ff7e76cf26c (Unity) GetStacktrace
+0x00007ff7e781bae7 (Unity) GetAssetHashAndValidate
+0x00007ff7e7816eb3 (Unity) AssetVersionBuilder::BuildHashOfSourceAssetArray
+0x00007ff7e7814e22 (Unity) AssetVersionBuilder::BuildAssetVersion
+0x00007ff7e77ef70d (Unity) CreateAssetVersionBuilder
+0x00007ff7e77f5f45 (Unity) ImportToObjects
+0x00007ff7e77f4d98 (Unity) ImportAsset
+0x00007ff7e778f0f8 (Unity) AssetImportWorker::Import
+0x00007ff7e77b47da (Unity) <lambda_4a0f5575432e8e69ec585d1ca7897980>::operator()
+0x00007ff7e783bee2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e783e040 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e78417be (Unity) asio::io_service::run
+0x00007ff7e77dd4db (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e77dd530 (Unity) RunAssetImporterV2
+0x00007ff7e7283a89 (Unity) Application::InitializeProject
+0x00007ff7e76d9722 (Unity) WinMain
+0x00007ff7e8d695ce (Unity) __scrt_common_main_seh
+0x00007fffd6467034 (KERNEL32) BaseThreadInitThunk
+0x00007fffd6a22651 (ntdll) RtlUserThreadStart
+)
+  ERROR: Build asset version error: assets/louis/007_anim/e_pusher/000_idle.anim in SourceAssetDB has modification time of '2022-03-23T14:53:34.191643Z' while content on disk has modification time of '0001-01-01T00:00:00Z' with error code 2
+Stacktrace:
+0x00007ff7e6969bac (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7e6970fa9 (Unity) StackWalker::ShowCallstack
+0x00007ff7e76cf26c (Unity) GetStacktrace
+0x00007ff7e781bae7 (Unity) GetAssetHashAndValidate
+0x00007ff7e7816eb3 (Unity) AssetVersionBuilder::BuildHashOfSourceAssetArray
+0x00007ff7e7814e22 (Unity) AssetVersionBuilder::BuildAssetVersion
+0x00007ff7e77ef70d (Unity) CreateAssetVersionBuilder
+0x00007ff7e77f5f45 (Unity) ImportToObjects
+0x00007ff7e77f4d98 (Unity) ImportAsset
+0x00007ff7e778f0f8 (Unity) AssetImportWorker::Import
+0x00007ff7e77b47da (Unity) <lambda_4a0f5575432e8e69ec585d1ca7897980>::operator()
+0x00007ff7e783bee2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e783e040 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e78417be (Unity) asio::io_service::run
+0x00007ff7e77dd4db (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e77dd530 (Unity) RunAssetImporterV2
+0x00007ff7e7283a89 (Unity) Application::InitializeProject
+0x00007ff7e76d9722 (Unity) WinMain
+0x00007ff7e8d695ce (Unity) __scrt_common_main_seh
+0x00007fffd6467034 (KERNEL32) BaseThreadInitThunk
+0x00007fffd6a22651 (ntdll) RtlUserThreadStart
+
+  Import took 0.364469 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004151 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.031 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1031ms)
+		BeginReloadAssembly (111ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (863ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (300ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (311ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (225ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3162 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 144.8 MB.
+System memory in use after: 145.0 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 3842.
+Total: 5.120600 ms (FindLiveObjects: 0.256900 ms CreateObjectMapping: 0.140100 ms MarkObjects: 4.645300 ms  DeleteObjects: 0.076900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 302.714094 seconds.
+  path: Assets/LOUIS/007_ANIM/E_PUSHER/002_Walking.anim
+  artifactKey: Guid(87670f313f0459246a573aba98728c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/007_ANIM/E_PUSHER/002_Walking.anim using Guid(87670f313f0459246a573aba98728c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29d8f3b61583d5a7fb0b596733ec2fdc') in 0.030129 seconds 
+  Import took 0.034759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.165377 seconds.
+  path: Assets/LOUIS/007_ANIM/E_PUSHER/001_Idle.anim
+  artifactKey: Guid(08bbf5d807916a540b91172ea3a69901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/007_ANIM/E_PUSHER/001_Idle.anim using Guid(08bbf5d807916a540b91172ea3a69901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ac59a26e00436659581c81211d80701') in 0.005343 seconds 
+  Import took 0.010311 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.704014 seconds.
+  path: Assets/LOUIS/007_ANIM/E_PUSHER/E_Pusher_body alone.controller
+  artifactKey: Guid(546f5750b9d3fd0419edd497e6b1a1a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/007_ANIM/E_PUSHER/E_Pusher_body alone.controller using Guid(546f5750b9d3fd0419edd497e6b1a1a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '264e16e1c6f5adc23f0a92b49c8fdd71') in 0.006478 seconds 
+  Import took 0.011100 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003537 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.009 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1009ms)
+		BeginReloadAssembly (102ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (858ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (294ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (313ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (225ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3162 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 144.9 MB.
+System memory in use after: 145.1 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 3844.
+Total: 4.894100 ms (FindLiveObjects: 0.259200 ms CreateObjectMapping: 0.156500 ms MarkObjects: 4.397900 ms  DeleteObjects: 0.079300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2051.953411 seconds.
+  path: Assets/LOUIS/007_ANIM/E_LAUNCHER/E_LAUNCHER.controller
+  artifactKey: Guid(e0b6658ae4f60104e8050479d0fe7e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/007_ANIM/E_LAUNCHER/E_LAUNCHER.controller using Guid(e0b6658ae4f60104e8050479d0fe7e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56a53715db226028bf15cf1ef6252361') in 0.031818 seconds 
+  Import took 0.037900 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004035 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.998 seconds
+Domain Reload Profiling:
+	ReloadAssembly (999ms)
+		BeginReloadAssembly (111ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (830ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (286ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (297ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (214ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3162 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 144.9 MB.
+System memory in use after: 145.1 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 3846.
+Total: 5.885200 ms (FindLiveObjects: 0.243600 ms CreateObjectMapping: 0.114600 ms MarkObjects: 5.417200 ms  DeleteObjects: 0.108600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 488.347074 seconds.
+  path: Assets/LOUIS/007_ANIM/E_PUSHER/003_ATK.anim
+  artifactKey: Guid(94a854b0405b7e14ea100f848d046629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/007_ANIM/E_PUSHER/003_ATK.anim using Guid(94a854b0405b7e14ea100f848d046629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d03e08bb0fa448a5b13e5e2ba7456c1') in 0.027435 seconds 
+  Import took 0.033128 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004145 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.960 seconds
+Domain Reload Profiling:
+	ReloadAssembly (961ms)
+		BeginReloadAssembly (109ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (798ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (276ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (289ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (210ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3162 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 144.9 MB.
+System memory in use after: 145.1 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 3848.
+Total: 4.812400 ms (FindLiveObjects: 0.257500 ms CreateObjectMapping: 0.145100 ms MarkObjects: 4.333800 ms  DeleteObjects: 0.074900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1625.635044 seconds.
+  path: Assets/LOUIS/007_ANIM/E_PUSHER/000_Tpose.anim
+  artifactKey: Guid(430d3e60f8b32f04cb4a906d382ab38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/007_ANIM/E_PUSHER/000_Tpose.anim using Guid(430d3e60f8b32f04cb4a906d382ab38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a4be176abeb1dc5181f1102569d0de9') in 0.028434 seconds 
+  Import took 0.034411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.073736 seconds.
+  path: Assets/LOUIS/007_ANIM/E_PUSHER/005_ATK.anim
+  artifactKey: Guid(94a854b0405b7e14ea100f848d046629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/007_ANIM/E_PUSHER/005_ATK.anim using Guid(94a854b0405b7e14ea100f848d046629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1af34b362e4102b9270f3da6d149645') in 0.006265 seconds 
+  Import took 0.011548 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003737 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.934 seconds
+Domain Reload Profiling:
+	ReloadAssembly (934ms)
+		BeginReloadAssembly (105ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (780ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (272ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (278ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (198ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3162 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 144.9 MB.
+System memory in use after: 145.1 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 3850.
+Total: 4.927500 ms (FindLiveObjects: 0.264500 ms CreateObjectMapping: 0.161000 ms MarkObjects: 4.424100 ms  DeleteObjects: 0.076700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
