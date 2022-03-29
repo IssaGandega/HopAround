@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class WinLauncher : MonoBehaviour
 {
-    [SerializeField] private GameObject winScreen;
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))

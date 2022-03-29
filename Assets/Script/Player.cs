@@ -3,19 +3,26 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private bool isGrounded;
+    public Rigidbody2D rb;
+    [SerializeField] public bool isGrounded;
     private Camera cam;
+    [SerializeField] private Transform groundedCheckerPos;
     private Vector3 point;
     [SerializeField] private bool isTouched;
     [SerializeField] private LayerMask layer;
     [SerializeField] private float speed;
-    [SerializeField] private float curentSpeed;
+    [SerializeField] private AnimationCurve accelCurve;
+    public float curentSpeed;
     [SerializeField] private Vector2 speedMinMax;
-    [SerializeField] private float jumpForce;
+    public float jumpForce;
     [SerializeField] private List<Collider2D> collider;
     private Tongue tongue;
-    private float xAxisAccel;
+    [SerializeField] private float xAxisAccel;
+    [HideInInspector] public Vector3 lastGroundedPos;
+    public bool wallLeftTouch;
+    public bool wallRightTouch;
+    private bool dirL;
+    private RaycastHit2D hit;
 
     private void OnEnable()
     {
@@ -25,11 +32,17 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        xAxisAccel = Mathf.Clamp(Input.acceleration.x, -0.5f, 0.5f);
+        CheckTouch();
+        xAxisAccel = Mathf.Clamp(Input.acceleration.x, -1f, 1f);
         if ((xAxisAccel < -0.3f && xAxisAccel > 0.3f) || (isTouched))
         {
             rb.velocity = Vector3.zero;
             
+        }
+
+        if (tongue.isGrabing)
+        {
+            curentSpeed = 0;
         }
 
         if ((!tongue.isGrabing) && (!isTouched))
@@ -38,42 +51,75 @@ public class Player : MonoBehaviour
             {
                 curentSpeed = 0.1f;
             }
+            
+            
+            if (((curentSpeed > 3f) && (xAxisAccel < 0) || (curentSpeed < -3f) && (xAxisAccel > 0)) && (isGrounded))
+            {
+                //use lerp to switch direction
+                curentSpeed = Mathf.Lerp(curentSpeed, 0f, 0.3f);
+            }
 
-            curentSpeed += xAxisAccel * speed;
-            Mathf.Clamp(curentSpeed,speedMinMax.x,speedMinMax.y);
+        
+
+            if ((xAxisAccel < 0) && (!wallLeftTouch) && (isGrounded))
+            {
+                curentSpeed -= accelCurve.Evaluate(Mathf.Abs(xAxisAccel)) * speed;
+            }
+            else if ((xAxisAccel < 0) && (!wallLeftTouch) && (dirL) && (!isGrounded))
+            {
+                curentSpeed -= (accelCurve.Evaluate(Mathf.Abs(xAxisAccel)) * speed)/1.5f;
+            }
+            
+            if ((xAxisAccel > 0) && (!wallRightTouch) && (isGrounded))
+            {
+                curentSpeed += accelCurve.Evaluate(xAxisAccel) * speed;
+            }
+            else if ((xAxisAccel > 0) && (!wallRightTouch) && (!isGrounded) && (!dirL))
+            {
+                curentSpeed += (accelCurve.Evaluate(xAxisAccel) * speed)/1.5f;
+            }
+
+            curentSpeed = Mathf.Clamp(curentSpeed,speedMinMax.x,speedMinMax.y);
             //rb.velocity = new Vector3(xAxisAccel * speed, rb.velocity.y, 0);
             rb.velocity = new Vector3(curentSpeed, rb.velocity.y, 0);
         }
 
-        isGrounded = Physics2D.OverlapCircle(transform.position, 0.4f, layer);
+        isGrounded = Physics2D.OverlapCircle(groundedCheckerPos.position, 0.3f, layer);
     }
-
-    private void Update()
-    {
-        CheckTouch();
-    }
-
+    
 
     private void CheckTouch()
     {
         if (Input.touchCount <= 0) return;
-        if ((Input.GetTouch(0).phase == TouchPhase.Began) && (isGrounded))
+        if ((Input.GetTouch(0).phase == TouchPhase.Began))
         {
             point = cam.ScreenPointToRay(Input.GetTouch(0).position).GetPoint(10);
-            point.z = transform.position.z;
-              
-            collider.Add(Physics2D.OverlapCircle(point,1f));
+            hit = Physics2D.Raycast(transform.position, point-transform.position,10,layer);
+            Debug.DrawRay(transform.position,point-transform.position,Color.magenta,3f);
 
-            if (collider.Count != 0)
+            point.z = transform.position.z;
+            if (hit != null)
             {
-                foreach (Collider2D col in collider)
+                if (hit.collider.gameObject.layer == 7)
                 {
-                
-                    if (col.gameObject == gameObject)
-                    {
-                        isTouched = true;
-                    }
+                    tongue.TongueStart(hit.collider);
                 }
+                else
+                {
+                    if (tongue.isGrabing)
+                    {
+                        tongue.StartCoroutine(tongue.TongueReset());
+                    }
+                    else
+                    {
+                        CheckPlayerTouch();
+                    }
+     
+                }
+            }
+            else
+            {
+                CheckPlayerTouch();
             }
         }
         if ((isTouched == false) && (isGrounded))
@@ -92,7 +138,34 @@ public class Player : MonoBehaviour
     {
         if ((isGrounded) && (tongue.isGrabing == false))
         {
+            if (xAxisAccel > 0)
+            {
+                dirL = false;
+            }
+            else
+            {
+                dirL = true;
+            }
             rb.AddForce(Vector3.up*jumpForce);
+        }
+    }
+
+    private void CheckPlayerTouch()
+    {
+        collider.Add(Physics2D.OverlapCircle(point,1f));
+        if (collider.Count != 0)
+        {
+            foreach (Collider2D col in collider)
+            {
+                if (col != null)
+                {
+                    if (col.gameObject == gameObject)
+                    {
+                        isTouched = true;
+                        break;
+                    }
+                }
+            }
         }
     }
 }

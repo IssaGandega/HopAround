@@ -1,104 +1,143 @@
+using System;
 using System.Collections;
-using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
 public class Tongue : MonoBehaviour
 {
-    private Vector3 point;
     private Transform objectMovePose;
     private Vector3 newPoint;
     public bool isGrabing;
     [SerializeField] private float range = 10;
-    [SerializeField] private float offsetFromPoint = 10;
     [SerializeField] private LineRenderer line;
     [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private float speed;
-    [SerializeField] private Camera cam;
-    [SerializeField] private LayerMask layer;
+    [SerializeField] private float timeToReachPoint =0.5f;
     [SerializeField] private Transform pointTr;
+    [SerializeField] private Transform playerContainer;
+    [SerializeField] private Player player;
+    public Transform touchedObj;
     private bool tongueReachedPoint;
+    private bool tongueCd;
     private bool pointCanMove;
+    private bool pointIsAnInteractable;
+    private bool frogReachedPoint;
     private float distance;
-    void Update()
-    {
-        if (Input.touchCount > 0)
-        {
-            if ((Input.GetTouch(0).phase == TouchPhase.Began) && (isGrabing == false))
-            {
-                pointCanMove = false;
-                point = cam.ScreenPointToRay(Input.touches[0].position).GetPoint(10);
+    
 
-                point.z = 0;
-            
-                RaycastHit2D hit = Physics2D.Raycast(transform.position, point-transform.position,range,layer);
-                if (hit.collider != null)
-                {
-                    if (hit.collider.GetComponent<Rigidbody2D>())
-                    {
-                        pointCanMove = true;
-                    }
-        
-                    if (Vector3.Distance(transform.position,hit.point) < range)
-                    {
-                        distance = 999;
-                        isGrabing = true;
-                        point = hit.point;
-                        pointTr.position = gameObject.transform.position;
-                    }
-                }
-            }
-            
-            if (Input.GetTouch(0).phase == TouchPhase.Ended)
-            {
-                isGrabing = false;
-                rb.gravityScale = 1f;
-            }
-        }
-        
+    public void FixedUpdate()
+    {
         if (isGrabing)
         {
+            pointTr.transform.position = touchedObj.transform.position;
             line.gameObject.SetActive(true);
-            if (tongueReachedPoint)
+            if ((tongueReachedPoint) && (!frogReachedPoint))
             {
-                if (pointCanMove)
-                {
-                    //point + objectMovePoint;
-                } 
-                distance = Vector3.Distance(transform.position, point);
+                distance = Vector3.Distance(transform.position, pointTr.transform.position);
                 line.SetPosition(0, transform.position);
-                line.SetPosition(1, point);
-                transform.right = point - transform.position;
-                if (distance > offsetFromPoint)
+                line.SetPosition(1, pointTr.transform.position);
+
+                if ((distance > 0.5f) && (!pointIsAnInteractable))
                 {
-                    transform.up = point - transform.position;
-                    rb.AddForce(transform.up*speed);
+                  
+                    transform.DOMove(pointTr.transform.position, timeToReachPoint);
                 }
                 else
                 {
-                    rb.velocity = Vector2.zero;
-                    rb.gravityScale = 0;
+                    frogReachedPoint = true;
                 }
             }
             else
             {
                 line.SetPosition(0, transform.position);
                 line.SetPosition(1, pointTr.position);
-                pointTr.DOMove(point, 0.2f);
+                pointTr.DOMove(pointTr.transform.position, 0.2f);
                 StartCoroutine(WaitForTongue());
             }
-
+            
+            if (frogReachedPoint)
+            {
+                rb.gravityScale = 0;
+                //line.gameObject.SetActive(false);
+                if (pointCanMove)
+                {
+                    transform.parent = touchedObj;
+                    transform.position = touchedObj.position;
+                    rb.gravityScale = 0;
+                }
+                else
+                {
+                    rb.velocity = Vector2.zero;
+                }
+            }
         }
-        else
+
+        if (Input.touchCount <= 0) return;
+        if ((Input.GetTouch(0).phase == TouchPhase.Began) && (isGrabing) && (tongueReachedPoint))
         {
-            line.gameObject.SetActive(false);
-            tongueReachedPoint = false;
+            StartCoroutine(TongueReset());
         }
     }
 
-    private IEnumerator WaitForTongue()
+    public void TongueStart(Collider2D hit)
+    {
+        if (!tongueCd)
+        {
+            if (isGrabing == false)
+            {
+                touchedObj = hit.gameObject.transform;
+                isGrabing = true;
+
+                if (Vector3.Distance(transform.position, hit.gameObject.transform.position) < range)
+                {
+                    distance = 999;
+                    pointTr.position = touchedObj.transform.position;
+                    
+                    if (touchedObj.GetComponent<Switch>())
+                    {
+                        line.gameObject.SetActive(true);
+                        pointIsAnInteractable = true;
+                    }
+                    else if (hit.GetComponent<Rigidbody2D>().bodyType == RigidbodyType2D.Dynamic)
+                    {
+                        pointCanMove = true;
+                    }
+                }
+            }
+        }
+    
+    }
+
+    public IEnumerator TongueReset()
+    {
+        isGrabing = false;
+        tongueReachedPoint = false;
+        line.gameObject.SetActive(false);
+        touchedObj = null;
+        frogReachedPoint = false;
+        pointIsAnInteractable = false;
+        transform.parent = playerContainer;
+        rb.gravityScale = 1f;
+        pointTr.position = Vector3.zero;
+        if (pointCanMove)
+        {
+            player.rb.AddForce((player.jumpForce*Vector2.up)*4);
+            pointCanMove = false;
+        }
+
+        tongueCd = true;
+        yield return new WaitForSeconds(0.05f);
+        tongueCd = false;
+    }
+    
+
+        private IEnumerator WaitForTongue()
     {
         yield return new WaitForSeconds(0.2f);
         tongueReachedPoint = true;
+        if (pointIsAnInteractable)
+        {
+            touchedObj.GetComponent<Switch>().TongueTouched();
+            StartCoroutine(TongueReset());
+        }
     }
 }

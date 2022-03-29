@@ -1,19 +1,15 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using DG.Tweening;
 using UnityEngine;
 
 public class Toad : MonoBehaviour
 {
-    [SerializeField]private List<Vector3> followTr;
-    [SerializeField] private float offset;
-    [SerializeField] private float playerToadDistance;
-    [SerializeField] private float targetToadDistance;
+    static public List<Toad> toadsFollowingPlayer = new List<Toad>();
     [SerializeField] private Transform playerTr;
-    [SerializeField] private float speed = 0.1f;
     private bool followPlayer;
-    
+    private bool recordStart;
+    public float moveSpeed = 5f;
+    private ToadTarget currTarget;
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -22,56 +18,23 @@ public class Toad : MonoBehaviour
             playerTr = other.gameObject.transform;
             LVLManager.instance.AddToad();
             followPlayer = true;
+            currTarget = playerTr.GetComponent<ToadTarget>();
+            toadsFollowingPlayer.Add(this);
         }
     }
+    
 
-    private void Update()
-    {
-        if (followPlayer)
-        {
-            playerToadDistance = Vector3.Distance(gameObject.transform.position, playerTr.position);
-
-            if ((playerToadDistance > offset) && (followTr.Count > 0))
-            {
-                Move();
-            }
-            else
-            {
-                Record();
-            }
-        }
-    }
-
-    private void Record()
-    {
-
-        if (followTr.Count == 0)
-        {
-            followTr.Add(playerTr.position);
-        }
-        else
-        {
-            if (followTr[followTr.Count-1] != playerTr.position)
-            {
-                followTr.Add(playerTr.position);
-            }
-        }
-        
-   
-      
-    }
-
-    private  void Move()
-    {
-        if (followTr.Count != 0)
-        {
-            targetToadDistance = Vector3.Distance(transform.position, followTr[0]);
-            transform.position = Vector3.MoveTowards(transform.position, followTr[0], speed);
-
-            if (targetToadDistance < 0.05f)
-            {
-                followTr.Remove(followTr[0]);
-            }
-        }
-    }
+   private void Update()
+   {
+       if (currTarget != null)
+       {
+           var index = currTarget.points.Count - (toadsFollowingPlayer.IndexOf(this) + 1);
+           if (index >= 0 && index < currTarget.points.Count)
+           {
+               var pt = currTarget.points[index];
+               //transform.position = Vector3.Lerp(transform.position, pt, Time.deltaTime * lerpSpeed);
+               transform.position = Vector3.MoveTowards(transform.position, pt, Time.deltaTime * moveSpeed);
+           }
+       }
+   }
 }
