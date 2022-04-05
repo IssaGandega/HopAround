@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Security.Permissions;
 using DG.Tweening;
 using UnityEngine;
 
@@ -33,12 +34,10 @@ public class Tongue : MonoBehaviour
             if ((tongueReachedPoint) && (!frogReachedPoint))
             {
                 distance = Vector3.Distance(transform.position, pointTr.transform.position);
-                line.SetPosition(0, transform.position);
-                line.SetPosition(1, pointTr.transform.position);
-
+                UpdateLR();
+                
                 if ((distance > 0.5f) && (!pointIsAnInteractable))
                 {
-                  
                     transform.DOMove(pointTr.transform.position, timeToReachPoint);
                 }
                 else
@@ -48,8 +47,7 @@ public class Tongue : MonoBehaviour
             }
             else
             {
-                line.SetPosition(0, transform.position);
-                line.SetPosition(1, pointTr.position);
+                UpdateLR();
                 pointTr.DOMove(pointTr.transform.position, 0.2f);
                 StartCoroutine(WaitForTongue());
             }
@@ -136,8 +134,19 @@ public class Tongue : MonoBehaviour
         tongueReachedPoint = true;
         if (pointIsAnInteractable)
         {
+   
             touchedObj.GetComponent<Switch>().TongueTouched();
             StartCoroutine(TongueReset());
         }
     }
+        private void UpdateLR()
+        {
+            //line.transform.LookAt(pointTr);
+            Vector3 target = pointTr.position;
+            // diviser z et x par ce qu'il faut pour aligner points
+            target.z = target.x - transform.position.x;
+            target.y -= transform.position.y; 
+            target.x = 0;
+            line.SetPosition(4, target);
+        }
 }
