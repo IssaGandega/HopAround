@@ -9,11 +9,13 @@ public class Toad : MonoBehaviour
     private bool recordStart;
     public float moveSpeed = 5f;
     private ToadTarget currTarget;
+    private int index;
+    private Vector3 pt;
 
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if ((other.gameObject.name == "Player") && (!followPlayer))
+        if ((other.gameObject.CompareTag("Player")) && (!followPlayer))
         {
             playerTr = other.gameObject.transform;
             LVLManager.instance.AddToad();
@@ -28,10 +30,10 @@ public class Toad : MonoBehaviour
    {
        if (currTarget != null)
        {
-           var index = currTarget.points.Count - (toadsFollowingPlayer.IndexOf(this) + 1);
+           index = currTarget.points.Count - (toadsFollowingPlayer.IndexOf(this) + 1);
            if (index >= 0 && index < currTarget.points.Count)
            {
-               var pt = currTarget.points[index];
+               pt = currTarget.points[index];
                //transform.position = Vector3.Lerp(transform.position, pt, Time.deltaTime * lerpSpeed);
                transform.position = Vector3.MoveTowards(transform.position, pt, Time.deltaTime * moveSpeed);
            }

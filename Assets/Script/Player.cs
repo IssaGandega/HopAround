@@ -18,7 +18,6 @@ public class Player : MonoBehaviour
     [SerializeField] private List<Collider2D> collider;
     private Tongue tongue;
     [SerializeField] private float xAxisAccel;
-    [HideInInspector] public Vector3 lastGroundedPos;
     public bool wallLeftTouch;
     public bool wallRightTouch;
     private bool dirL;
@@ -27,6 +26,7 @@ public class Player : MonoBehaviour
     private void OnEnable()
     {
         cam = Camera.main;
+        cam.GetComponent<CameraController>().playerController = gameObject;
         tongue = gameObject.GetComponent<Tongue>();
     }
 
