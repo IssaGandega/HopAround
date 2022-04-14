@@ -15,11 +15,11 @@ C:/Users/l.lafontaine/Documents/HopAround
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63959
+52007
 Successfully changed project path to: C:/Users/l.lafontaine/Documents/HopAround
 C:/Users/l.lafontaine/Documents/HopAround
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 59.89 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 57.94 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.27f1 (e759542391ea)
 [Subsystems] Discovering subsystems at path C:/Users/l.lafontaine/Desktop/2020.3.27f1/Editor/Data/Resources/UnitySubsystems
@@ -35,77 +35,77 @@ Initialize mono
 Mono path[0] = 'C:/Users/l.lafontaine/Desktop/2020.3.27f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Users/l.lafontaine/Desktop/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Users/l.lafontaine/Desktop/2020.3.27f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56000
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56156
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Users/l.lafontaine/Desktop/2020.3.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001102 seconds.
+Registered in 0.001175 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 57.12 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 53.81 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.509 seconds
+- Completed reload, in  0.518 seconds
 Domain Reload Profiling:
-	ReloadAssembly (509ms)
-		BeginReloadAssembly (52ms)
+	ReloadAssembly (518ms)
+		BeginReloadAssembly (51ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (400ms)
+		EndReloadAssembly (408ms)
 			LoadAssemblies (50ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (126ms)
+			SetupTypeCache (132ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (162ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (165ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (57ms)
+				RefreshPlugins (54ms)
 				BeforeProcessingInitializeOnLoad (7ms)
-				ProcessInitializeOnLoadAttributes (69ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
+				ProcessInitializeOnLoadAttributes (75ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003216 seconds.
+Registered in 0.004289 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 56.93 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 56.68 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.040 seconds
+- Completed reload, in  1.057 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1041ms)
-		BeginReloadAssembly (121ms)
+	ReloadAssembly (1058ms)
+		BeginReloadAssembly (132ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (871ms)
-			LoadAssemblies (79ms)
+		EndReloadAssembly (875ms)
+			LoadAssemblies (84ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (278ms)
+			SetupTypeCache (291ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (54ms)
-			SetupLoadedEditorAssemblies (345ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (353ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (57ms)
-				BeforeProcessingInitializeOnLoad (77ms)
-				ProcessInitializeOnLoadAttributes (197ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (203ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
@@ -114,10 +114,10 @@ Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3333 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 151.4 MB.
-System memory in use after: 151.5 MB.
+System memory in use after: 151.6 MB.
 
 Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 3754.
-Total: 4.572200 ms (FindLiveObjects: 0.225800 ms CreateObjectMapping: 0.117400 ms MarkObjects: 4.132100 ms  DeleteObjects: 0.096000 ms)
+Total: 4.751700 ms (FindLiveObjects: 0.249900 ms CreateObjectMapping: 0.144500 ms MarkObjects: 4.253000 ms  DeleteObjects: 0.103300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,313 +131,236 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab
-  artifactKey: Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab using Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c9d5adfe8fd7830a1f782c6c2367811') in 0.193783 seconds 
-  Import took 0.198585 seconds .
+  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab
+  artifactKey: Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab using Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e848be807cd51a6313e617bc95a37f28') in 0.196060 seconds 
+  Import took 0.200901 seconds .
 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.71 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 27 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 83.6 MB.
-System memory in use after: 83.8 MB.
-
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 3826.
-Total: 5.031400 ms (FindLiveObjects: 0.238700 ms CreateObjectMapping: 0.130100 ms MarkObjects: 4.585500 ms  DeleteObjects: 0.076400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.272181 seconds.
+  Time since last request: 0.289794 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab
+  artifactKey: Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab using Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd790e1ffb69bcc96f61b26b20e90f94') in 0.009019 seconds 
+  Import took 0.014273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.275347 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab
+  artifactKey: Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab using Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f828bbc35242213997ac1122d58d1e') in 0.010326 seconds 
+  Import took 0.016178 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 600.074331 seconds.
   path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleB.prefab
   artifactKey: Guid(060fd11c225891a4caf19fad0bc11aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleB.prefab using Guid(060fd11c225891a4caf19fad0bc11aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '162958e3f3385fdfa70450dcc69fcc20') in 0.020410 seconds 
-  Import took 0.025265 seconds .
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleB.prefab using Guid(060fd11c225891a4caf19fad0bc11aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6f61b68b960dd9a814dad72b415513f') in 0.023675 seconds 
+  Import took 0.030065 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.335298 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab
-  artifactKey: Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab using Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94a22a5dc12c931305dcb1ec3ff47075') in 0.016470 seconds 
-  Import took 0.021814 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.117537 seconds.
+  Time since last request: 0.000223 seconds.
   path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab
   artifactKey: Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab using Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1183351ef6bb2bbc86866e44a21a9f1a') in 0.017972 seconds 
-  Import took 0.022759 seconds .
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab using Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33773a6940af455daedb44c20be643cd') in 0.019205 seconds 
+  Import took 0.024012 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.934107 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD
-  artifactKey: Guid(4c37c1f8e43e6d7488932a370e7b7dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD using Guid(4c37c1f8e43e6d7488932a370e7b7dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e7071c07c60e9fda15136392cd84a81') in 0.004908 seconds 
-  Import took 0.010205 seconds .
+  Time since last request: 0.000145 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab
+  artifactKey: Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab using Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '200b41c1750d14ae8aafd3b9e3e7a1f0') in 0.016345 seconds 
+  Import took 0.021187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.714489 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleB.prefab
+  artifactKey: Guid(060fd11c225891a4caf19fad0bc11aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleB.prefab using Guid(060fd11c225891a4caf19fad0bc11aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51822b322dec182b6a3822eba7e0fc59') in 0.022205 seconds 
+  Import took 0.028765 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.209896 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleB.prefab
+  artifactKey: Guid(060fd11c225891a4caf19fad0bc11aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleB.prefab using Guid(060fd11c225891a4caf19fad0bc11aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40585b5ee36e6023d0b37167a508fe82') in 0.016105 seconds 
+  Import took 0.021063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.241508 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleB.prefab
+  artifactKey: Guid(060fd11c225891a4caf19fad0bc11aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleB.prefab using Guid(060fd11c225891a4caf19fad0bc11aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d679dd8838840a4c36b3b7cfd66f47c') in 0.020537 seconds 
+  Import took 0.027772 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.003593 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleB.prefab
+  artifactKey: Guid(060fd11c225891a4caf19fad0bc11aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleB.prefab using Guid(060fd11c225891a4caf19fad0bc11aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49dfdf8a3a325febcd879df43348ae0c') in 0.020983 seconds 
+  Import took 0.027053 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.308199 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleB.prefab
+  artifactKey: Guid(060fd11c225891a4caf19fad0bc11aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleB.prefab using Guid(060fd11c225891a4caf19fad0bc11aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc9c440ba6e26c5090653e24edb6ba49') in 0.020311 seconds 
+  Import took 0.026112 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.430435 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleB.prefab
+  artifactKey: Guid(060fd11c225891a4caf19fad0bc11aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleB.prefab using Guid(060fd11c225891a4caf19fad0bc11aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9851fb5677ec2ad0fdf141425a206f60') in 0.016814 seconds 
+  Import took 0.023065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.775180 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleB.prefab
+  artifactKey: Guid(060fd11c225891a4caf19fad0bc11aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleB.prefab using Guid(060fd11c225891a4caf19fad0bc11aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f53728c146414d9a04535da49b3191e') in 0.016809 seconds 
+  Import took 0.022022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab
+  artifactKey: Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab using Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7b65fc9a76938f32e1dd148c246a780') in 0.013606 seconds 
+  Import took 0.018417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab
+  artifactKey: Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab using Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efc3d78f9292643588a1fe77ec9c118c') in 0.015081 seconds 
+  Import took 0.020236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.293502 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab
+  artifactKey: Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab using Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b62c4feebd302acbef7992f78fac9b7c') in 0.012495 seconds 
+  Import took 0.018040 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.021156 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab
+  artifactKey: Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab using Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42708a97a9778fbbc6f1a9f3e2ae1580') in 0.016684 seconds 
+  Import took 0.022683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.206997 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab
+  artifactKey: Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab using Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a1828fd194d629d58e4bffce9fcdd49') in 0.015594 seconds 
+  Import took 0.021403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.591716 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab
+  artifactKey: Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab using Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63cd24e35715a59b3dfe7c2cce658541') in 0.017778 seconds 
+  Import took 0.023944 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.308494 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab
+  artifactKey: Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab using Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90dd376c743e007eeafbcb11ea067815') in 0.017270 seconds 
+  Import took 0.022855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.110494 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab
+  artifactKey: Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab using Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91da960ad80d5617eae3e121df7bb0c8') in 0.013183 seconds 
+  Import took 0.018503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.125352 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab
+  artifactKey: Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab using Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80e14511d0569a88f24edf8019ea9ef8') in 0.014341 seconds 
+  Import took 0.019644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.914177 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab
+  artifactKey: Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab using Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a17e12fd47945b73f1b541685084f39a') in 0.019134 seconds 
+  Import took 0.025506 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.182704 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab
+  artifactKey: Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab using Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38452a8bfe8e3612827e35b63b5a688e') in 0.013823 seconds 
+  Import took 0.018818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.412969 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab
+  artifactKey: Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab using Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3089a52a6fa73e42c4480a10c97eedd9') in 0.015126 seconds 
+  Import took 0.020710 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003097 seconds.
+Registered in 0.004108 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.041 seconds
+- Completed reload, in  1.030 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1041ms)
-		BeginReloadAssembly (121ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (870ms)
-			LoadAssemblies (91ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (315ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (298ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (217ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (13ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3196 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 146.7 MB.
-System memory in use after: 146.9 MB.
-
-Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 3801.
-Total: 5.054600 ms (FindLiveObjects: 0.300800 ms CreateObjectMapping: 0.177200 ms MarkObjects: 4.507200 ms  DeleteObjects: 0.068500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 304.936370 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleB.prefab
-  artifactKey: Guid(060fd11c225891a4caf19fad0bc11aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleB.prefab using Guid(060fd11c225891a4caf19fad0bc11aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9272d464666a3bcfe3db01eda7493e1') in 0.143935 seconds 
-  Import took 0.149417 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000252 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab
-  artifactKey: Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab using Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef6c532f68e44fe596ba4d7c343e1636') in 0.015414 seconds 
-  Import took 0.020280 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.630563 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab
-  artifactKey: Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab using Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01c141184c4b63b140f7b7d88e1b37df') in 0.016395 seconds 
-  Import took 0.022193 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.376675 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab
-  artifactKey: Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab using Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb1b9aedac5f2c9c78b826e38a2c9363') in 0.016312 seconds 
-  Import took 0.022276 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.100081 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab
-  artifactKey: Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab using Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbde48a11554ab7cc53330d4f15e6534') in 0.017367 seconds 
-  Import took 0.023174 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.411229 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab
-  artifactKey: Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab using Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4049d78d4af3ad80bcd575d746f7f864') in 0.013770 seconds 
-  Import took 0.018745 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.210319 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab
-  artifactKey: Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab using Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffa8ca0a028b0ccb3de235a515bcdafc') in 0.012644 seconds 
-  Import took 0.018405 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.193397 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab
-  artifactKey: Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab using Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d8c3ca387db6c22e1448cf92d6b0c81') in 0.014387 seconds 
-  Import took 0.019412 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.410350 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab
-  artifactKey: Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab using Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16422475c1f620fe7f4e0c1f40d1b9f4') in 0.017084 seconds 
-  Import took 0.022115 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.820325 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab
-  artifactKey: Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab using Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feb6faaf3afb2a90b789dfd8d1b915a2') in 0.013146 seconds 
-  Import took 0.018201 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003261 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.968 seconds
-Domain Reload Profiling:
-	ReloadAssembly (969ms)
-		BeginReloadAssembly (111ms)
+	ReloadAssembly (1030ms)
+		BeginReloadAssembly (127ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (807ms)
-			LoadAssemblies (84ms)
+		EndReloadAssembly (852ms)
+			LoadAssemblies (87ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (283ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (286ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (60ms)
-				ProcessInitializeOnLoadAttributes (210ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (13ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3196 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 146.9 MB.
-System memory in use after: 147.1 MB.
-
-Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 3839.
-Total: 4.524200 ms (FindLiveObjects: 0.240300 ms CreateObjectMapping: 0.121600 ms MarkObjects: 4.082600 ms  DeleteObjects: 0.078900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 113.811015 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab
-  artifactKey: Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab using Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f90e33236036e7908e3bd81961261662') in 0.159753 seconds 
-  Import took 0.164491 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 24.583839 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab
-  artifactKey: Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab using Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ba085931819bdc6e7bf9e321745d353') in 0.012429 seconds 
-  Import took 0.017999 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 42.282031 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab
-  artifactKey: Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab using Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94a6b29ba8dd6d885edaa7fc812ac4b8') in 0.011169 seconds 
-  Import took 0.016382 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003329 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.990 seconds
-Domain Reload Profiling:
-	ReloadAssembly (990ms)
-		BeginReloadAssembly (108ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (831ms)
-			LoadAssemblies (84ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (290ms)
+			SetupTypeCache (279ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (295ms)
+			SetupLoadedEditorAssemblies (315ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (63ms)
-				ProcessInitializeOnLoadAttributes (216ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (227ms)
 				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (14ms)
@@ -445,11 +368,11 @@ Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3196 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 147.1 MB.
-System memory in use after: 147.3 MB.
+System memory in use before: 146.9 MB.
+System memory in use after: 147.0 MB.
 
-Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 3877.
-Total: 5.573900 ms (FindLiveObjects: 0.234600 ms CreateObjectMapping: 0.135100 ms MarkObjects: 5.118100 ms  DeleteObjects: 0.085200 ms)
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 3801.
+Total: 4.518800 ms (FindLiveObjects: 0.243500 ms CreateObjectMapping: 0.144400 ms MarkObjects: 4.050700 ms  DeleteObjects: 0.079000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -463,209 +386,233 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 26.413732 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab
-  artifactKey: Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab using Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c17e282731f0ebb0884107de4b4933d6') in 0.153967 seconds 
-  Import took 0.158946 seconds .
+  Time since last request: 1932.264474 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_Checkpoint.prefab
+  artifactKey: Guid(f886effd4b592764eabf9ef89354bea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_Checkpoint.prefab using Guid(f886effd4b592764eabf9ef89354bea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0acc92763d163405e71fba94197b82c9') in 0.153659 seconds 
+  Import took 0.159568 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.482059 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab
-  artifactKey: Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab using Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b28dcfee379a26847112eea02493d1de') in 0.009979 seconds 
-  Import took 0.015669 seconds .
+  Time since last request: 6.764280 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors
+  artifactKey: Guid(2e382196803d298449577739d652bb44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors using Guid(2e382196803d298449577739d652bb44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2100700b07a5ba5f77b67d5e014a2af9') in 0.004870 seconds 
+  Import took 0.009757 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 22.046635 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab
-  artifactKey: Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab using Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd790e1ffb69bcc96f61b26b20e90f94') in 0.013650 seconds 
-  Import took 0.018694 seconds .
+  Time since last request: 0.065567 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_BigRing.prefab
+  artifactKey: Guid(51e243deed4f5bd48adcb5938cdda177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_BigRing.prefab using Guid(51e243deed4f5bd48adcb5938cdda177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa2d4a43cd9fe991968710f1651eb6d4') in 0.020829 seconds 
+  Import took 0.025893 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.006176 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab
-  artifactKey: Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab using Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa27e4e783b9c3a179557eee5f643572') in 0.011492 seconds 
-  Import took 0.016223 seconds .
+  Time since last request: 0.000139 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Bouton.prefab
+  artifactKey: Guid(65fd5eb6db8a47d46b07fd525bcaf866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Bouton.prefab using Guid(65fd5eb6db8a47d46b07fd525bcaf866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af5366f19b6df8415c2285b9f14cb8c2') in 0.015288 seconds 
+  Import took 0.019960 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.579474 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab
-  artifactKey: Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab using Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91842b07cc388fb40f3848cd01caf60c') in 0.011220 seconds 
-  Import took 0.016545 seconds .
+  Time since last request: 0.000119 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Levier.prefab
+  artifactKey: Guid(38fe8b63ff157f54e844d257989d41c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Levier.prefab using Guid(38fe8b63ff157f54e844d257989d41c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93d077046807882cdff6f7ce57e33f62') in 0.015198 seconds 
+  Import took 0.019652 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.996735 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab
-  artifactKey: Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab using Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8850d24d2f154bc56f99ba4a46db45b8') in 0.013499 seconds 
-  Import took 0.018439 seconds .
+  Time since last request: 0.000152 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Ring.prefab
+  artifactKey: Guid(07e0377bb7885554d92e991184a535f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Ring.prefab using Guid(07e0377bb7885554d92e991184a535f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15058b1173502c18a59414162d8cc949') in 0.011534 seconds 
+  Import took 0.016450 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.459122 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab
-  artifactKey: Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab using Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '751741ba807b0ef43bbf076cbfd27cb0') in 0.008633 seconds 
-  Import took 0.013610 seconds .
+  Time since last request: 0.000197 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab
+  artifactKey: Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab using Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb9e82a7d6bd1c15a9c8f781b422e005') in 0.013013 seconds 
+  Import took 0.017634 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.404226 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab
-  artifactKey: Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab using Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6f2a352c1d111f21d9a30669261ff9f') in 0.009578 seconds 
-  Import took 0.014347 seconds .
+  Time since last request: 0.000147 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Timebouton.prefab
+  artifactKey: Guid(ef4f74b4248d957489dd3b3146ccafff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Timebouton.prefab using Guid(ef4f74b4248d957489dd3b3146ccafff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4730d30580877cda73fb7dea6f3e97d7') in 0.012904 seconds 
+  Import took 0.017272 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.999486 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab
-  artifactKey: Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab using Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc7a296dbd0b67837bc67c78c88ec65e') in 0.010360 seconds 
-  Import took 0.015332 seconds .
+  Time since last request: 0.000128 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_MovingPlateforme.prefab
+  artifactKey: Guid(93670252c7916fc45b78409c35ea40d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_MovingPlateforme.prefab using Guid(93670252c7916fc45b78409c35ea40d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74b677658a61f8e3710883aa451009ba') in 0.011904 seconds 
+  Import took 0.016735 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.452178 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab
-  artifactKey: Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab using Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beed7d13f2cd35589fdd1846337ef24f') in 0.009704 seconds 
-  Import took 0.014598 seconds .
+  Time since last request: 0.000187 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Spring.prefab
+  artifactKey: Guid(9d1161db07810c64cbf26b661b73bc64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Spring.prefab using Guid(9d1161db07810c64cbf26b661b73bc64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd35dad426535832f7ec5e6c7231fba72') in 0.014796 seconds 
+  Import took 0.019765 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.195855 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab
-  artifactKey: Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab using Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3352337d1b81f79aa77a8c2bafb6120') in 0.009967 seconds 
-  Import took 0.015048 seconds .
+  Time since last request: 13.980684 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_Checkpoint.prefab
+  artifactKey: Guid(f886effd4b592764eabf9ef89354bea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_Checkpoint.prefab using Guid(f886effd4b592764eabf9ef89354bea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2915dbe9fda75dfcf292147343c27bdb') in 0.009121 seconds 
+  Import took 0.014204 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.534867 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab
-  artifactKey: Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab using Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd777d93dcfdbf0f3ef32d7961f87fcdf') in 0.009889 seconds 
-  Import took 0.014701 seconds .
+  Time since last request: 20.171343 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab
+  artifactKey: Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab using Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93ede4a7ac287de6e761afd5493f715a') in 0.015066 seconds 
+  Import took 0.019902 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.014703 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab
-  artifactKey: Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab using Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b822610db2e9bb769dcc57b303e7e480') in 0.011681 seconds 
-  Import took 0.016383 seconds .
+  Time since last request: 6.993190 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab
+  artifactKey: Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab using Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e7b6f85cd818dc9246918f599a7f497') in 0.017121 seconds 
+  Import took 0.023957 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.008669 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab
-  artifactKey: Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab using Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0cec0a0bbbe25e6ef33259e160acb23') in 0.011951 seconds 
-  Import took 0.017440 seconds .
+  Time since last request: 12.363793 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab
+  artifactKey: Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab using Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5d26f9a7cb1f4d7293b1ab5bedee5ec') in 0.017435 seconds 
+  Import took 0.022621 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.239253 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab
-  artifactKey: Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab using Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c81ef878e7e9666207b5a944f2f02e89') in 0.012982 seconds 
-  Import took 0.018784 seconds .
+  Time since last request: 2.796462 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab
+  artifactKey: Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab using Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdcd5764bca7234b3ee548f4168973fd') in 0.017454 seconds 
+  Import took 0.022444 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.128519 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab
-  artifactKey: Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab using Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b028600556f75ed7610138a1495e228') in 0.010938 seconds 
-  Import took 0.016217 seconds .
+  Time since last request: 2.611447 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab
+  artifactKey: Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab using Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c60e846338ecc2901aa07d570f6bcb37') in 0.013667 seconds 
+  Import took 0.018899 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 20.234205 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab
-  artifactKey: Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_TadpoleGacha.prefab using Guid(e5af85e234e10bc41bb12507cebd6c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0dc77614929f0c5ef561e35956aec63') in 0.011470 seconds 
-  Import took 0.016999 seconds .
+  Time since last request: 11.090946 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab
+  artifactKey: Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab using Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbead55fdfa920ffea218c8c42879ab7') in 0.015154 seconds 
+  Import took 0.021087 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 47.712464 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleB.prefab
-  artifactKey: Guid(060fd11c225891a4caf19fad0bc11aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleB.prefab using Guid(060fd11c225891a4caf19fad0bc11aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '162108fe7e26de277f2efca5c3cbf1c7') in 0.015301 seconds 
-  Import took 0.020137 seconds .
+  Time since last request: 6.641694 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab
+  artifactKey: Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab using Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dbe231a9001f1f116406e57f89f1969') in 0.019693 seconds 
+  Import took 0.026186 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab
-  artifactKey: Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleY.prefab using Guid(f70ed5c35c03eae4097fd0be55cca90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02382dedc1e0109c9a84af4afd8be55e') in 0.019742 seconds 
-  Import took 0.024346 seconds .
+  Time since last request: 9.049765 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab
+  artifactKey: Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab using Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b3df6d9072c8773b6a8293727e37e24') in 0.016650 seconds 
+  Import took 0.022550 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab
-  artifactKey: Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab using Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad1942dd65bb23d463c875b75e829763') in 0.015287 seconds 
-  Import took 0.020542 seconds .
+  Time since last request: 2.189580 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab
+  artifactKey: Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab using Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ede8e88a3d26ec349a8578e5e212bba') in 0.016321 seconds 
+  Import took 0.021415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.313363 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab
+  artifactKey: Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab using Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd1c1e378745afe7727a076d77041cf1') in 0.015886 seconds 
+  Import took 0.021726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.646898 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab
+  artifactKey: Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab using Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd4cbaf858549c2e1f51509423c801fe') in 0.014630 seconds 
+  Import took 0.019824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.592309 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab
+  artifactKey: Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/InteractibleDecors/MI_Phar.prefab using Guid(61e05fb16091736409202325f4af4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f97f3ec84a4a340c40cfdec8e42354c9') in 0.013815 seconds 
+  Import took 0.019702 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003207 seconds.
+Registered in 0.003604 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.82 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.945 seconds
+- Completed reload, in  0.948 seconds
 Domain Reload Profiling:
-	ReloadAssembly (946ms)
-		BeginReloadAssembly (104ms)
+	ReloadAssembly (949ms)
+		BeginReloadAssembly (110ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (791ms)
-			LoadAssemblies (82ms)
+		EndReloadAssembly (788ms)
+			LoadAssemblies (85ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (286ms)
+			SetupTypeCache (275ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (272ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (279ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (59ms)
-				ProcessInitializeOnLoadAttributes (198ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (200ms)
 				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (3ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (14ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3196 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 147.2 MB.
-System memory in use after: 147.4 MB.
+System memory in use before: 149.5 MB.
+System memory in use after: 149.7 MB.
 
-Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 3915.
-Total: 5.045700 ms (FindLiveObjects: 0.295300 ms CreateObjectMapping: 0.139700 ms MarkObjects: 4.523000 ms  DeleteObjects: 0.086800 ms)
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 3840.
+Total: 5.960300 ms (FindLiveObjects: 0.397400 ms CreateObjectMapping: 0.180300 ms MarkObjects: 5.282700 ms  DeleteObjects: 0.098000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -679,57 +626,89 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.101757 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab
-  artifactKey: Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_TadpoleR.prefab using Guid(70be8b317f8d6354ab382331bf1ce23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f75a308398412242e1436f061cef7bc1') in 0.164566 seconds 
-  Import took 0.170155 seconds .
+  Time since last request: 494.426042 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_GoldenFly.prefab
+  artifactKey: Guid(9f7e738496031d04485ce4a575dc96e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_GoldenFly.prefab using Guid(9f7e738496031d04485ce4a575dc96e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b10cca000ef640ff681de51a13833d8') in 0.153705 seconds 
+  Import took 0.159498 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.402140 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Decors
+  artifactKey: Guid(29a7b96c80909d146822406cb756bd29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Decors using Guid(29a7b96c80909d146822406cb756bd29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26d76ddaddc20ba118f69eeb38516ffc') in 0.005347 seconds 
+  Import took 0.009995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.697650 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_GoldenFly.prefab
+  artifactKey: Guid(9f7e738496031d04485ce4a575dc96e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_GoldenFly.prefab using Guid(9f7e738496031d04485ce4a575dc96e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e74e7f0498c0fa510a897bc86179b433') in 0.008984 seconds 
+  Import took 0.014033 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.576733 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_GoldenFly.prefab
+  artifactKey: Guid(9f7e738496031d04485ce4a575dc96e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_GoldenFly.prefab using Guid(9f7e738496031d04485ce4a575dc96e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc9676b7afca261581c4265d22bfd312') in 0.007662 seconds 
+  Import took 0.012351 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.318403 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_GoldenFly.prefab
+  artifactKey: Guid(9f7e738496031d04485ce4a575dc96e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_GoldenFly.prefab using Guid(9f7e738496031d04485ce4a575dc96e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e81f0e2cf14914f9f3bff2bb523092c3') in 0.009891 seconds 
+  Import took 0.014457 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003540 seconds.
+Registered in 0.003563 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.03 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.933 seconds
+- Completed reload, in  0.991 seconds
 Domain Reload Profiling:
-	ReloadAssembly (933ms)
-		BeginReloadAssembly (105ms)
+	ReloadAssembly (992ms)
+		BeginReloadAssembly (111ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (778ms)
-			LoadAssemblies (79ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (826ms)
+			LoadAssemblies (85ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (276ms)
+			SetupTypeCache (285ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (270ms)
+			SetupLoadedEditorAssemblies (296ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (60ms)
-				ProcessInitializeOnLoadAttributes (195ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (212ms)
 				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (3ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (13ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3196 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 147.4 MB.
-System memory in use after: 147.6 MB.
+System memory in use before: 149.7 MB.
+System memory in use after: 149.9 MB.
 
-Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 3953.
-Total: 4.499300 ms (FindLiveObjects: 0.248600 ms CreateObjectMapping: 0.147000 ms MarkObjects: 4.018100 ms  DeleteObjects: 0.085100 ms)
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 3878.
+Total: 4.875000 ms (FindLiveObjects: 0.240700 ms CreateObjectMapping: 0.123100 ms MarkObjects: 4.372700 ms  DeleteObjects: 0.137900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -741,4 +720,228 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 68.282011 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_GoldenFly.prefab
+  artifactKey: Guid(9f7e738496031d04485ce4a575dc96e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_GoldenFly.prefab using Guid(9f7e738496031d04485ce4a575dc96e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eac75fe94c3ec6bde8db74b481b2536') in 0.148679 seconds 
+  Import took 0.153257 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.502250 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_Gfly.prefab
+  artifactKey: Guid(d1946ca6d8052124cbc168defd472505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_Gfly.prefab using Guid(d1946ca6d8052124cbc168defd472505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b84ea31a1ffd1def924249dc4ee73532') in 0.015272 seconds 
+  Import took 0.020357 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003503 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.982 seconds
+Domain Reload Profiling:
+	ReloadAssembly (982ms)
+		BeginReloadAssembly (110ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (820ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (279ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (299ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (216ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.18 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3196 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.9 MB.
+System memory in use after: 150.1 MB.
+
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 3916.
+Total: 6.669600 ms (FindLiveObjects: 0.464400 ms CreateObjectMapping: 0.153600 ms MarkObjects: 5.951800 ms  DeleteObjects: 0.098800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 17.275852 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_Gfly.prefab
+  artifactKey: Guid(d1946ca6d8052124cbc168defd472505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Characters_Enemies/C_Gfly.prefab using Guid(d1946ca6d8052124cbc168defd472505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99c54da307595cd734b2bb8a0d7764bc') in 0.155212 seconds 
+  Import took 0.160423 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005590 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.994 seconds
+Domain Reload Profiling:
+	ReloadAssembly (994ms)
+		BeginReloadAssembly (109ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (829ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (290ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (294ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (209ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3196 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.1 MB.
+System memory in use after: 150.3 MB.
+
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 3954.
+Total: 5.065200 ms (FindLiveObjects: 0.260100 ms CreateObjectMapping: 0.120700 ms MarkObjects: 4.600300 ms  DeleteObjects: 0.083100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004594 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.106 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1107ms)
+		BeginReloadAssembly (114ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (931ms)
+			LoadAssemblies (97ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (321ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (333ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (241ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3196 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.1 MB.
+System memory in use after: 150.3 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 3956.
+Total: 4.686400 ms (FindLiveObjects: 0.251900 ms CreateObjectMapping: 0.141800 ms MarkObjects: 4.213300 ms  DeleteObjects: 0.078300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1677.301149 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_MCFrog_Drool.prefab
+  artifactKey: Guid(6bab633cbddfb8644bee472c2d85553a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_MCFrog_Drool.prefab using Guid(6bab633cbddfb8644bee472c2d85553a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fc92cfdc5824305326d4efdbad828d0') in 0.170031 seconds 
+  Import took 0.176714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 181.510535 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_MCFrog_Drool.prefab
+  artifactKey: Guid(6bab633cbddfb8644bee472c2d85553a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_MCFrog_Drool.prefab using Guid(6bab633cbddfb8644bee472c2d85553a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e90f559fd2efa21a77b8f2a3c7a6185') in 0.009409 seconds 
+  Import took 0.014469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.576705 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_MCFrog_Drool.prefab
+  artifactKey: Guid(6bab633cbddfb8644bee472c2d85553a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_MCFrog_Drool.prefab using Guid(6bab633cbddfb8644bee472c2d85553a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '261ef9918904782be50761fb4b0e8ecb') in 0.009151 seconds 
+  Import took 0.014871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.209619 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_FX/PS_MCFrog_Drool.prefab
+  artifactKey: Guid(6bab633cbddfb8644bee472c2d85553a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_FX/PS_MCFrog_Drool.prefab using Guid(6bab633cbddfb8644bee472c2d85553a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cfdde4f30a70b47e44dd6eb12c25390') in 0.008729 seconds 
+  Import took 0.013601 seconds .
+
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
