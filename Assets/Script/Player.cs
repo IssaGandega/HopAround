@@ -37,7 +37,8 @@ public class Player : MonoBehaviour
         if ((xAxisAccel < -0.3f && xAxisAccel > 0.3f) || (isTouched))
         {
             rb.velocity = Vector3.zero;
-            
+            PlayerAnimatorManager.instance.AnimatorStateChange(0);
+
         }
 
         if (tongue.isGrabing)
@@ -57,6 +58,7 @@ public class Player : MonoBehaviour
             {
                 //use lerp to switch direction
                 curentSpeed = Mathf.Lerp(curentSpeed, 0f, 0.3f);
+                
             }
 
         
@@ -82,6 +84,8 @@ public class Player : MonoBehaviour
             curentSpeed = Mathf.Clamp(curentSpeed,speedMinMax.x,speedMinMax.y);
             //rb.velocity = new Vector3(xAxisAccel * speed, rb.velocity.y, 0);
             rb.velocity = new Vector3(curentSpeed, rb.velocity.y, 0);
+            PlayerAnimatorManager.instance.AnimatorStateChange(1);
+
         }
 
         isGrounded = Physics2D.OverlapCircle(groundedCheckerPos.position, 0.3f, layer);
@@ -147,6 +151,8 @@ public class Player : MonoBehaviour
                 dirL = true;
             }
             rb.AddForce(Vector3.up*jumpForce);
+            PlayerAnimatorManager.instance.AnimatorStateChange(2);
+
         }
     }
 
