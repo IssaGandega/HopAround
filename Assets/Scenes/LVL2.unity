@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -23801,6 +23801,11 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3314515447334205155, guid: af91097a6259da24f8055902aaa14a2d,
+        type: 3}
+      propertyPath: m_TranslationOffsets.Array.data[0].x
+      value: 0.001711607
+      objectReference: {fileID: 0}
     - target: {fileID: 3705289844060961321, guid: af91097a6259da24f8055902aaa14a2d,
         type: 3}
       propertyPath: m_Name
@@ -23902,12 +23907,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823015584086122921, guid: 51d8d8e7fa8d6a44c92222c3eb5107c0,
         type: 3}
+      propertyPath: eventsOn.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 823015584086122921, guid: 51d8d8e7fa8d6a44c92222c3eb5107c0,
+        type: 3}
       propertyPath: events.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 823015584086122921, guid: 51d8d8e7fa8d6a44c92222c3eb5107c0,
         type: 3}
       propertyPath: events.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 466784296}
+    - target: {fileID: 823015584086122921, guid: 51d8d8e7fa8d6a44c92222c3eb5107c0,
+        type: 3}
+      propertyPath: eventsOn.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 823015584086122921, guid: 51d8d8e7fa8d6a44c92222c3eb5107c0,
+        type: 3}
+      propertyPath: eventsOn.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 466784296}
     - target: {fileID: 823015584086122921, guid: 51d8d8e7fa8d6a44c92222c3eb5107c0,
@@ -23922,12 +23942,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823015584086122921, guid: 51d8d8e7fa8d6a44c92222c3eb5107c0,
         type: 3}
+      propertyPath: eventsOn.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 823015584086122921, guid: 51d8d8e7fa8d6a44c92222c3eb5107c0,
+        type: 3}
+      propertyPath: eventsOn.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeState
+      objectReference: {fileID: 0}
+    - target: {fileID: 823015584086122921, guid: 51d8d8e7fa8d6a44c92222c3eb5107c0,
+        type: 3}
       propertyPath: events.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: MovingPlatform, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 823015584086122921, guid: 51d8d8e7fa8d6a44c92222c3eb5107c0,
         type: 3}
+      propertyPath: eventsOn.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MovingPlatform, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 823015584086122921, guid: 51d8d8e7fa8d6a44c92222c3eb5107c0,
+        type: 3}
       propertyPath: events.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 823015584086122921, guid: 51d8d8e7fa8d6a44c92222c3eb5107c0,
+        type: 3}
+      propertyPath: eventsOn.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1088812732731502984, guid: 51d8d8e7fa8d6a44c92222c3eb5107c0,
@@ -23939,6 +23979,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088812732731502985, guid: 51d8d8e7fa8d6a44c92222c3eb5107c0,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088812732731502985, guid: 51d8d8e7fa8d6a44c92222c3eb5107c0,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088812732731502985, guid: 51d8d8e7fa8d6a44c92222c3eb5107c0,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1088812732731502985, guid: 51d8d8e7fa8d6a44c92222c3eb5107c0,
         type: 3}

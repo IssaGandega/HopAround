@@ -17,7 +17,7 @@ public class MovingPlatform : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (move == true)
+        if (move)
         {
             transform.Translate(direction*speed);
         }

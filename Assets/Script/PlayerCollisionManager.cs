@@ -19,7 +19,8 @@ public class PlayerCollisionManager : MonoBehaviour
         if (other.gameObject.CompareTag("CheckPoint"))
         {
             lastCheckpointPos = other.gameObject.transform;
-            other.gameObject.SetActive(false);
+            other.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            other.gameObject.GetComponentInChildren<Animator>().SetBool("Go",true);
         }
     }
 }
