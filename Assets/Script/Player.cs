@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,15 +19,16 @@ public class Player : MonoBehaviour
     [SerializeField] private List<Collider2D> collider;
     private Tongue tongue;
     [SerializeField] private float xAxisAccel;
-    [HideInInspector] public Vector3 lastGroundedPos;
     public bool wallLeftTouch;
     public bool wallRightTouch;
     private bool dirL;
+    private bool isJumping;
     private RaycastHit2D hit;
 
     private void OnEnable()
     {
         cam = Camera.main;
+        cam.GetComponent<CameraController>().playerController = gameObject;
         tongue = gameObject.GetComponent<Tongue>();
     }
 
@@ -34,10 +36,18 @@ public class Player : MonoBehaviour
     {
         CheckTouch();
         xAxisAccel = Mathf.Clamp(Input.acceleration.x, -1f, 1f);
-        if ((xAxisAccel < -0.3f && xAxisAccel > 0.3f) || (isTouched))
+        if ((xAxisAccel > -0.2f && xAxisAccel < 0.2f || isTouched) && isGrounded)
         {
             rb.velocity = Vector3.zero;
-            
+            curentSpeed = 0;
+            PlayerAnimatorManager.instance.AnimatorStateChange(0);
+        }
+        else
+            PlayerAnimatorManager.instance.AnimatorStateChange(1);
+
+        if (!isGrounded)
+        {
+            PlayerAnimatorManager.instance.AnimatorStateChange(2);
         }
 
         if (tongue.isGrabing)
@@ -55,7 +65,6 @@ public class Player : MonoBehaviour
             
             if (((curentSpeed > 3f) && (xAxisAccel < 0) || (curentSpeed < -3f) && (xAxisAccel > 0)) && (isGrounded))
             {
-                //use lerp to switch direction
                 curentSpeed = Mathf.Lerp(curentSpeed, 0f, 0.3f);
             }
 
@@ -82,9 +91,14 @@ public class Player : MonoBehaviour
             curentSpeed = Mathf.Clamp(curentSpeed,speedMinMax.x,speedMinMax.y);
             //rb.velocity = new Vector3(xAxisAccel * speed, rb.velocity.y, 0);
             rb.velocity = new Vector3(curentSpeed, rb.velocity.y, 0);
+      
+
         }
 
-        isGrounded = Physics2D.OverlapCircle(groundedCheckerPos.position, 0.3f, layer);
+        if (!isJumping)
+        {
+            isGrounded = Physics2D.OverlapCircle(groundedCheckerPos.position, 0.3f, layer);
+        }
     }
     
 
@@ -147,6 +161,9 @@ public class Player : MonoBehaviour
                 dirL = true;
             }
             rb.AddForce(Vector3.up*jumpForce);
+            PlayerAnimatorManager.instance.AnimatorStateChange(2);
+            StartCoroutine(GroundCheckDisabler());
+
         }
     }
 
@@ -167,5 +184,14 @@ public class Player : MonoBehaviour
                 }
             }
         }
+    }
+
+
+    private IEnumerator GroundCheckDisabler()
+    {
+        isJumping = true;
+        isGrounded = false;
+        yield return new WaitForSeconds(0.1f);
+        isJumping = false;
     }
 }
