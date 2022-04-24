@@ -15,11 +15,11 @@ public class FollowGyro : MonoBehaviour
     private void Update()
     {
         deltaEulerAngles = Input.gyro.attitude.eulerAngles - startGyroAttitudeToEuler;
-        //Debug.Log(Input.gyro.attitude.eulerAngles);
+        Debug.Log(Input.gyro.attitude.eulerAngles);
         deltaEulerAngles.x = 0.0f;
         deltaEulerAngles.y = 0.0f;
         //deltaEulerAngles.z = 0.0f;
-
+        Debug.Log(Input.acceleration);
 
         transform.eulerAngles = startEulerAngles - deltaEulerAngles;
     }
