@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6497087498525384648}
   - component: {fileID: 1706022108606849073}
   - component: {fileID: 9127469947975467556}
+  - component: {fileID: 324249285547918578}
   m_Layer: 0
   m_Name: MI_Bouton
   m_TagString: Untagged
@@ -106,6 +107,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &324249285547918578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5864137534779213170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a5e4d23ddf5044fb27dfa780f1b2c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PS:
+  - {fileID: 1806802607675627246}
 --- !u!1001 &4902572669959333176
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -178,6 +193,12 @@ PrefabInstance:
 --- !u!4 &2145941014201760654 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6471257211708972726, guid: 2f59407a493f39d44aaea13cb30cb758,
+    type: 3}
+  m_PrefabInstance: {fileID: 4902572669959333176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1806802607675627246 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6708783138806936534, guid: 2f59407a493f39d44aaea13cb30cb758,
     type: 3}
   m_PrefabInstance: {fileID: 4902572669959333176}
   m_PrefabAsset: {fileID: 0}
