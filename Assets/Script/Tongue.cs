@@ -21,16 +21,15 @@ public class Tongue : MonoBehaviour
     private bool tongueCd;
     private bool pointCanMove;
     private bool pointIsAnInteractable;
-    private bool frogReachedPoint;
+    public bool frogReachedPoint;
     private float distance;
     
-
     public void FixedUpdate()
     {
         if (isGrabing)
         {
             pointTr.transform.position = touchedObj.transform.position;
-            line.gameObject.SetActive(true);
+            line.enabled = true;
             if ((tongueReachedPoint) && (!frogReachedPoint))
             {
                 distance = Vector3.Distance(transform.position, pointTr.transform.position);
@@ -52,10 +51,10 @@ public class Tongue : MonoBehaviour
                 StartCoroutine(WaitForTongue());
             }
             
-            if (frogReachedPoint)
+            if (frogReachedPoint && !pointIsAnInteractable)
             {
                 rb.gravityScale = 0;
-                //line.gameObject.SetActive(false);
+                line.enabled = false;;
                 if (pointCanMove)
                 {
                     transform.parent = touchedObj;
@@ -76,26 +75,27 @@ public class Tongue : MonoBehaviour
         }
     }
 
-    public void TongueStart(Collider2D hit)
+    public void TongueStart(RaycastHit2D hit)
     {
         if (!tongueCd)
         {
+            line.enabled = true;
             if (isGrabing == false)
             {
-                touchedObj = hit.gameObject.transform;
+                touchedObj = hit.collider.gameObject.transform;
                 isGrabing = true;
 
-                if (Vector3.Distance(transform.position, hit.gameObject.transform.position) < range)
+                if (Vector3.Distance(transform.position, hit.point) < range)
                 {
                     distance = 999;
                     pointTr.position = touchedObj.transform.position;
                     
                     if (touchedObj.GetComponent<Switch>())
                     {
-                        line.gameObject.SetActive(true);
+                        line.enabled = true;
                         pointIsAnInteractable = true;
                     }
-                    else if (hit.GetComponent<Rigidbody2D>().bodyType == RigidbodyType2D.Dynamic)
+                    else if (hit.collider.GetComponent<Rigidbody2D>().bodyType == RigidbodyType2D.Dynamic)
                     {
                         pointCanMove = true;
                     }
@@ -109,7 +109,7 @@ public class Tongue : MonoBehaviour
     {
         isGrabing = false;
         tongueReachedPoint = false;
-        line.gameObject.SetActive(false);
+        line.enabled = false;
         touchedObj = null;
         frogReachedPoint = false;
         pointIsAnInteractable = false;
@@ -134,7 +134,6 @@ public class Tongue : MonoBehaviour
         tongueReachedPoint = true;
         if (pointIsAnInteractable)
         {
-   
             touchedObj.GetComponent<Switch>().TongueTouched();
             StartCoroutine(TongueReset());
         }
@@ -148,5 +147,8 @@ public class Tongue : MonoBehaviour
             target.y -= transform.position.y; 
             target.x = 0;
             line.SetPosition(4, target);
+            line.SetPosition(3, target * 0.75f);
+            line.SetPosition(2, target * 0.5f);
+            line.SetPosition(2, target * 0.25f);
         }
 }
