@@ -60,7 +60,7 @@ public class MovingPlatform : MonoBehaviour
         direction = (currentWaypoint.position- transform.position).normalized;
     }
 
-    public void ChangeState()
+    private void ChangeState()
     {
         move = !move;
     }

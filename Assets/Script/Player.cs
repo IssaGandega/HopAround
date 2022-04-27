@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
     public bool wallRightTouch;
     private bool dirL;
     private bool isJumping;
+    private bool isTakingAHit;
     private RaycastHit2D hit;
 
     private void OnEnable()
@@ -90,7 +91,10 @@ public class Player : MonoBehaviour
 
             curentSpeed = Mathf.Clamp(curentSpeed,speedMinMax.x,speedMinMax.y);
             //rb.velocity = new Vector3(xAxisAccel * speed, rb.velocity.y, 0);
-            rb.velocity = new Vector3(curentSpeed, rb.velocity.y, 0);
+            if (!isTakingAHit)
+            {
+                rb.velocity = new Vector3(curentSpeed, rb.velocity.y, 0);
+            }
       
 
         }
@@ -112,7 +116,7 @@ public class Player : MonoBehaviour
             Debug.DrawRay(transform.position,point-transform.position,Color.magenta,3f);
 
             point.z = transform.position.z;
-            if (hit != null)
+            if (hit != false)
             {
                 if (hit.collider.gameObject.layer == 7)
                 {
@@ -165,6 +169,19 @@ public class Player : MonoBehaviour
             StartCoroutine(GroundCheckDisabler());
 
         }
+    }
+
+    public void AddForceToPlayer(Vector2 dir, float strength)
+    {
+        isTakingAHit = true;
+        rb.AddForce(dir*strength);
+        StartCoroutine(TakingHitCd());
+    }
+
+    private IEnumerator TakingHitCd()
+    {
+        yield return new WaitForSeconds(0.3f);
+        isTakingAHit = false;
     }
 
     private void CheckPlayerTouch()

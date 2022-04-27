@@ -1,22 +1,42 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class Pusher : MonoBehaviour, ITonguable
 {
 
     [SerializeField] private Animator animator;
-    [SerializeField] private MovingPlatform mvm;
     [SerializeField] private float force;
+    
+    [SerializeField] private float speedInTime;
+    private bool isFacingLeft;
+
+    [SerializeField]private Transform[] waypoints;
+    private Transform currentWaypoint;
+    private int currentWaypointNo;
+    private float distance;
+    [SerializeField] private bool move = false;
 
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Player"))
         {
-            mvm.ChangeState();
+            ChangeState();
             animator.SetInteger("State" ,1);
-            col.GetComponent<Rigidbody2D>().AddForce((transform.position-col.transform.position).normalized*force,ForceMode2D.Impulse);
+            if (isFacingLeft)
+            {
+                col.GetComponent<Player>().AddForceToPlayer(Vector2.left, force);
+            }
+            else
+            {
+                col.GetComponent<Player>().AddForceToPlayer(Vector2.right, force);
+
+                Debug.Log(Vector2.right*force);
+
+            }
+    
             StartCoroutine(CD());
         }
     }
@@ -24,17 +44,66 @@ public class Pusher : MonoBehaviour, ITonguable
     public void Tongued()
     {
         animator.SetInteger("State" ,2);
-        mvm.ChangeState();
+        ChangeState();
         StartCoroutine(CD());
     }
 
 
     private IEnumerator CD()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(1f);
         animator.SetInteger("State" ,0);
-        mvm.ChangeState();
-
-
+        ChangeState();
     }
+    
+    private void OnEnable()
+    {
+        ChangeWaypoint();
+    }
+
+    private void FixedUpdate()
+    {
+        if (move)
+        {
+            transform.DOMove(currentWaypoint.position, speedInTime);
+        }
+        
+        distance = Vector3.Distance(currentWaypoint.position, transform.position);
+
+        if (distance < 1)
+        {
+            if (currentWaypointNo == waypoints.Length-1)
+            {
+                currentWaypointNo = 0;
+                ChangeWaypoint();
+            }
+            else
+            {
+                currentWaypointNo++;
+                ChangeWaypoint();
+            }
+        }
+    }
+    
+    private void ChangeWaypoint()
+    {
+        currentWaypoint = waypoints[currentWaypointNo];
+        if (currentWaypoint.transform.position.x < transform.position.x)
+        {
+            transform.rotation = new Quaternion(0,0,0,0);
+            isFacingLeft = true;
+        }
+        else
+        {
+            isFacingLeft = false;
+            transform.rotation = new Quaternion(0,180,0,0);
+        }
+ 
+    }
+
+    public void ChangeState()
+    {
+        move = !move;
+    }
+
 }

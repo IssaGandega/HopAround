@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,6 +13,7 @@ public class LVLManager : MonoBehaviour
     private int tempCoins;
     public GameObject winCanvas;
 
+
     public void Start()
     {
         instance = this;
@@ -19,12 +21,14 @@ public class LVLManager : MonoBehaviour
 
     public void AddToad()
     {
+        UiInGameManager.instance.UpdateCurrentToadImg();
         currentToad++;
     }
 
     public void AddCoin()
     {
         currentCoins++;
+        UiInGameManager.instance.UpdateCoinsTxt();
     }
 
     public void Win()
