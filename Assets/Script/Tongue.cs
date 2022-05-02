@@ -82,10 +82,10 @@ public class Tongue : MonoBehaviour
             line.enabled = true;
             if (isGrabing == false)
             {
-                touchedObj = hit.collider.gameObject.transform;
+                touchedObj = hit.GetComponent<Collider>().gameObject.transform;
                 isGrabing = true;
 
-                if (Vector3.Distance(transform.position, hit.point) < range)
+                if (Vector3.Distance(transform.position, hit.gameObject.transform.position) < range)
                 {
                     distance = 999;
                     pointTr.position = touchedObj.transform.position;
@@ -95,7 +95,7 @@ public class Tongue : MonoBehaviour
                         line.enabled = true;
                         pointIsAnInteractable = true;
                     }
-                    else if (hit.collider.GetComponent<Rigidbody2D>().bodyType == RigidbodyType2D.Dynamic)
+                    else if (hit.GetComponent<Collider>().GetComponent<Rigidbody2D>().bodyType == RigidbodyType2D.Dynamic)
                     {
                         pointCanMove = true;
                     }
