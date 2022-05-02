@@ -64,33 +64,23 @@ public class Player : MonoBehaviour
             {
                 curentSpeed = 0.1f;
             }
-            
-            
+
             if (((curentSpeed > 3f) && (xAxisAccel < 0) || (curentSpeed < -3f) && (xAxisAccel > 0)) && (isGrounded))
             {
                 curentSpeed = Mathf.Lerp(curentSpeed, 0f, 0.3f);
             }
             
-            if ((xAxisAccel < 0) && (!wallLeftTouch) && (isGrounded))
+            if ((xAxisAccel < 0) && (!wallLeftTouch))
             {
                 curentSpeed -= accelCurve.Evaluate(Mathf.Abs(xAxisAccel)) * speed;
             }
-            else if ((xAxisAccel < 0) && (!wallLeftTouch) && (dirL) && (!isGrounded))
-            {
-                curentSpeed -= (accelCurve.Evaluate(Mathf.Abs(xAxisAccel)) * speed)/1.5f;
-            }
-            
-            if ((xAxisAccel > 0) && (!wallRightTouch) && (isGrounded))
+
+            else if ((xAxisAccel > 0) && (!wallRightTouch))
             {
                 curentSpeed += accelCurve.Evaluate(xAxisAccel) * speed;
             }
-            else if ((xAxisAccel > 0) && (!wallRightTouch) && (!isGrounded) && (!dirL))
-            {
-                curentSpeed += (accelCurve.Evaluate(xAxisAccel) * speed)/1.5f;
-            }
 
             curentSpeed = Mathf.Clamp(curentSpeed,speedMinMax.x,speedMinMax.y);
-            //rb.velocity = new Vector3(xAxisAccel * speed, rb.velocity.y, 0);
             rb.velocity = new Vector3(curentSpeed, rb.velocity.y, 0);
         }
 
@@ -108,7 +98,6 @@ public class Player : MonoBehaviour
     private void CheckTouch()
     {
         if (Input.touchCount <= 0) return;
-        Debug.Log(Input.GetTouch(0).phase);
         
         if (tongue.isGrabing && tongue.frogReachedPoint)
         {
