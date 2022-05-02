@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
     [SerializeField] private AnimationCurve accelCurve;
     public float curentSpeed;
     [SerializeField] private Vector2 speedMinMax;
+    public float jumpTimeCounter;
+    private float originalJumpTimeCounter;
     public float jumpForce;
     [SerializeField] private List<Collider2D> collider;
     private Tongue tongue;
@@ -31,6 +33,7 @@ public class Player : MonoBehaviour
         cam = Camera.main;
         cam.GetComponent<CameraController>().playerController = gameObject;
         tongue = gameObject.GetComponent<Tongue>();
+        originalJumpTimeCounter = jumpTimeCounter;
     }
 
     private void FixedUpdate()
@@ -71,22 +74,14 @@ public class Player : MonoBehaviour
 
         
 
-            if ((xAxisAccel < 0) && (!wallLeftTouch) && (isGrounded))
+            if ((xAxisAccel < 0) && (!wallLeftTouch))
             {
                 curentSpeed -= accelCurve.Evaluate(Mathf.Abs(xAxisAccel)) * speed;
             }
-            else if ((xAxisAccel < 0) && (!wallLeftTouch) && (dirL) && (!isGrounded))
-            {
-                curentSpeed -= (accelCurve.Evaluate(Mathf.Abs(xAxisAccel)) * speed)/1.5f;
-            }
-            
-            if ((xAxisAccel > 0) && (!wallRightTouch) && (isGrounded))
+
+            if ((xAxisAccel > 0) && (!wallRightTouch))
             {
                 curentSpeed += accelCurve.Evaluate(xAxisAccel) * speed;
-            }
-            else if ((xAxisAccel > 0) && (!wallRightTouch) && (!isGrounded) && (!dirL))
-            {
-                curentSpeed += (accelCurve.Evaluate(xAxisAccel) * speed)/1.5f;
             }
 
             curentSpeed = Mathf.Clamp(curentSpeed,speedMinMax.x,speedMinMax.y);
@@ -102,6 +97,10 @@ public class Player : MonoBehaviour
         if (!isJumping)
         {
             isGrounded = Physics2D.OverlapCircle(groundedCheckerPos.position, 0.3f, layer);
+            if (isGrounded)
+            {
+                jumpTimeCounter = originalJumpTimeCounter;
+            }
         }
     }
     
@@ -109,42 +108,47 @@ public class Player : MonoBehaviour
     private void CheckTouch()
     {
         if (Input.touchCount <= 0) return;
-        if ((Input.GetTouch(0).phase == TouchPhase.Began))
+        if (tongue.isGrabing && tongue.frogReachedPoint)
+        {
+            tongue.StartCoroutine(tongue.TongueReset());
+        }
+
+        if (isTouched == false)
         {
             point = cam.ScreenPointToRay(Input.GetTouch(0).position).GetPoint(10);
             hit = Physics2D.Raycast(transform.position, point-transform.position,10,layer);
-            Debug.DrawRay(transform.position,point-transform.position,Color.magenta,3f);
-
+            //Debug.DrawRay(transform.position,point-transform.position,Color.magenta,3f);
+            
             point.z = transform.position.z;
-            if (hit != false)
+            if (hit != null && hit.collider != null)
             {
                 if (hit.collider.gameObject.layer == 7)
                 {
-                    tongue.TongueStart(hit.collider);
+                    tongue.TongueStart(hit);
+                }
+                else if (isGrounded || isJumping)
+                {
+                    Jump();
+                }
+                else if (tongue.isGrabing)
+                {
+                    tongue.StartCoroutine(tongue.TongueReset());
                 }
                 else
                 {
-                    if (tongue.isGrabing)
-                    {
-                        tongue.StartCoroutine(tongue.TongueReset());
-                    }
-                    else
-                    {
-                        CheckPlayerTouch();
-                    }
-     
+                    CheckPlayerTouch();
                 }
+            }
+            else if (isGrounded || isJumping)
+            {
+                Jump();
             }
             else
             {
                 CheckPlayerTouch();
             }
         }
-        if ((isTouched == false) && (isGrounded))
-        {
-            Jump();
-        }
-            
+
         if (Input.GetTouch(0).phase == TouchPhase.Ended)
         {
             isTouched = false;
@@ -156,6 +160,9 @@ public class Player : MonoBehaviour
     {
         if ((isGrounded) && (tongue.isGrabing == false))
         {
+            isJumping = true;
+            isGrounded = false;
+            
             if (xAxisAccel > 0)
             {
                 dirL = false;
@@ -166,8 +173,16 @@ public class Player : MonoBehaviour
             }
             rb.AddForce(Vector3.up*jumpForce);
             PlayerAnimatorManager.instance.AnimatorStateChange(2);
-            StartCoroutine(GroundCheckDisabler());
-
+        }
+        
+        else if ((Input.GetTouch(0).phase == TouchPhase.Stationary
+                  ||Input.GetTouch(0).phase == TouchPhase.Moved) && isJumping)
+        {
+            if (jumpTimeCounter > 0)
+            {
+                rb.AddForce(Vector3.up*jumpForce/5);
+                jumpTimeCounter -= Time.deltaTime;
+            }
         }
     }
 

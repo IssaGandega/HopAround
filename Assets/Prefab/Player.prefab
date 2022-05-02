@@ -194,8 +194,8 @@ MonoBehaviour:
     m_RotationOrder: 4
   curentSpeed: 0.1
   speedMinMax: {x: -5, y: 5}
-  jumpForce: 75
   jumpTimeCounter: 0.5
+  jumpForce: 75
   collider: []
   xAxisAccel: 0
   wallLeftTouch: 0
@@ -637,6 +637,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8766519122334624075, guid: 6bfd1ed139813c741ae4a05605667be8,
         type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8766519122334624075, guid: 6bfd1ed139813c741ae4a05605667be8,
+        type: 3}
       propertyPath: m_Positions.Array.data[2].y
       value: 0
       objectReference: {fileID: 0}
@@ -716,6 +721,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3705289844060961324}
     m_Modifications:
+    - target: {fileID: 663702280289616206, guid: ac22ce391f380eb46adf007bdee6f735,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3658599138012342868, guid: ac22ce391f380eb46adf007bdee6f735,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743970631398890226, guid: ac22ce391f380eb46adf007bdee6f735,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479053714909031222, guid: ac22ce391f380eb46adf007bdee6f735,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8103973368246796763, guid: ac22ce391f380eb46adf007bdee6f735,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8395643410047334625, guid: ac22ce391f380eb46adf007bdee6f735,
         type: 3}
       propertyPath: m_RootOrder
