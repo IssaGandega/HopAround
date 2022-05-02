@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     public bool wallLeftTouch;
     public bool wallRightTouch;
     private bool dirL;
-    private bool isJumping;
+    public bool isJumping;
     private bool isTakingAHit;
     private RaycastHit2D hit;
 

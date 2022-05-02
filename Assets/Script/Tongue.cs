@@ -75,7 +75,7 @@ public class Tongue : MonoBehaviour
         }
     }
 
-    public void TongueStart(RaycastHit2D hit)
+    public void TongueStart(Collider2D hit)
     {
         if (!tongueCd)
         {
