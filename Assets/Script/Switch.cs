@@ -6,26 +6,25 @@ using UnityEngine.Events;
 
 public class Switch : MonoBehaviour
 {
-    [SerializeField] private UnityEvent events;
-    [SerializeField] private Material mat;
-    [SerializeField] private Color colorOn;
-    [SerializeField] private Color colorOff;
-
-    private void OnEnable()
-    {
-        mat.color = colorOff;
-    }
+    [SerializeField] private UnityEvent eventsOn;
+    [SerializeField] private UnityEvent eventsOff;
+    [SerializeField] private Animator animator;
+    private bool On;
+    
 
     public void TongueTouched()
     {
-        events.Invoke();
-        if (mat.color == colorOn)
+        if (On)
         {
-            mat.color = colorOff;
+            eventsOff.Invoke();
+            animator.SetBool("Go", false);
+            On = false;
         }
         else
         {
-            mat.color = colorOn;
+            eventsOn.Invoke();
+            animator.SetBool("Go", true);
+            On = true;
         }
     }
 

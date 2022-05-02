@@ -10,19 +10,19 @@ public class ToadTarget : MonoBehaviour
     public float radius = 1f;
     public Player player;
     public LayerMask groundLayer;
+    private Vector3 actualPos;
+    private RaycastHit2D hit;
     
     private void Update()
     {
-        if (player == null)
-            player = GetComponent<Player>();
-        
+ 
         while (points.Count > size) 
             points.RemoveAt(0);
 
-        var actualPos = transform.position;
+        actualPos = transform.position;
         if (player != null && player.isGrounded)
         {
-            RaycastHit2D hit = Physics2D.CircleCast(actualPos, radius, -Vector3.up, 1000f, groundLayer);
+            hit = Physics2D.CircleCast(transform.position, radius, -Vector3.up, 1000f, groundLayer);
             if (hit.collider != null)
             {
                 actualPos = hit.point + Vector2.up * radius;

@@ -9,9 +9,8 @@ public class Coins : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            
+            LVLManager.instance.AddCoin();
+            gameObject.transform.parent.gameObject.SetActive(false);
         }
-        LVLManager.instance.AddCoin();
-        gameObject.SetActive(false);
     }
 }

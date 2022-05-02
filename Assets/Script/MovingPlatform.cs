@@ -17,7 +17,7 @@ public class MovingPlatform : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (move == true)
+        if (move)
         {
             transform.Translate(direction*speed);
         }
@@ -60,7 +60,7 @@ public class MovingPlatform : MonoBehaviour
         direction = (currentWaypoint.position- transform.position).normalized;
     }
 
-    public void ChangeState()
+    private void ChangeState()
     {
         move = !move;
     }
