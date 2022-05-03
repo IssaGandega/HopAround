@@ -5,5 +5,5 @@ using UnityEngine;
 
     public interface ITonguable
     {
-        void Tongued();
+        public void Tongued();
     }

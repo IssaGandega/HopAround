@@ -152,6 +152,7 @@ public class Player : MonoBehaviour
         if (Input.GetTouch(0).phase == TouchPhase.Ended)
         {
             isTouched = false;
+            jumpTimeCounter = 0;
             collider.Clear();
         }
     }
@@ -175,7 +176,7 @@ public class Player : MonoBehaviour
             PlayerAnimatorManager.instance.AnimatorStateChange(2);
         }
         
-        else if ((Input.GetTouch(0).phase == TouchPhase.Stationary
+        if ((Input.GetTouch(0).phase == TouchPhase.Stationary
                   ||Input.GetTouch(0).phase == TouchPhase.Moved) && isJumping)
         {
             if (jumpTimeCounter > 0)
@@ -216,14 +217,5 @@ public class Player : MonoBehaviour
                 }
             }
         }
-    }
-
-
-    private IEnumerator GroundCheckDisabler()
-    {
-        isJumping = true;
-        isGrounded = false;
-        yield return new WaitForSeconds(0.1f);
-        isJumping = false;
     }
 }
