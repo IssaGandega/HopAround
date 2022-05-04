@@ -192,6 +192,13 @@ MonoBehaviour:
   playerContainer: {fileID: 3705289844060961324}
   player: {fileID: 978449559491475704}
   touchedObj: {fileID: 0}
+  tongueProgressionCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  tongueProgressionSpeed: 0
   frogReachedPoint: 0
 --- !u!114 &2546195356535171387
 MonoBehaviour:
@@ -362,6 +369,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8766519122334624075, guid: 6bfd1ed139813c741ae4a05605667be8,
         type: 3}
+      propertyPath: m_Parameters.numCapVertices
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8766519122334624075, guid: 6bfd1ed139813c741ae4a05605667be8,
+        type: 3}
       propertyPath: m_Positions.Array.data[2].y
       value: 0
       objectReference: {fileID: 0}
@@ -378,6 +390,11 @@ PrefabInstance:
     - target: {fileID: 8766519122334624075, guid: 6bfd1ed139813c741ae4a05605667be8,
         type: 3}
       propertyPath: m_Positions.Array.data[4].z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8766519122334624075, guid: 6bfd1ed139813c741ae4a05605667be8,
+        type: 3}
+      propertyPath: m_Parameters.numCornerVertices
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8766519122334624075, guid: 6bfd1ed139813c741ae4a05605667be8,
