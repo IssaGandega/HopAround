@@ -17,11 +17,7 @@ public class Tongue : MonoBehaviour
     [SerializeField] private Transform playerContainer;
     [SerializeField] private Player player;
     public Transform touchedObj;
-    public AnimationCurve tongueProgressionCurve;
-    public float tongueProgressionSpeed;
-    private Transform objectImIn;
     private bool tongueReachedPoint;
-    private float moveTime;
     private bool tongueCd;
     private bool pointCanMove;
     private bool pointIsAnInteractable;
@@ -30,12 +26,11 @@ public class Tongue : MonoBehaviour
 
     private void OnEnable()
     {
-        moveTime = 0;
+        line.enabled = false;;
     }
 
     public void FixedUpdate()
     {
-        moveTime += Time.deltaTime;
         if (isGrabing)
         {
             pointTr.transform.position = touchedObj.transform.position;
@@ -64,11 +59,10 @@ public class Tongue : MonoBehaviour
             if (frogReachedPoint && !pointIsAnInteractable)
             {
                 rb.gravityScale = 0;
-                line.enabled = false;;
+                line.enabled = false;
                 if (pointCanMove)
                 {
                     transform.parent = touchedObj;
-                    objectImIn = touchedObj;
                     transform.position = touchedObj.position;
                     rb.gravityScale = 0;
                 }

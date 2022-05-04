@@ -91,7 +91,6 @@ public class Player : MonoBehaviour
     private RaycastHit2D hit;
     
     private float xAxisAccel;
-    //private bool isTakingAHit;
     private float coyoteTimeCounter;
     private float bufferTimeCounter;
 
