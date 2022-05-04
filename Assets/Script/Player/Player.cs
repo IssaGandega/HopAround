@@ -71,6 +71,19 @@ public class Player : MonoBehaviour
     [Range(.5f, 2f)] public float turnPower;
 
     #endregion
+
+    #region Sounds
+
+    [Space] [Header("Sounds")] 
+    [SerializeField] private AudioClip frogStart;
+    [SerializeField] private AudioClip frogDeath;
+    [SerializeField] private AudioClip frogJump;
+    [SerializeField] private AudioClip frogWalking;
+    [SerializeField] private AudioClip frogContact;
+    [SerializeField] private AudioClip frogTongue;
+    [SerializeField] private AudioClip frogMecanism;
+    
+    #endregion
     
     private Vector3 point;
     private Camera cam;
@@ -88,6 +101,7 @@ public class Player : MonoBehaviour
         isFacingRight = true;
         cam.GetComponent<CameraController>().playerController = gameObject;
         tongue = gameObject.GetComponent<Tongue>();
+        SoundManager.instance.PlaySound(frogStart);
     }
 
     private void FixedUpdate()
@@ -235,6 +249,7 @@ public class Player : MonoBehaviour
             {
                 if (hit.collider.gameObject.layer == 7)
                 {
+                    SoundManager.instance.PlaySound(frogTongue);
                     tongue.TongueStart(hit);
                 }
                 else if (coyoteTimeCounter > 0f || isJumping)
@@ -277,6 +292,7 @@ public class Player : MonoBehaviour
             isJumping = true;
             isGrounded = false;
             
+            SoundManager.instance.PlaySound(frogJump);
             rb.velocity = Vector2.up*jumpForce;
 
             bufferTimeCounter = 0;
