@@ -2277,16 +2277,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 18.329998
       objectReference: {fileID: 0}
-    - target: {fileID: 3314515447334205155, guid: af91097a6259da24f8055902aaa14a2d,
-        type: 3}
-      propertyPath: m_TranslationOffsets.Array.data[0].x
-      value: -23.838297
-      objectReference: {fileID: 0}
-    - target: {fileID: 3314515447334205155, guid: af91097a6259da24f8055902aaa14a2d,
-        type: 3}
-      propertyPath: m_TranslationOffsets.Array.data[0].y
-      value: -17.124998
-      objectReference: {fileID: 0}
     - target: {fileID: 3705289844060961321, guid: af91097a6259da24f8055902aaa14a2d,
         type: 3}
       propertyPath: m_Name
@@ -8089,7 +8079,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dir: {x: 0.7, y: 1}
   force: 14
-  animator: {fileID: 0}
 --- !u!61 &349792629
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8734,7 +8723,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dir: {x: 5, y: 1}
   force: 8
-  animator: {fileID: 0}
 --- !u!61 &384340421
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16983,7 +16971,7 @@ Transform:
   m_LocalScale: {x: 16.421724, y: 1.0504, z: 5.3880267}
   m_Children: []
   m_Father: {fileID: 1640307931}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &835378187
 Mesh:
@@ -17568,7 +17556,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dir: {x: 5, y: 1}
   force: 6
-  animator: {fileID: 0}
 --- !u!61 &845051478
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18622,6 +18609,87 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &876929063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 876929068}
+  - component: {fileID: 876929067}
+  - component: {fileID: 876929066}
+  m_Layer: 0
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &876929066
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876929063}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 580df13dd963fbb41bed87ad4edbc60a, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &876929067
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876929063}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &876929068
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876929063}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
+  m_LocalPosition: {x: -3.184661, y: -5.868749, z: 51.177567}
+  m_LocalScale: {x: 28.169193, y: 10, z: 12.160194}
+  m_Children: []
+  m_Father: {fileID: 1640307931}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
 --- !u!43 &894673040
 Mesh:
   m_ObjectHideFlags: 0
@@ -26546,7 +26614,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dir: {x: 0, y: 1}
   force: 20
-  animator: {fileID: 0}
 --- !u!61 &1201964381
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39266,6 +39333,7 @@ Transform:
   - {fileID: 1549676427}
   - {fileID: 137096619}
   - {fileID: 592456679}
+  - {fileID: 876929068}
   - {fileID: 834196711}
   m_Father: {fileID: 261052686}
   m_RootOrder: 4
@@ -39318,7 +39386,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dir: {x: 0, y: 1}
   force: 13
-  animator: {fileID: 0}
 --- !u!61 &1644879222
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40131,7 +40198,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dir: {x: 0, y: 1}
   force: 8
-  animator: {fileID: 0}
 --- !u!61 &1728563432
 BoxCollider2D:
   m_ObjectHideFlags: 0

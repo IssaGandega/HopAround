@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Switch : MonoBehaviour, ITonguable
+public class Switch : MonoBehaviour
 {
     [SerializeField] private UnityEvent eventsOn;
     [SerializeField] private UnityEvent eventsOff;
@@ -12,7 +12,7 @@ public class Switch : MonoBehaviour, ITonguable
     private bool On;
     
 
-    public void Tongued()
+    public void TongueTouched()
     {
         if (On)
         {
@@ -27,4 +27,5 @@ public class Switch : MonoBehaviour, ITonguable
             On = true;
         }
     }
+
 }
