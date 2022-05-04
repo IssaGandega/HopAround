@@ -17,15 +17,25 @@ public class Tongue : MonoBehaviour
     [SerializeField] private Transform playerContainer;
     [SerializeField] private Player player;
     public Transform touchedObj;
+    public AnimationCurve tongueProgressionCurve;
+    public float tongueProgressionSpeed;
+    private Transform objectImIn;
     private bool tongueReachedPoint;
+    private float moveTime;
     private bool tongueCd;
     private bool pointCanMove;
     private bool pointIsAnInteractable;
     public bool frogReachedPoint;
     private float distance;
-    
+
+    private void OnEnable()
+    {
+        moveTime = 0;
+    }
+
     public void FixedUpdate()
     {
+        moveTime += Time.deltaTime;
         if (isGrabing)
         {
             pointTr.transform.position = touchedObj.transform.position;
@@ -35,7 +45,7 @@ public class Tongue : MonoBehaviour
                 distance = Vector3.Distance(transform.position, pointTr.transform.position);
                 UpdateLR();
                 
-                if ((distance > 0.5f) && (!pointIsAnInteractable))
+                if ((distance > 1f) && (!pointIsAnInteractable))
                 {
                     transform.DOMove(pointTr.transform.position, timeToReachPoint);
                 }
@@ -58,6 +68,7 @@ public class Tongue : MonoBehaviour
                 if (pointCanMove)
                 {
                     transform.parent = touchedObj;
+                    objectImIn = touchedObj;
                     transform.position = touchedObj.position;
                     rb.gravityScale = 0;
                 }
@@ -69,9 +80,18 @@ public class Tongue : MonoBehaviour
         }
 
         if (Input.touchCount <= 0) return;
-        if ((Input.GetTouch(0).phase == TouchPhase.Began) && (isGrabing) && (tongueReachedPoint))
+        if ((Input.GetTouch(0).phase == TouchPhase.Began) && (isGrabing) && (frogReachedPoint))
         {
             StartCoroutine(TongueReset());
+            StopCoroutine(WaitForTongue());
+        }
+    }
+
+    private void CheckPosition()
+    {
+        if (Vector3.Dot(transform.forward, pointTr.position - transform.position) < 0)
+        {
+            player.Flip();
         }
     }
 
@@ -81,14 +101,16 @@ public class Tongue : MonoBehaviour
         {
             line.enabled = true;
             if (isGrabing == false)
-            {
-                touchedObj = hit.collider.gameObject.transform;
+            { 
+                touchedObj = hit.transform;
                 isGrabing = true;
+
 
                 if (Vector3.Distance(transform.position, hit.point) < range)
                 {
                     distance = 999;
                     pointTr.position = touchedObj.transform.position;
+                    CheckPosition();
                     
                     if (touchedObj.GetComponent<Switch>())
                     {
@@ -110,16 +132,22 @@ public class Tongue : MonoBehaviour
         isGrabing = false;
         tongueReachedPoint = false;
         line.enabled = false;
-        touchedObj = null;
+        
         frogReachedPoint = false;
         pointIsAnInteractable = false;
-        transform.parent = playerContainer;
+        
+        player.transform.parent = playerContainer;
         rb.gravityScale = 1f;
-        pointTr.position = Vector3.zero;
+        
+        pointTr.position = player.transform.position;
+        
         if (pointCanMove)
         {
-            player.rb.AddForce((player.jumpForce*Vector2.up)*4);
+            Vector3 inertia = touchedObj.gameObject.GetComponentInChildren<ObjMovement>().rb.velocity;
+            
+            player.rb.AddForce((player.jumpForce*Vector2.up)* (20 * Math.Abs(inertia.x)));
             pointCanMove = false;
+            touchedObj = null;
         }
 
         tongueCd = true;
@@ -140,15 +168,20 @@ public class Tongue : MonoBehaviour
     }
         private void UpdateLR()
         {
-            //line.transform.LookAt(pointTr);
             Vector3 target = pointTr.position;
             // diviser z et x par ce qu'il faut pour aligner points
             target.z = target.x - transform.position.x;
             target.y -= transform.position.y; 
             target.x = 0;
+
+            if (!player.isFacingRight)
+            {
+                target.z *= -1;
+            }
+            
             line.SetPosition(4, target);
             line.SetPosition(3, target * 0.75f);
             line.SetPosition(2, target * 0.5f);
-            line.SetPosition(2, target * 0.25f);
+            line.SetPosition(1, target * 0.25f);
         }
 }

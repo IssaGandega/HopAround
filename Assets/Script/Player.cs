@@ -78,7 +78,7 @@ public class Player : MonoBehaviour
     private RaycastHit2D hit;
     
     private float xAxisAccel;
-    private bool isTakingAHit;
+    //private bool isTakingAHit;
     private float coyoteTimeCounter;
     private float bufferTimeCounter;
 
@@ -94,8 +94,12 @@ public class Player : MonoBehaviour
     {
         CheckTouch();
         Jump();
-        JumpForces();
         Move();
+
+        if (!tongue.isGrabing)
+        {
+            JumpForces();
+        }
 
         xAxisAccel = Mathf.Clamp(Input.acceleration.x, -1f, 1f);
         bufferTimeCounter -= Time.deltaTime;
@@ -209,10 +213,10 @@ public class Player : MonoBehaviour
 
     public void Flip()
     {
-        Vector3 localScale = transform.localScale;
+        Vector3 localRotate = transform.localEulerAngles;
         isFacingRight = !isFacingRight;
-        localScale.x *= -1f;
-        transform.localScale = localScale;
+        localRotate.y += 180f;
+        transform.localEulerAngles = localRotate;
     }
 
 
@@ -220,16 +224,11 @@ public class Player : MonoBehaviour
     {
         if (Input.touchCount <= 0) return;
         //Reset Tongue
-        if (tongue.isGrabing && tongue.frogReachedPoint)
-        {
-            tongue.StartCoroutine(tongue.TongueReset());
-        }
-
-        if (isTouched == false)
+        if (Input.GetTouch(0).phase == TouchPhase.Began)
         {
             point = cam.ScreenPointToRay(Input.GetTouch(0).position).GetPoint(10);
-            hit = Physics2D.Raycast(transform.position, point-transform.position,10,layer);
-            //Debug.DrawRay(transform.position,point-transform.position,Color.magenta,3f);
+            hit = Physics2D.Raycast(transform.position, point-transform.position,7,layer);
+            //Debug.DrawRay(transform.position,(point-transform.position).normalized * 7,Color.magenta,3f);
             
             point.z = transform.position.z;
             if (hit != false && hit.collider != null)
@@ -302,7 +301,7 @@ public class Player : MonoBehaviour
 
     public void AddForceToPlayer(Vector2 dir, float strength)
     {
-        isTakingAHit = true;
+        //isTakingAHit = true;
         rb.AddForce(dir*strength);
         StartCoroutine(TakingHitCd());
     }
@@ -310,7 +309,7 @@ public class Player : MonoBehaviour
     private IEnumerator TakingHitCd()
     {
         yield return new WaitForSeconds(0.3f);
-        isTakingAHit = false;
+        //isTakingAHit = false;
     }
 
     private void CheckPlayerTouch()

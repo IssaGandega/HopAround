@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObjMovement : MonoBehaviour
 {
-    [SerializeField] private Rigidbody2D rb;
+    public Rigidbody2D rb;
     [SerializeField] private float speed;
     private float xAxisAccel;
 
