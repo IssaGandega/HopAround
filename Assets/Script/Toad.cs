@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Toad : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class Toad : MonoBehaviour
     [SerializeField] private Material walk;
     [SerializeField] private Material idle;
     [SerializeField] private MeshRenderer mR;
-    [SerializeField] private GameObject particleSystem;
+    [SerializeField] private GameObject toadParticleSystem;
 
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -25,7 +26,7 @@ public class Toad : MonoBehaviour
         {
             playerTr = other.gameObject.transform;
             currTarget = playerTr.GetComponent<ToadTarget>();
-            particleSystem.SetActive(false);
+            toadParticleSystem.SetActive(false);
 
             animator.SetBool("Go",true);
             StartCoroutine(WaitForOpening(other.gameObject.transform));

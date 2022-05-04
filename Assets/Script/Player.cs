@@ -1,113 +1,225 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.Serialization;
 
 public class Player : MonoBehaviour
 {
+    #region externalObjects
+    
+    [Header("Object Setters")]
     public Rigidbody2D rb;
-    [SerializeField] public bool isGrounded;
-    private Camera cam;
+    public GameObject mesh;
+    
     [SerializeField] private Transform groundedCheckerPos;
-    private Vector3 point;
-    [SerializeField] private bool isTouched;
     [SerializeField] private LayerMask layer;
-    [SerializeField] private float speed;
     [SerializeField] private AnimationCurve accelCurve;
-    public float curentSpeed;
-    [SerializeField] private Vector2 speedMinMax;
-    public float jumpTimeCounter;
-    private float originalJumpTimeCounter;
-    public float jumpForce;
-    [SerializeField] private List<Collider2D> collider;
-    private Tongue tongue;
-    [SerializeField] private float xAxisAccel;
-    public bool wallLeftTouch;
-    public bool wallRightTouch;
-    private bool dirL;
+    [SerializeField] private List<Collider2D> colliders;
+    
+    #endregion
+
+    #region externalValues
+    
+    [Space]
+    [Header("Value Setters")]
+    
+    [Range(1, 10)] 
+    public int jumpForce;
+    [Range(0, 0.5f)] 
+    public float coyoteTime;
+    [Range(0, 0.5f)] 
+    public float bufferTime;
+
+    public float fallMultiplier;
+    public float lowJumpMultiplier;
+    
+    #endregion
+
+    #region Visualizers
+
+    [Space]
+    [Header("Visualizers")]
+    public bool isGrounded;
+    public bool isTouched;
+    public float currentSpeed;
+    public bool isFacingRight;
     public bool isJumping;
-    private bool isTakingAHit;
+
+    [Space(5)] 
+    public float targetSpeed;
+    public float speedDif;
+    public float accelRate;
+    public float velPower;
+    public float movement;
+    
+
+    #endregion
+
+    #region Move
+
+    [Header("Run")]
+    public float maxSpeed;
+    public float speedAccel;
+    public float speedDeccel;
+    [Range(0, 1)] public float accelInAir;
+    [Range(0, 1)] public float deccelInAir;
+    [Space(5)]
+    [Range(.5f, 2f)] public float accelPower;   
+    [Range(.5f, 2f)] public float stopPower;
+    [Range(.5f, 2f)] public float turnPower;
+
+    #endregion
+    
+    private Vector3 point;
+    private Camera cam;
+    private Tongue tongue;
     private RaycastHit2D hit;
+    
+    private float xAxisAccel;
+    private bool isTakingAHit;
+    private float coyoteTimeCounter;
+    private float bufferTimeCounter;
 
     private void OnEnable()
     {
         cam = Camera.main;
+        isFacingRight = true;
         cam.GetComponent<CameraController>().playerController = gameObject;
         tongue = gameObject.GetComponent<Tongue>();
-        originalJumpTimeCounter = jumpTimeCounter;
     }
 
     private void FixedUpdate()
     {
         CheckTouch();
+        Jump();
+        JumpForces();
+        Move();
+
         xAxisAccel = Mathf.Clamp(Input.acceleration.x, -1f, 1f);
-        if ((xAxisAccel > -0.2f && xAxisAccel < 0.2f || isTouched) && isGrounded)
-        {
-            rb.velocity = Vector3.zero;
-            curentSpeed = 0;
-            PlayerAnimatorManager.instance.AnimatorStateChange(0);
-        }
-        else
-            PlayerAnimatorManager.instance.AnimatorStateChange(1);
-
-        if (!isGrounded)
-        {
-            PlayerAnimatorManager.instance.AnimatorStateChange(2);
-        }
-
-        if (tongue.isGrabing)
-        {
-            curentSpeed = 0;
-        }
-
-        if ((!tongue.isGrabing) && (!isTouched))
-        {
-            if (curentSpeed == 0)
-            {
-                curentSpeed = 0.1f;
-            }
-            
-            
-            if (((curentSpeed > 3f) && (xAxisAccel < 0) || (curentSpeed < -3f) && (xAxisAccel > 0)) && (isGrounded))
-            {
-                curentSpeed = Mathf.Lerp(curentSpeed, 0f, 0.3f);
-            }
-
-        
-
-            if ((xAxisAccel < 0) && (!wallLeftTouch))
-            {
-                curentSpeed -= accelCurve.Evaluate(Mathf.Abs(xAxisAccel)) * speed;
-            }
-
-            if ((xAxisAccel > 0) && (!wallRightTouch))
-            {
-                curentSpeed += accelCurve.Evaluate(xAxisAccel) * speed;
-            }
-
-            curentSpeed = Mathf.Clamp(curentSpeed,speedMinMax.x,speedMinMax.y);
-            //rb.velocity = new Vector3(xAxisAccel * speed, rb.velocity.y, 0);
-            if (!isTakingAHit)
-            {
-                rb.velocity = new Vector3(curentSpeed, rb.velocity.y, 0);
-            }
-      
-
-        }
+        bufferTimeCounter -= Time.deltaTime;
 
         if (!isJumping)
         {
             isGrounded = Physics2D.OverlapCircle(groundedCheckerPos.position, 0.3f, layer);
-            if (isGrounded)
-            {
-                jumpTimeCounter = originalJumpTimeCounter;
-            }
         }
     }
-    
+
+    private void Move()
+    {
+        if (isGrounded)
+        {
+            //Reset CoyoteTime value
+            coyoteTimeCounter = coyoteTime;
+            
+            //Not moving if not tilted enough / Touched
+            if (xAxisAccel > -0.2f && xAxisAccel < 0.2f || isTouched)
+            {
+                rb.velocity = Vector3.zero;
+                currentSpeed = 0;
+                PlayerAnimatorManager.instance.AnimatorStateChange(0);
+            }
+        
+            //Moving animation
+            else 
+            {
+                PlayerAnimatorManager.instance.AnimatorStateChange(1);
+            }
+        }
+
+        else
+        {
+            //Decrease CoyoteTime
+            coyoteTimeCounter -= Time.deltaTime;
+        }
+
+        //Stop moving if grabing
+        if (tongue.isGrabing)
+        {
+            currentSpeed = 0;
+        }
+        
+        if ((!tongue.isGrabing) && (!isTouched))
+        {
+            //Return speed after being to 0
+            if (currentSpeed == 0)
+            {
+                currentSpeed = 0.1f;
+            }
+            
+            //Reset speed and turn
+            if ((isFacingRight && xAxisAccel < -0.1 || !isFacingRight && xAxisAccel > 0.1))
+            {
+                if (isGrounded)
+                {
+                    currentSpeed = Mathf.Lerp(currentSpeed, 0f, 0.3f);
+                }
+                
+                Flip();
+            }
+
+            targetSpeed = xAxisAccel * maxSpeed;
+            speedDif = targetSpeed - rb.velocity.x;
+
+            #region Acceleration Rate
+            
+            if (coyoteTimeCounter > 0)
+            {
+                accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? speedAccel : speedDeccel;
+            }
+            else
+            {
+                accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? speedAccel * accelInAir : speedDeccel * deccelInAir;
+            }
+
+            if (((rb.velocity.x > targetSpeed && targetSpeed > 0.01f) || (rb.velocity.x < targetSpeed && targetSpeed < -0.01f)))
+            {
+                accelRate = 0;
+            }
+            
+            #endregion
+            
+            #region Velocity Power
+            
+            //Stopping
+            if (Mathf.Abs(targetSpeed) < 0.01f)
+            {
+                velPower = stopPower;
+            }
+            //Turning
+            else if (Mathf.Abs(rb.velocity.x) > 0 && (Mathf.Sign(targetSpeed) != Mathf.Sign(rb.velocity.x)))
+            {
+                velPower = turnPower;
+            }
+            //Accelerating
+            else
+            {
+                velPower = accelPower;
+            }
+
+            #endregion
+
+            movement = Mathf.Pow(Mathf.Abs(speedDif) * accelRate, velPower) * Mathf.Sign(speedDif);
+            movement = Mathf.Lerp(rb.velocity.x, movement, 1);
+            
+            rb.AddForce((movement * Vector2.right));
+        }
+    }
+
+    public void Flip()
+    {
+        Vector3 localScale = transform.localScale;
+        isFacingRight = !isFacingRight;
+        localScale.x *= -1f;
+        transform.localScale = localScale;
+    }
+
 
     private void CheckTouch()
     {
         if (Input.touchCount <= 0) return;
+        //Reset Tongue
         if (tongue.isGrabing && tongue.frogReachedPoint)
         {
             tongue.StartCoroutine(tongue.TongueReset());
@@ -120,15 +232,16 @@ public class Player : MonoBehaviour
             //Debug.DrawRay(transform.position,point-transform.position,Color.magenta,3f);
             
             point.z = transform.position.z;
-            if (hit != null && hit.collider != null)
+            if (hit != false && hit.collider != null)
             {
                 if (hit.collider.gameObject.layer == 7)
                 {
                     tongue.TongueStart(hit);
                 }
-                else if (isGrounded || isJumping)
+                else if (coyoteTimeCounter > 0f || isJumping)
                 {
-                    Jump();
+                    //Buffer the jump
+                    bufferTimeCounter = bufferTime;
                 }
                 else if (tongue.isGrabing)
                 {
@@ -139,9 +252,10 @@ public class Player : MonoBehaviour
                     CheckPlayerTouch();
                 }
             }
-            else if (isGrounded || isJumping)
+            else if (coyoteTimeCounter > 0f || isJumping)
             {
-                Jump();
+                //Buffer the jump
+                bufferTimeCounter = bufferTime;
             }
             else
             {
@@ -152,37 +266,37 @@ public class Player : MonoBehaviour
         if (Input.GetTouch(0).phase == TouchPhase.Ended)
         {
             isTouched = false;
-            collider.Clear();
+            colliders.Clear();
         }
     }
 
     private void Jump()
     {
-        if ((isGrounded) && (tongue.isGrabing == false))
+        if (coyoteTimeCounter > 0f && bufferTimeCounter > 0f && tongue.isGrabing == false)
         {
+            rb.velocity = new Vector2(rb.velocity.x, 0);
             isJumping = true;
             isGrounded = false;
             
-            if (xAxisAccel > 0)
-            {
-                dirL = false;
-            }
-            else
-            {
-                dirL = true;
-            }
-            rb.AddForce(Vector3.up*jumpForce);
+            rb.velocity = Vector2.up*jumpForce;
+
+            bufferTimeCounter = 0;
+            coyoteTimeCounter = 0;
+            
             PlayerAnimatorManager.instance.AnimatorStateChange(2);
         }
-        
-        else if ((Input.GetTouch(0).phase == TouchPhase.Stationary
-                  ||Input.GetTouch(0).phase == TouchPhase.Moved) && isJumping)
+    }
+    
+    private void JumpForces()
+    {
+        if (rb.velocity.y < 0)
         {
-            if (jumpTimeCounter > 0)
-            {
-                rb.AddForce(Vector3.up*jumpForce/5);
-                jumpTimeCounter -= Time.deltaTime;
-            }
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime; 
+        }
+        
+        else if (rb.velocity.y > 0 && Input.touchCount <= 0)
+        {
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime; 
         }
     }
 
@@ -201,10 +315,10 @@ public class Player : MonoBehaviour
 
     private void CheckPlayerTouch()
     {
-        collider.Add(Physics2D.OverlapCircle(point,1f));
-        if (collider.Count != 0)
+        colliders.Add(Physics2D.OverlapCircle(point,1f));
+        if (colliders.Count != 0)
         {
-            foreach (Collider2D col in collider)
+            foreach (Collider2D col in colliders)
             {
                 if (col != null)
                 {
@@ -216,14 +330,5 @@ public class Player : MonoBehaviour
                 }
             }
         }
-    }
-
-
-    private IEnumerator GroundCheckDisabler()
-    {
-        isJumping = true;
-        isGrounded = false;
-        yield return new WaitForSeconds(0.1f);
-        isJumping = false;
     }
 }
