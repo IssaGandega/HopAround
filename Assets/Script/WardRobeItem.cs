@@ -21,5 +21,4 @@ public class WardRobeItem : MonoBehaviour
             itemButton.interactable = false;
         }
     }
-    
 }
