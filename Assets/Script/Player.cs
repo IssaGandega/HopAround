@@ -217,13 +217,4 @@ public class Player : MonoBehaviour
             }
         }
     }
-
-
-    private IEnumerator GroundCheckDisabler()
-    {
-        isJumping = true;
-        isGrounded = false;
-        yield return new WaitForSeconds(0.1f);
-        isJumping = false;
-    }
 }
