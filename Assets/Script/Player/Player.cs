@@ -100,7 +100,7 @@ public class Player : MonoBehaviour
         isFacingRight = true;
         cam.GetComponent<CameraController>().playerController = gameObject;
         tongue = gameObject.GetComponent<Tongue>();
-        SoundManager.instance.PlaySound(frogStart);
+        //SoundManager.instance.PlaySound(frogStart);
     }
 
     private void FixedUpdate()
