@@ -1,123 +1,123 @@
 Using pre-set license
 Built from '2020.3/release' branch; Version is '2020.3.27f1 (e759542391ea) revision 15161684'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19043) 64bit Professional' Language: 'en' Physical Memory: 32543 MB
+OS: 'Windows 10  (10.0.19043) 64bit Professional' Language: 'fr' Physical Memory: 32543 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity 2020.3.27f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.27f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/l.lafontaine/Documents/HopAround/HopAround
+C:/Users/y.zhu/Documents/Rebbie/save/HopAround
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51150
+57006
 Successfully changed project path to: C:/Users/l.lafontaine/Documents/HopAround/HopAround
 C:/Users/l.lafontaine/Documents/HopAround/HopAround
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 61.17 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 65.45 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.27f1 (e759542391ea)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2020.3.27f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/l.lafontaine/Documents/HopAround/HopAround/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/y.zhu/Documents/Rebbie/save/HopAround/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
     Renderer: NVIDIA GeForce RTX 2060 SUPER (ID=0x1f06)
     Vendor:   
     VRAM:     8031 MB
-    Driver:   30.0.15.1259
+    Driver:   30.0.14.7291
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2020.3.27f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity 2020.3.27f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56632
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56188
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2020.3.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001383 seconds.
+Registered in 0.001568 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 58.01 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 60.58 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.510 seconds
+- Completed reload, in  0.778 seconds
 Domain Reload Profiling:
-	ReloadAssembly (510ms)
-		BeginReloadAssembly (50ms)
+	ReloadAssembly (778ms)
+		BeginReloadAssembly (54ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (401ms)
-			LoadAssemblies (49ms)
+		EndReloadAssembly (567ms)
+			LoadAssemblies (52ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (122ms)
+			SetupTypeCache (240ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (168ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (185ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (58ms)
+				RefreshPlugins (61ms)
 				BeforeProcessingInitializeOnLoad (7ms)
-				ProcessInitializeOnLoadAttributes (73ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
+				ProcessInitializeOnLoadAttributes (79ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004433 seconds.
+Registered in 0.115645 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 63.47 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 56.45 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.058 seconds
+- Completed reload, in  1.152 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1058ms)
-		BeginReloadAssembly (126ms)
+	ReloadAssembly (1156ms)
+		BeginReloadAssembly (124ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (881ms)
-			LoadAssemblies (87ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (983ms)
+			LoadAssemblies (81ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (289ms)
+			SetupTypeCache (278ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (352ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (481ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (64ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (198ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
+				RefreshPlugins (57ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (337ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3393 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 154.9 MB.
-System memory in use after: 155.1 MB.
+System memory in use before: 155.2 MB.
+System memory in use after: 155.3 MB.
 
 Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 3817.
-Total: 4.767600 ms (FindLiveObjects: 0.499600 ms CreateObjectMapping: 0.162300 ms MarkObjects: 4.000100 ms  DeleteObjects: 0.104700 ms)
+Total: 4.964000 ms (FindLiveObjects: 0.249900 ms CreateObjectMapping: 0.188000 ms MarkObjects: 4.432300 ms  DeleteObjects: 0.092800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,760 +131,944 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/YaPing/001_Mesh
-  artifactKey: Guid(2acdfbd170052114aa381e469fe82ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh using Guid(2acdfbd170052114aa381e469fe82ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49f0196bc9027282e6efdff2c71b984f') in 0.008549 seconds 
-  Import took 0.012734 seconds .
+  path: Assets/LOUIS/004_MATERIALS/MATERIAL_KEY_L.mat
+  artifactKey: Guid(338dfd171a19198478523faebc1bac7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/MATERIAL_KEY_L.mat using Guid(338dfd171a19198478523faebc1bac7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '952e320161129279bcafd5ec87eca604') in 0.585328 seconds 
+  Import took 0.590300 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/YaPing/001_Mesh/InteractibleDecors/M_Roue.fbx
-  artifactKey: Guid(8d1e1472d891ffa4d9f515a3d573dcca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/InteractibleDecors/M_Roue.fbx using Guid(8d1e1472d891ffa4d9f515a3d573dcca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa093639c03a6637b16f012b7eaf2b2a') in 0.667078 seconds 
-  Import took 0.671465 seconds .
+  Time since last request: 0.000141 seconds.
+  path: Assets/LOUIS/002_TEXTURES/M_Enviro/Material _221_Mixed_AO.png
+  artifactKey: Guid(2dc7d41b5e676f94c89c81ca7d91f684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/M_Enviro/Material _221_Mixed_AO.png using Guid(2dc7d41b5e676f94c89c81ca7d91f684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7034233d18d7c8694847cbdae13cde05') in 0.039783 seconds 
+  Import took 0.044364 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000178 seconds.
-  path: Assets/YaPing/001_Mesh/LD_Mesh
-  artifactKey: Guid(35b8c5b0439c87f449d3dac193b2e2a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/LD_Mesh using Guid(35b8c5b0439c87f449d3dac193b2e2a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98385172b052ed414430fa82e6bef9e4') in 0.004478 seconds 
-  Import took 0.008434 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/YaPing/001_Mesh/LD_Mesh/SM_Pond_Wood.fbx
-  artifactKey: Guid(38c4209f929a4834fa170a9bad6bb836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/LD_Mesh/SM_Pond_Wood.fbx using Guid(38c4209f929a4834fa170a9bad6bb836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc5bddef493a1baf251edef52df9a727') in 0.474428 seconds 
-  Import took 0.478928 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/YaPing/001_Mesh/LD_Mesh/SM_Mur_Planche.fbx
-  artifactKey: Guid(268533a9849c1704a8706c4851d27d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/LD_Mesh/SM_Mur_Planche.fbx using Guid(268533a9849c1704a8706c4851d27d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df4952c0ea21330e71c72084379dc80') in 0.026183 seconds 
-  Import took 0.031000 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000153 seconds.
-  path: Assets/YaPing/001_Mesh/LD_Mesh/SM_Planche.fbx
-  artifactKey: Guid(9c0fe49dc601d7940a26a4c8156ba1f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/LD_Mesh/SM_Planche.fbx using Guid(9c0fe49dc601d7940a26a4c8156ba1f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e4e76e93b4c550f9a90e5b5a8a79015') in 0.024203 seconds 
-  Import took 0.029238 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000129 seconds.
-  path: Assets/YaPing/001_Mesh/LD_Mesh/SM_Livre_rouge.fbx
-  artifactKey: Guid(a0e015fda3eda8b41af376078dc44b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/LD_Mesh/SM_Livre_rouge.fbx using Guid(a0e015fda3eda8b41af376078dc44b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '965bf5c37922530d910a78628dee8508') in 0.020324 seconds 
-  Import took 0.024484 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000121 seconds.
-  path: Assets/YaPing/001_Mesh/LD_Mesh/SM_Livre.fbx
-  artifactKey: Guid(e48465286e4bafa49a68e1b47a449b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/LD_Mesh/SM_Livre.fbx using Guid(e48465286e4bafa49a68e1b47a449b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f75f3c1149feac2d95b4c6f51d07b1f') in 0.018060 seconds 
-  Import took 0.022099 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/YaPing/001_Mesh/LD_Mesh/SM_Big_Cube.fbx
-  artifactKey: Guid(4d9dcd2eeb8915e43a21d077e36728a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/LD_Mesh/SM_Big_Cube.fbx using Guid(4d9dcd2eeb8915e43a21d077e36728a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96304c2fbe6965cc13d9eec5ddb88783') in 0.021181 seconds 
-  Import took 0.025482 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/YaPing/001_Mesh/LD_Mesh/SM_Triangle_Wood_Bleu.fbx
-  artifactKey: Guid(7cc36fdf0c278f84d836efd318a1eaaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/LD_Mesh/SM_Triangle_Wood_Bleu.fbx using Guid(7cc36fdf0c278f84d836efd318a1eaaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7fc73a53f6475489582c779272482d9') in 0.017328 seconds 
-  Import took 0.021748 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000319 seconds.
-  path: Assets/YaPing/001_Mesh/LD_Mesh/SM_L_haut_Wood.fbx
-  artifactKey: Guid(0fb7fd3721d17a3449f1ef1c1a4e3975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/LD_Mesh/SM_L_haut_Wood.fbx using Guid(0fb7fd3721d17a3449f1ef1c1a4e3975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9279ec3c177215978430b6a66fec103e') in 0.020702 seconds 
-  Import took 0.024914 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/YaPing/001_Mesh/LD_Mesh/SM_Livre_orange.fbx
-  artifactKey: Guid(5ff7fc8c0f67d3e4f83145670f3a6f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/LD_Mesh/SM_Livre_orange.fbx using Guid(5ff7fc8c0f67d3e4f83145670f3a6f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce33ccf126bd85896563d1f07e13a6b4') in 0.016430 seconds 
-  Import took 0.020688 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000128 seconds.
-  path: Assets/YaPing/001_Mesh/LD_Mesh/SM_Livre_Vert.fbx
-  artifactKey: Guid(3e0e9aac3bef5ee43851a17210a13904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/LD_Mesh/SM_Livre_Vert.fbx using Guid(3e0e9aac3bef5ee43851a17210a13904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b97f0492d863a5e56a0ca157bbbfe0b6') in 0.018035 seconds 
-  Import took 0.022384 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000120 seconds.
-  path: Assets/YaPing/001_Mesh/LD_Mesh/SM_Wood_Box.fbx
-  artifactKey: Guid(7816f8630e130c942a7a6f8887bbda50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/LD_Mesh/SM_Wood_Box.fbx using Guid(7816f8630e130c942a7a6f8887bbda50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa18d410d68b01a260eda2b477d0b126') in 0.030822 seconds 
-  Import took 0.034835 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000148 seconds.
-  path: Assets/YaPing/001_Mesh/LD_Mesh/SM_L_bas_Wood.fbx
-  artifactKey: Guid(7c7b82e7a2efb4641955fad601847171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/LD_Mesh/SM_L_bas_Wood.fbx using Guid(7c7b82e7a2efb4641955fad601847171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48d7fe3a6e0e68bf5d84ef81373906ba') in 0.024252 seconds 
-  Import took 0.028410 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/YaPing/001_Mesh/InteractibleDecors/M_Balance.fbx
-  artifactKey: Guid(ef260ca8029dbae4fa9a23d3bbca949f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/InteractibleDecors/M_Balance.fbx using Guid(ef260ca8029dbae4fa9a23d3bbca949f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc8d45ab59cab090ce3b3ddfbe744999') in 0.033226 seconds 
-  Import took 0.037389 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000125 seconds.
-  path: Assets/YaPing/001_Mesh/InteractibleDecors
-  artifactKey: Guid(ee3f94a8e713cee46b7bda4f33976817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/InteractibleDecors using Guid(ee3f94a8e713cee46b7bda4f33976817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96a09198095b40e15ec31643bce4afe0') in 0.004431 seconds 
-  Import took 0.008669 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/YaPing/001_Mesh/LD_Mesh/SM_Fin.fbx
-  artifactKey: Guid(40303efe017daf54382c7353590751eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/LD_Mesh/SM_Fin.fbx using Guid(40303efe017daf54382c7353590751eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9053e9d91cf81815a073d71f644e7556') in 0.013987 seconds 
-  Import took 0.018362 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000120 seconds.
-  path: Assets/YaPing/001_Mesh/LD_Mesh/SM_Box_Rangement.fbx
-  artifactKey: Guid(ded54fdba76ae954394b9c17282b48e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/LD_Mesh/SM_Box_Rangement.fbx using Guid(ded54fdba76ae954394b9c17282b48e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fb64080e72556be07ef2f56095a8b25') in 0.016938 seconds 
-  Import took 0.021085 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/YaPing/001_Mesh/LD_Mesh/SM_T_Wood.fbx
-  artifactKey: Guid(d17608149ab348d499d139907e0cf0d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/LD_Mesh/SM_T_Wood.fbx using Guid(d17608149ab348d499d139907e0cf0d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '961cde79f926f44a658896650bdd518f') in 0.013117 seconds 
-  Import took 0.017211 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000109 seconds.
-  path: Assets/YaPing/001_Mesh/LD_Mesh/SM_Planche_verticale.fbx
-  artifactKey: Guid(8b86e009db201b64d8db6c0357c6127c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/LD_Mesh/SM_Planche_verticale.fbx using Guid(8b86e009db201b64d8db6c0357c6127c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a05f613219fb92a4a532e0e346185f6') in 0.016436 seconds 
-  Import took 0.020544 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/YaPing/001_Mesh/LD_Mesh/SM_Table.fbx
-  artifactKey: Guid(b452aa8cd924f3f4b9abbf1cd8e16e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/LD_Mesh/SM_Table.fbx using Guid(b452aa8cd924f3f4b9abbf1cd8e16e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81f3434d5b01668edced86fe6e6bacc5') in 0.018141 seconds 
-  Import took 0.022458 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000123 seconds.
-  path: Assets/YaPing/001_Mesh/LD_Mesh/SM-Regle.fbx
-  artifactKey: Guid(b09743810970b5748b9bac53fad8152f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/LD_Mesh/SM-Regle.fbx using Guid(b09743810970b5748b9bac53fad8152f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5faed5c68b2e2f05d3f8731661a7299e') in 0.021453 seconds 
-  Import took 0.025657 seconds .
+  Time since last request: 0.000140 seconds.
+  path: Assets/LOUIS/004_MATERIALS/M_Obj_Interactif.mat
+  artifactKey: Guid(2c10b06520b672a4287207f01c5ecbf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/M_Obj_Interactif.mat using Guid(2c10b06520b672a4287207f01c5ecbf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f6e90023a34dfdc2ec2525976f6027c') in 0.033295 seconds 
+  Import took 0.037797 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000113 seconds.
-  path: Assets/YaPing/001_Mesh/LD_Mesh/SM_fine_Planche.fbx
-  artifactKey: Guid(447dc494ded0b2947bb2bb8b60d9a08e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/LD_Mesh/SM_fine_Planche.fbx using Guid(447dc494ded0b2947bb2bb8b60d9a08e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a853d3e4de44d7b4b7d6ac5276828817') in 0.012776 seconds 
-  Import took 0.016950 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.429039 seconds.
-  path: Assets/YaPing/001_Mesh/Mesh_Decor
-  artifactKey: Guid(15ee49ef1aefe3942bfabba3688ed919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/Mesh_Decor using Guid(15ee49ef1aefe3942bfabba3688ed919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e60a550fefd8fc624ca127a07c022063') in 0.005658 seconds 
-  Import took 0.010683 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.070586 seconds.
-  path: Assets/YaPing/001_Mesh/Mesh_Decor/M_Passage_a_Niveau.fbx
-  artifactKey: Guid(f3ee270a7007f1c459adac1de5161d11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/Mesh_Decor/M_Passage_a_Niveau.fbx using Guid(f3ee270a7007f1c459adac1de5161d11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0e7c47dc3ef15416b505a7141831f2d') in 0.039694 seconds 
-  Import took 0.044407 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/YaPing/001_Mesh/Mesh_Decor/SM_Maison 1.fbx
-  artifactKey: Guid(78ceaae04b4868342ac00db5bd9966a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/Mesh_Decor/SM_Maison 1.fbx using Guid(78ceaae04b4868342ac00db5bd9966a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17b1ca36e84123a6c7330e40b4721ccc') in 0.031318 seconds 
-  Import took 0.035537 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/YaPing/001_Mesh/Mesh_Decor/SM_etoile.fbx
-  artifactKey: Guid(14a9b4fef1a44c94ab8f7206355e613d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/Mesh_Decor/SM_etoile.fbx using Guid(14a9b4fef1a44c94ab8f7206355e613d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c3d42dc09fdb90c638707ed2f772760') in 0.029257 seconds 
-  Import took 0.033606 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000126 seconds.
-  path: Assets/YaPing/001_Mesh/Mesh_Decor/SM_Train_Track.fbx
-  artifactKey: Guid(fd49b88262848d84c83d90a5558c48c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/Mesh_Decor/SM_Train_Track.fbx using Guid(fd49b88262848d84c83d90a5558c48c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ff1a95c13d5f9ec557a6e49ed1ad4e') in 0.021173 seconds 
-  Import took 0.025435 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/YaPing/001_Mesh/Mesh_Decor/SM_Train_Corps.fbx
-  artifactKey: Guid(cc77b48009f72914fae5cc8e9bd3fe13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/Mesh_Decor/SM_Train_Corps.fbx using Guid(cc77b48009f72914fae5cc8e9bd3fe13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c5d48c134f548cb2028ca370eba9275') in 0.028624 seconds 
-  Import took 0.032895 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/YaPing/001_Mesh/Mesh_Decor/SM_Box.fbx
-  artifactKey: Guid(7f656b6cb71bcd043b8764dff1211285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/Mesh_Decor/SM_Box.fbx using Guid(7f656b6cb71bcd043b8764dff1211285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '991e8851afbff4d3ec62acff3233fa0b') in 0.018440 seconds 
-  Import took 0.022597 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/YaPing/001_Mesh/Mesh_Decor/SM_Wood_Tiangke.fbx
-  artifactKey: Guid(50ee4b70770cff0438c99df4c1d6fba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/Mesh_Decor/SM_Wood_Tiangke.fbx using Guid(50ee4b70770cff0438c99df4c1d6fba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2881a4cf4698522e326060fee01e919') in 0.030433 seconds 
-  Import took 0.034731 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000121 seconds.
-  path: Assets/YaPing/001_Mesh/Mesh_Decor/SM_Train_Tete.fbx
-  artifactKey: Guid(7e40b98af08abec4ab8e4348f674a004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/Mesh_Decor/SM_Train_Tete.fbx using Guid(7e40b98af08abec4ab8e4348f674a004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f934000f7cce3f7a90f963ed18ddaaa2') in 0.029192 seconds 
-  Import took 0.033772 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/YaPing/001_Mesh/Mesh_Decor/SM_coffe_cup.fbx
-  artifactKey: Guid(ae5228a3f6c6eca4099436d4d244a0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/Mesh_Decor/SM_coffe_cup.fbx using Guid(ae5228a3f6c6eca4099436d4d244a0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61df9a39fcb21ac0a2e6f1fee3af3976') in 0.029821 seconds 
-  Import took 0.034489 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/YaPing/001_Mesh/Mesh_Decor/SM_Voiture.fbx
-  artifactKey: Guid(037b7c0dfae4dae4b8bb6db018b5224b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/Mesh_Decor/SM_Voiture.fbx using Guid(037b7c0dfae4dae4b8bb6db018b5224b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f15916817c91c11a308355bb9c234bb8') in 0.025827 seconds 
-  Import took 0.030040 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/YaPing/001_Mesh/Mesh_Decor/SM_arbre.fbx
-  artifactKey: Guid(4a2475bdf13e298418064db77988f1bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/Mesh_Decor/SM_arbre.fbx using Guid(4a2475bdf13e298418064db77988f1bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7502efd3f41a48daa196d156173ea1a') in 0.028589 seconds 
-  Import took 0.032709 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000187 seconds.
-  path: Assets/YaPing/001_Mesh/Mesh_Decor/SM_Nuage.fbx
-  artifactKey: Guid(302248594ff8eaf4b99a9d08ca7c5340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/Mesh_Decor/SM_Nuage.fbx using Guid(302248594ff8eaf4b99a9d08ca7c5340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dacf00bb6aad06f498a126222028700f') in 0.028937 seconds 
-  Import took 0.033089 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000187 seconds.
-  path: Assets/YaPing/001_Mesh/Mesh_Decor/SM_Wood_Dice_Box.fbx
-  artifactKey: Guid(5de9ceeb0116e8f4bb2d46f4a0cad230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/Mesh_Decor/SM_Wood_Dice_Box.fbx using Guid(5de9ceeb0116e8f4bb2d46f4a0cad230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a835ac61d00b2e609d4f009bc2ad358') in 0.029270 seconds 
-  Import took 0.033415 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/YaPing/001_Mesh/Mesh_Decor/M_roue_02.fbx
-  artifactKey: Guid(916056511f7eb7e4ca46d8bad8c53055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/Mesh_Decor/M_roue_02.fbx using Guid(916056511f7eb7e4ca46d8bad8c53055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81d7d2c6ed426e281ce71608a4edb0cc') in 0.021408 seconds 
-  Import took 0.025842 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Assets/YaPing/001_Mesh/Mesh_Decor/M_Roue_01.fbx
-  artifactKey: Guid(108fd66d04e63f74ea9f8be65c051fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/Mesh_Decor/M_Roue_01.fbx using Guid(108fd66d04e63f74ea9f8be65c051fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a334c0adbce04cff0cbf1b7a047c7b1f') in 0.025277 seconds 
-  Import took 0.029387 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.813048 seconds.
-  path: Assets/YaPing/001_Mesh/BG
-  artifactKey: Guid(c8955f578d3ed6246b1dc9eefd46f6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/BG using Guid(c8955f578d3ed6246b1dc9eefd46f6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42b70d0564eddf27684377883fd8c866') in 0.005223 seconds 
-  Import took 0.010370 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.072154 seconds.
-  path: Assets/YaPing/001_Mesh/BG/BG.fbx
-  artifactKey: Guid(d545c443cdc6a004bbfde0fd3a7361c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/BG/BG.fbx using Guid(d545c443cdc6a004bbfde0fd3a7361c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d37046910921f026b83703042848b35') in 0.031157 seconds 
-  Import took 0.035854 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/YaPing/001_Mesh/BG/BG_Sol.fbx
-  artifactKey: Guid(14fbe77e1345e5d42b72908dac9d5a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/BG/BG_Sol.fbx using Guid(14fbe77e1345e5d42b72908dac9d5a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fe1aae6b89227ad906f3614f857275d') in 0.032678 seconds 
-  Import took 0.037227 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000187 seconds.
-  path: Assets/YaPing/001_Mesh/BG/SM_coffe_cup.fbx
-  artifactKey: Guid(24eac6ee0f3f3bf408a05a33f0ec8bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/BG/SM_coffe_cup.fbx using Guid(24eac6ee0f3f3bf408a05a33f0ec8bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebcd46002eae7ab559197365b0a4d75c') in 0.030419 seconds 
-  Import took 0.034589 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/YaPing/001_Mesh/BG/BG_Mur.fbx
-  artifactKey: Guid(c1674f9acc6479e43a9bcb3bafe8fd8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/BG/BG_Mur.fbx using Guid(c1674f9acc6479e43a9bcb3bafe8fd8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e29448add313d901b9f3040efab013f') in 0.032084 seconds 
-  Import took 0.036206 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/YaPing/001_Mesh/BG/SM_etoile.fbx
-  artifactKey: Guid(3b93ee3cf9c31e342b3ebcc71268552a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/BG/SM_etoile.fbx using Guid(3b93ee3cf9c31e342b3ebcc71268552a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3b0dce34ebb97d5ad9c7581d9eb7b63') in 0.029803 seconds 
-  Import took 0.034362 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/YaPing/001_Mesh/BG/SM_Nuage.fbx
-  artifactKey: Guid(f433db63f56c31b49b45a653043f94b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/BG/SM_Nuage.fbx using Guid(f433db63f56c31b49b45a653043f94b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09aa098d96c74a06ee512001c871496b') in 0.029756 seconds 
-  Import took 0.034337 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/YaPing/001_Mesh/BG/SM_arbre.fbx
-  artifactKey: Guid(7a214353e54ad494caf4e8e04d9f77f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/001_Mesh/BG/SM_arbre.fbx using Guid(7a214353e54ad494caf4e8e04d9f77f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '282cc7cf0bb31b9aadbb9d88599ccc15') in 0.035956 seconds 
-  Import took 0.040405 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.948919 seconds.
-  path: Assets/YaPing/000_PREFAB
-  artifactKey: Guid(94912fd169a35854b83f5ae234aadf34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB using Guid(94912fd169a35854b83f5ae234aadf34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8256005e33ba994a18b459a0d267870') in 0.006604 seconds 
-  Import took 0.011845 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.561083 seconds.
-  path: Assets/YaPing/000_PREFAB/Decors
-  artifactKey: Guid(281a4f4f72fa56841b324e1b983c123c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/Decors using Guid(281a4f4f72fa56841b324e1b983c123c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8839b46b1e02752fac22e7461e5f50e3') in 0.005336 seconds 
-  Import took 0.010230 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.067894 seconds.
-  path: Assets/YaPing/000_PREFAB/Decors/M_Passage_a_Niveau.prefab
-  artifactKey: Guid(26c3347f5136e7840826101f50b5fe95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/Decors/M_Passage_a_Niveau.prefab using Guid(26c3347f5136e7840826101f50b5fe95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e875432a2ea15dfc921dbec101a6c52') in 0.015968 seconds 
-  Import took 0.020604 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/YaPing/000_PREFAB/Decors/SM_Box.prefab
-  artifactKey: Guid(55c82051aac99b048940dc3ec597d3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/Decors/SM_Box.prefab using Guid(55c82051aac99b048940dc3ec597d3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37e280e99d8c203905929f03da61f327') in 0.012018 seconds 
-  Import took 0.016516 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/YaPing/000_PREFAB/Decors/SM_Train_Track.prefab
-  artifactKey: Guid(cd832b70e1d777b448aff4c7d8a1e775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/Decors/SM_Train_Track.prefab using Guid(cd832b70e1d777b448aff4c7d8a1e775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6198da30250f88b66b397fca364ea286') in 0.015924 seconds 
-  Import took 0.020522 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000194 seconds.
-  path: Assets/YaPing/000_PREFAB/Decors/SM_Wood_Tiangke.prefab
-  artifactKey: Guid(b3ab31369d43d5b4a8b2b8b298bb6038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/Decors/SM_Wood_Tiangke.prefab using Guid(b3ab31369d43d5b4a8b2b8b298bb6038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c03afb236ab751d02580804354535bbc') in 0.009428 seconds 
-  Import took 0.014198 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/YaPing/000_PREFAB/Decors/SM_etoile.prefab
-  artifactKey: Guid(f5ec2c47d7854b143b376d26d8c657b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/Decors/SM_etoile.prefab using Guid(f5ec2c47d7854b143b376d26d8c657b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1794f52366f9413caaf7f6e5edbc573') in 0.340613 seconds 
-  Import took 0.345691 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/YaPing/000_PREFAB/Decors/SM_Train_Tete.prefab
-  artifactKey: Guid(17bef3c5b9a74e8458a7853b8b9ca70f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/Decors/SM_Train_Tete.prefab using Guid(17bef3c5b9a74e8458a7853b8b9ca70f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '633236b8b71fb7df5c4ebd1d86371d73') in 0.011360 seconds 
-  Import took 0.015972 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/YaPing/000_PREFAB/Decors/SM_Nuage.prefab
-  artifactKey: Guid(c071ea781b04c954094e8f814b264804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/Decors/SM_Nuage.prefab using Guid(c071ea781b04c954094e8f814b264804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ad12630db068e5bb7e79b9056ba2950') in 0.011676 seconds 
-  Import took 0.016712 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/YaPing/000_PREFAB/Decors/SM_coffe_cup.prefab
-  artifactKey: Guid(974894385690bab469f6a2f7d0fbcd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/Decors/SM_coffe_cup.prefab using Guid(974894385690bab469f6a2f7d0fbcd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56b0635c58a54de78712ab761ec6913e') in 0.010587 seconds 
-  Import took 0.015793 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000120 seconds.
-  path: Assets/YaPing/000_PREFAB/Decors/SM_Train_Corps Variant.prefab
-  artifactKey: Guid(5e9c1914c1aea5043a284a306918cdc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/Decors/SM_Train_Corps Variant.prefab using Guid(5e9c1914c1aea5043a284a306918cdc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9390b00ad18feb958f159195afd4774') in 0.016174 seconds 
-  Import took 0.020627 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/YaPing/000_PREFAB/Decors/SM_Maison 1.prefab
-  artifactKey: Guid(ce0a3fb42a18d644c8dbb607fbd053eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/Decors/SM_Maison 1.prefab using Guid(ce0a3fb42a18d644c8dbb607fbd053eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '399d7df7481ddd11b74bd288face758e') in 0.011688 seconds 
-  Import took 0.016373 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000274 seconds.
-  path: Assets/YaPing/000_PREFAB/Decors/SM_arbre.prefab
-  artifactKey: Guid(19cd1157739fa04489fe5a8ebd0b787a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/Decors/SM_arbre.prefab using Guid(19cd1157739fa04489fe5a8ebd0b787a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6c26701cf45bc36e5f61faedbe94c12') in 0.010675 seconds 
-  Import took 0.015511 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.901114 seconds.
-  path: Assets/YaPing/000_PREFAB/InteractibleDecors
-  artifactKey: Guid(335a2e170f6733b4e946c1cb164230aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/InteractibleDecors using Guid(335a2e170f6733b4e946c1cb164230aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7130f158f44469d6e640c839622ed362') in 0.002156 seconds 
-  Import took 0.007457 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.050893 seconds.
-  path: Assets/YaPing/000_PREFAB/InteractibleDecors/M_Balance.prefab
-  artifactKey: Guid(fdab9ff6953ca8e41aa25c6a00960959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/InteractibleDecors/M_Balance.prefab using Guid(fdab9ff6953ca8e41aa25c6a00960959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9142516b0d2e357e343cc964afb72a35') in 0.011949 seconds 
-  Import took 0.016679 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000245 seconds.
-  path: Assets/YaPing/000_PREFAB/InteractibleDecors/M_Roue.prefab
-  artifactKey: Guid(870eed0cb1175504d9bdf9bc4452ab30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/InteractibleDecors/M_Roue.prefab using Guid(870eed0cb1175504d9bdf9bc4452ab30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8743e0c4e1e50ec5ac3d13f76279500') in 0.011494 seconds 
-  Import took 0.016006 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000186 seconds.
-  path: Assets/YaPing/000_PREFAB/InteractibleDecors/SM_Fin.prefab
-  artifactKey: Guid(976f2492b9d387f43b662bfd3f3da203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/InteractibleDecors/SM_Fin.prefab using Guid(976f2492b9d387f43b662bfd3f3da203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d14aecad02d265f7241c0c08e7f1496') in 0.010737 seconds 
-  Import took 0.015503 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.575056 seconds.
-  path: Assets/YaPing/000_PREFAB/LD_Mesh
-  artifactKey: Guid(99b15a801df71904bafd2b3dddb5ece8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/LD_Mesh using Guid(99b15a801df71904bafd2b3dddb5ece8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b95cb282be6015c16fcfcb9d5658c3eb') in 0.005429 seconds 
-  Import took 0.010623 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.065200 seconds.
-  path: Assets/YaPing/000_PREFAB/LD_Mesh/SM_Big_Cube.prefab
-  artifactKey: Guid(2fda8c14a7f55f2478498223cedc9ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/LD_Mesh/SM_Big_Cube.prefab using Guid(2fda8c14a7f55f2478498223cedc9ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da1cf6833b1ac9c02fdf45ac9307fcfb') in 0.011293 seconds 
-  Import took 0.015937 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000249 seconds.
-  path: Assets/YaPing/000_PREFAB/LD_Mesh/SM_Livre.prefab
-  artifactKey: Guid(76510cefd080821459cd44823a4c5424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/LD_Mesh/SM_Livre.prefab using Guid(76510cefd080821459cd44823a4c5424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '852f6c5b44e65abfdb00cea6b4a05385') in 0.011820 seconds 
-  Import took 0.015917 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/YaPing/000_PREFAB/LD_Mesh/SM_Mur_Planche.prefab
-  artifactKey: Guid(8acafd3741b6c514db82b7f58ec5744b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/LD_Mesh/SM_Mur_Planche.prefab using Guid(8acafd3741b6c514db82b7f58ec5744b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2711711c9c0f0add704781b6ca7cc1e7') in 0.011468 seconds 
-  Import took 0.015908 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000117 seconds.
-  path: Assets/YaPing/000_PREFAB/LD_Mesh/SM_Livre_orange.prefab
-  artifactKey: Guid(9ea95af605ce5de44b8d386e0d297e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/LD_Mesh/SM_Livre_orange.prefab using Guid(9ea95af605ce5de44b8d386e0d297e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5610194ad0111735198a18c33576a38') in 0.010723 seconds 
-  Import took 0.014918 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/YaPing/000_PREFAB/LD_Mesh/SM_Planche.prefab
-  artifactKey: Guid(4da0611c069658040b75474e12b8deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/LD_Mesh/SM_Planche.prefab using Guid(4da0611c069658040b75474e12b8deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aec0ec9081e34fe15e77f55c67d58d29') in 0.013055 seconds 
-  Import took 0.017558 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/YaPing/000_PREFAB/LD_Mesh/SM_L_haut_Wood.prefab
-  artifactKey: Guid(9777e48dc9728bb4782b01aec6ab56bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/LD_Mesh/SM_L_haut_Wood.prefab using Guid(9777e48dc9728bb4782b01aec6ab56bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec571532c8c34bba9f88eaef7cc9fc93') in 0.011086 seconds 
-  Import took 0.016028 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/YaPing/000_PREFAB/LD_Mesh/SM_T_Wood.prefab
-  artifactKey: Guid(3f4a879a434556e4b888f787dc4652ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/LD_Mesh/SM_T_Wood.prefab using Guid(3f4a879a434556e4b888f787dc4652ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b40130d943a023d06f0d03b5985173a') in 0.012203 seconds 
-  Import took 0.016535 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/YaPing/000_PREFAB/LD_Mesh/SM_Table.prefab
-  artifactKey: Guid(a0a3c615699eea240974871205fcce33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/LD_Mesh/SM_Table.prefab using Guid(a0a3c615699eea240974871205fcce33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '927c9439f30c83d7c6eb9020b1ed31fe') in 0.009999 seconds 
-  Import took 0.014357 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/YaPing/000_PREFAB/LD_Mesh/SM_Triangle_Wood_Bleu.prefab
-  artifactKey: Guid(83ed2243a9a0e1d48ac88b9367349c7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/LD_Mesh/SM_Triangle_Wood_Bleu.prefab using Guid(83ed2243a9a0e1d48ac88b9367349c7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7725e95bba3499f81576699e5aa808bb') in 0.010236 seconds 
-  Import took 0.014870 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/YaPing/000_PREFAB/LD_Mesh/SM_fine_Planche.prefab
-  artifactKey: Guid(5685a43a9a200754aabdcd2b23059007) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/LD_Mesh/SM_fine_Planche.prefab using Guid(5685a43a9a200754aabdcd2b23059007) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e505d288a0f2dff46b11bf14eaffafb1') in 0.011396 seconds 
-  Import took 0.015874 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000167 seconds.
-  path: Assets/YaPing/000_PREFAB/LD_Mesh/SM_Livre_rouge.prefab
-  artifactKey: Guid(79e304966af71cc49b688f60cff17d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/LD_Mesh/SM_Livre_rouge.prefab using Guid(79e304966af71cc49b688f60cff17d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bb5be53ca7e5e119d0b95b7547487cf') in 0.010634 seconds 
-  Import took 0.015425 seconds .
+  path: Assets/LOUIS/004_MATERIALS/MATERIAL_M_Fly.mat
+  artifactKey: Guid(fab4f2c203cfc904eb8fd8a19be4398a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/MATERIAL_M_Fly.mat using Guid(fab4f2c203cfc904eb8fd8a19be4398a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '135084e5376c47b362bba16a05344a31') in 0.395079 seconds 
+  Import took 0.400794 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000123 seconds.
-  path: Assets/YaPing/000_PREFAB/LD_Mesh/SM_Box_Rangement.prefab
-  artifactKey: Guid(0b2398d44e490c44ea8a86a468107e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/LD_Mesh/SM_Box_Rangement.prefab using Guid(0b2398d44e490c44ea8a86a468107e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee982c89f7d20acedbbf3c0253e0f1cb') in 0.011628 seconds 
-  Import took 0.016210 seconds .
+  path: Assets/LOUIS/004_MATERIALS/MATERIAL_C_Tadpole_L_yellow_Walk.mat
+  artifactKey: Guid(49e47367c42d1aa4e81faca6db7300b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/MATERIAL_C_Tadpole_L_yellow_Walk.mat using Guid(49e47367c42d1aa4e81faca6db7300b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53552ce93c7751734df2ecdfe631713b') in 0.419515 seconds 
+  Import took 0.424156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/LOUIS/002_TEXTURES/M_Interactible/DefaultMaterial_Base_color.png
+  artifactKey: Guid(67a3c5a9dfa38c14ba3130843b570b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/M_Interactible/DefaultMaterial_Base_color.png using Guid(67a3c5a9dfa38c14ba3130843b570b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb1165fedc79d5e4786fc07fffaf3af1') in 0.009839 seconds 
+  Import took 0.014834 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000131 seconds.
-  path: Assets/YaPing/000_PREFAB/LD_Mesh/SM_Planche_verticale.prefab
-  artifactKey: Guid(b5599a4e9010a8b48b5af07879a63c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/LD_Mesh/SM_Planche_verticale.prefab using Guid(b5599a4e9010a8b48b5af07879a63c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08508a904c4b1329c242c32dd97d1402') in 0.010777 seconds 
-  Import took 0.015647 seconds .
+  path: Assets/LOUIS/004_MATERIALS/M_Obj_Interactif 1.mat
+  artifactKey: Guid(fed77e56639f494478c91cabf096dd7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/M_Obj_Interactif 1.mat using Guid(fed77e56639f494478c91cabf096dd7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff50c1668b0cbbef5dae288338a8e81b') in 0.025556 seconds 
+  Import took 0.029887 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000121 seconds.
-  path: Assets/YaPing/000_PREFAB/LD_Mesh/SM_L_bas_Wood.prefab
-  artifactKey: Guid(5554e1a3137083f46b571d17cd5a4c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/LD_Mesh/SM_L_bas_Wood.prefab using Guid(5554e1a3137083f46b571d17cd5a4c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9a17d64b8377bc6933d41431589b532') in 0.010373 seconds 
-  Import took 0.015215 seconds .
+  Time since last request: 0.000152 seconds.
+  path: Assets/LOUIS/004_MATERIALS/MATERIAL_MC_Langue.mat
+  artifactKey: Guid(c06b3cd108121b04ab22dff248e6724e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/MATERIAL_MC_Langue.mat using Guid(c06b3cd108121b04ab22dff248e6724e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21adf95390fdeba216fa9fb547f8430e') in 0.012712 seconds 
+  Import took 0.017042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/LOUIS/002_TEXTURES/M_Enviro/Material _221_Opacity.png
+  artifactKey: Guid(ba2dc211d3353404ca19aefbb40ba0cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/M_Enviro/Material _221_Opacity.png using Guid(ba2dc211d3353404ca19aefbb40ba0cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7b8caddd381c7bae8c3067b771e356f') in 0.008614 seconds 
+  Import took 0.012968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/LOUIS/004_MATERIALS/MATERIAL_SM_DEATHTAPE.mat
+  artifactKey: Guid(06a57634249a81b49b2adbb6920388e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/MATERIAL_SM_DEATHTAPE.mat using Guid(06a57634249a81b49b2adbb6920388e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '024152477da951268c6a85b49efe93b6') in 0.022143 seconds 
+  Import took 0.026466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/LOUIS/004_MATERIALS
+  artifactKey: Guid(9fd1801d1e2521843848f636f2a2f5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS using Guid(9fd1801d1e2521843848f636f2a2f5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '797b001fda7e2b48f749ed6144b4eb36') in 0.004879 seconds 
+  Import took 0.009459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/LOUIS/002_TEXTURES/M_Enviro/Material _221_Metallic.png
+  artifactKey: Guid(aa929916bd93b514094840814d844ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/M_Enviro/Material _221_Metallic.png using Guid(aa929916bd93b514094840814d844ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '063da4eaf212b4fd4bc9ee1620eeaf90') in 0.008604 seconds 
+  Import took 0.013151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/LOUIS/002_TEXTURES/C_TADPOLE/red/DefaultMaterial_Mixed_AO.png
+  artifactKey: Guid(d41a915fe010ec546abf510da52ed563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/C_TADPOLE/red/DefaultMaterial_Mixed_AO.png using Guid(d41a915fe010ec546abf510da52ed563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '035019bfe75622eccc377eb78412d675') in 0.009107 seconds 
+  Import took 0.013409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/LOUIS/002_TEXTURES/C_TADPOLE/blue/DefaultMaterial_Base_color.png
+  artifactKey: Guid(c2b7bb7ead5f0e64e9bedec2797eda14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/C_TADPOLE/blue/DefaultMaterial_Base_color.png using Guid(c2b7bb7ead5f0e64e9bedec2797eda14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adec1d41f41580fa58901aebbb418e94') in 0.013962 seconds 
+  Import took 0.018645 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/LOUIS/004_MATERIALS/MATERIAL_M_TadpoleGacha.mat
+  artifactKey: Guid(fdc3dcdc857985440b636965421fbe5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/MATERIAL_M_TadpoleGacha.mat using Guid(fdc3dcdc857985440b636965421fbe5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47a2c91ea20d63f43b3c128e899b8543') in 0.018177 seconds 
+  Import took 0.022562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/LOUIS/002_TEXTURES/M_Interactible/DefaultMaterial_Metallic.png
+  artifactKey: Guid(883ea1460327ea546ba72edd8582126a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/M_Interactible/DefaultMaterial_Metallic.png using Guid(883ea1460327ea546ba72edd8582126a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '711f9818b2251db20faa5e1618b13a18') in 0.009313 seconds 
+  Import took 0.013990 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/LOUIS/004_MATERIALS/MATERIAL_C_Tadpole_L_bleu 1_Walk.mat
+  artifactKey: Guid(5f7c0ccbabc58ec49aba8c8b6962d8ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/MATERIAL_C_Tadpole_L_bleu 1_Walk.mat using Guid(5f7c0ccbabc58ec49aba8c8b6962d8ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c47ed9b5746c869473ffb8b64c8937b1') in 0.016058 seconds 
+  Import took 0.020568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/LOUIS/004_MATERIALS/MATERIAL_C_Tadpole_L_bleu_Idle.mat
+  artifactKey: Guid(0ec16b2fc222f224d87723fb9f0a7c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/MATERIAL_C_Tadpole_L_bleu_Idle.mat using Guid(0ec16b2fc222f224d87723fb9f0a7c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30016c41dccc161aff31b6ec97f7c3fb') in 0.015926 seconds 
+  Import took 0.020401 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/LOUIS/004_MATERIALS/MATERIAL_E_Launcher_L 2.mat
+  artifactKey: Guid(81932805e00e4d34a914904c1c262e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/MATERIAL_E_Launcher_L 2.mat using Guid(81932805e00e4d34a914904c1c262e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f1583aee6124f60588996c85e38fc09') in 0.025078 seconds 
+  Import took 0.029866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/LOUIS/002_TEXTURES/M_Enviro/Material _221_Base_color.png
+  artifactKey: Guid(d792866930f28aa4687d98abada83fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/M_Enviro/Material _221_Base_color.png using Guid(d792866930f28aa4687d98abada83fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb4d656254a2aa382d20a27f61972e50') in 0.010209 seconds 
+  Import took 0.014810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/LOUIS/004_MATERIALS/MATERIAL_C_Tadpole_L_red_walk.mat
+  artifactKey: Guid(daecc5cb96220a745a41b597dea0666c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/MATERIAL_C_Tadpole_L_red_walk.mat using Guid(daecc5cb96220a745a41b597dea0666c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '097eae5f62e7a109b24efa0bde6bcac8') in 0.018358 seconds 
+  Import took 0.022858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/LOUIS/004_MATERIALS/MATERIAL_SM_DEATHMESH 1.mat
+  artifactKey: Guid(f6495cd611de33b4d80f27f1b167dc45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/MATERIAL_SM_DEATHMESH 1.mat using Guid(f6495cd611de33b4d80f27f1b167dc45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb447a2ab6efa11bf6a850b4449ace18') in 0.023933 seconds 
+  Import took 0.028565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/LOUIS/004_MATERIALS/MATERIAL_C_Tadpole_L_red_Idle.mat
+  artifactKey: Guid(d610bda4a64d90e4ab818a86e3e2e04a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/MATERIAL_C_Tadpole_L_red_Idle.mat using Guid(d610bda4a64d90e4ab818a86e3e2e04a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08f1671167ac33db3fb78fc91ae7ed4f') in 0.014915 seconds 
+  Import took 0.019931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/LOUIS/004_MATERIALS/MATERIAL_C_Tadpole_L_yellow_Idle.mat
+  artifactKey: Guid(d93d3e25630ac39418c92e285cbf46bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/MATERIAL_C_Tadpole_L_yellow_Idle.mat using Guid(d93d3e25630ac39418c92e285cbf46bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bda9ce883723e03843130f82cb20bac2') in 0.015015 seconds 
+  Import took 0.019696 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/LOUIS/002_TEXTURES/M_Interactible/DefaultMaterial_Opacity.png
+  artifactKey: Guid(a0baf9f5ac6160b4c90fcbadca4d34d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/M_Interactible/DefaultMaterial_Opacity.png using Guid(a0baf9f5ac6160b4c90fcbadca4d34d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92b0f5a1c2095cbcefd8c86fd96ef0a9') in 0.008839 seconds 
+  Import took 0.013289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/LOUIS/002_TEXTURES/C_TADPOLE/red/DefaultMaterial_Metallic.png
+  artifactKey: Guid(c272a3c06009a6b4b9f61413b217333a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/C_TADPOLE/red/DefaultMaterial_Metallic.png using Guid(c272a3c06009a6b4b9f61413b217333a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b988c10e7d213dcb78f5e2c87b55ac25') in 0.008154 seconds 
+  Import took 0.012433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/YaPing/002_TEXTURE/DefaultMaterial_BaseColor.png
+  artifactKey: Guid(6941b8a052313c24da90c0c5939a62e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YaPing/002_TEXTURE/DefaultMaterial_BaseColor.png using Guid(6941b8a052313c24da90c0c5939a62e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e03dbd5a7a81d6407f70f96f1e94e1f') in 0.013980 seconds 
+  Import took 0.018483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/LOUIS/004_MATERIALS/Material_E_Pusher.mat
+  artifactKey: Guid(367494ad08f25744f9ecd925871b6f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/Material_E_Pusher.mat using Guid(367494ad08f25744f9ecd925871b6f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab18fb0e5116449ea91870a962aebd91') in 0.024343 seconds 
+  Import took 0.029055 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/LOUIS/002_TEXTURES/M_Interactible/DefaultMaterial_Mixed_AO.png
+  artifactKey: Guid(2cbf662b08629af47b91d88cc3b155e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/M_Interactible/DefaultMaterial_Mixed_AO.png using Guid(2cbf662b08629af47b91d88cc3b155e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1baf4c1716de4d41ad53224a036ac6f') in 0.011632 seconds 
+  Import took 0.015695 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.619214 seconds.
+  path: Assets/LOUIS/002_TEXTURES/C_TADPOLE/red/DefaultMaterial_Base_color.png
+  artifactKey: Guid(708b24e6437b2974f869fde784c5f464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/C_TADPOLE/red/DefaultMaterial_Base_color.png using Guid(708b24e6437b2974f869fde784c5f464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dbf0a2f0508c680e28f429661cbfde6') in 0.011675 seconds 
+  Import took 0.016973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.776193 seconds.
+  path: Assets/LOUIS/002_TEXTURES/C_TADPOLE/yellow/DefaultMaterial_Base_color.png
+  artifactKey: Guid(a5849936c467c0146b3c9c2e7be02571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/C_TADPOLE/yellow/DefaultMaterial_Base_color.png using Guid(a5849936c467c0146b3c9c2e7be02571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e726fa8edda55f4a2dddd52315fc3d5') in 0.011890 seconds 
+  Import took 0.017294 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.805622 seconds.
+  path: Assets/LOUIS/002_TEXTURES/E_LAUNCHER/DefaultMaterial_Base_color.png
+  artifactKey: Guid(ef6f28f904eabe74a9520a3c50aa80ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/E_LAUNCHER/DefaultMaterial_Base_color.png using Guid(ef6f28f904eabe74a9520a3c50aa80ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfb29fa6849bc0292e4270b54d0b933f') in 0.011390 seconds 
+  Import took 0.016775 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/LOUIS/002_TEXTURES/E_LAUNCHER/DefaultMaterial_Mixed_AO.png
+  artifactKey: Guid(78d98fe93517d0947bdc3566d217e2cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/E_LAUNCHER/DefaultMaterial_Mixed_AO.png using Guid(78d98fe93517d0947bdc3566d217e2cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '859bffb22d0b56bfb4e27bb81ad1bbc5') in 0.010987 seconds 
+  Import took 0.015766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.897420 seconds.
+  path: Assets/LOUIS/002_TEXTURES/E_pusher/DefaultMaterial_Base_color.png
+  artifactKey: Guid(aca4efd21ac4e3d488503d991a4764c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/E_pusher/DefaultMaterial_Base_color.png using Guid(aca4efd21ac4e3d488503d991a4764c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '180e5afcf4f8e34ded708ec100eb0de3') in 0.016943 seconds 
+  Import took 0.022621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/LOUIS/002_TEXTURES/E_pusher/DefaultMaterial_Mixed_AO.png
+  artifactKey: Guid(e59782e610e969d4c88c286394c17a31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/E_pusher/DefaultMaterial_Mixed_AO.png using Guid(e59782e610e969d4c88c286394c17a31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2ca7c010be1317efc86dadc3ef9bd61') in 0.011136 seconds 
+  Import took 0.015871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.719005 seconds.
+  path: Assets/LOUIS/002_TEXTURES/M_Interactible/Fly_Button/DefaultMaterial_Base_color.png
+  artifactKey: Guid(5ef6f26be3f5dfd44bd92b1523bec09c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/M_Interactible/Fly_Button/DefaultMaterial_Base_color.png using Guid(5ef6f26be3f5dfd44bd92b1523bec09c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12d7d57d58d846bef7dfaba4f0e0b664') in 0.010852 seconds 
+  Import took 0.016915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/LOUIS/002_TEXTURES/M_Interactible/Fly_Button/DefaultMaterial_Metallic.png
+  artifactKey: Guid(eb3fa7531cfc1fe4fafc0dcacb8a54e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/M_Interactible/Fly_Button/DefaultMaterial_Metallic.png using Guid(eb3fa7531cfc1fe4fafc0dcacb8a54e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2132f53c8165cb8dbe841d528913663a') in 0.010523 seconds 
+  Import took 0.015032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/LOUIS/002_TEXTURES/M_Interactible/Fly_Button/DefaultMaterial_Mixed_AO.png
+  artifactKey: Guid(d565550ca08534143bb79aadc89049fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/M_Interactible/Fly_Button/DefaultMaterial_Mixed_AO.png using Guid(d565550ca08534143bb79aadc89049fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a9b33ed53617424d1fc3808157a6d87') in 0.010262 seconds 
+  Import took 0.015383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/LOUIS/002_TEXTURES/M_Interactible/Fly_Button/DefaultMaterial_Opacity.png
+  artifactKey: Guid(26c69c2f4e821eb4c855f0b2edfc1334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/M_Interactible/Fly_Button/DefaultMaterial_Opacity.png using Guid(26c69c2f4e821eb4c855f0b2edfc1334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc9688e651e5de11b99172d8812961b2') in 0.009571 seconds 
+  Import took 0.014590 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.248488 seconds.
+  path: Assets/LOUIS/002_TEXTURES/C_TADPOLE/M_Tadpolegacha/DefaultMaterial_Base_color.png
+  artifactKey: Guid(999b28cc7df862e468f26f7bd40bd4d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/C_TADPOLE/M_Tadpolegacha/DefaultMaterial_Base_color.png using Guid(999b28cc7df862e468f26f7bd40bd4d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8fdda0ea862d05bab5bc44eafa025a4') in 0.011808 seconds 
+  Import took 0.017090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/LOUIS/002_TEXTURES/SM_Death_props/SM_Tape/DefaultMaterial_Metallic.png
+  artifactKey: Guid(c4699b0de81ef1e46aa80b270980ed59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/SM_Death_props/SM_Tape/DefaultMaterial_Metallic.png using Guid(c4699b0de81ef1e46aa80b270980ed59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d6d43fc83b52f64ec563c0f48c5efe1') in 0.016372 seconds 
+  Import took 0.020741 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.361057 seconds.
+  path: Assets/LOUIS/002_TEXTURES/SM_Death_props/SM_Tape/DefaultMaterial_Base_color.png
+  artifactKey: Guid(0440ae53a342dda40ba3562f9bac211b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/SM_Death_props/SM_Tape/DefaultMaterial_Base_color.png using Guid(0440ae53a342dda40ba3562f9bac211b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f804c28431323d2aec5d0952d3bc0941') in 0.009465 seconds 
+  Import took 0.014586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.599445 seconds.
+  path: Assets/LOUIS/002_TEXTURES/SM_Death_props/DefaultMaterial_Base_color.png
+  artifactKey: Guid(a3fb81e9e75df544f802eb3015ea7ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/SM_Death_props/DefaultMaterial_Base_color.png using Guid(a3fb81e9e75df544f802eb3015ea7ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d6d03481a095ff4b388e6d4bc3a41c5') in 0.012976 seconds 
+  Import took 0.018373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000383 seconds.
+  path: Assets/LOUIS/002_TEXTURES/SM_Death_props/DefaultMaterial_Mixed_AO.png
+  artifactKey: Guid(9c0a73d7d9348324d9ac529017fcbe4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/SM_Death_props/DefaultMaterial_Mixed_AO.png using Guid(9c0a73d7d9348324d9ac529017fcbe4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26ca90d2512674f511284b6476074430') in 0.011878 seconds 
+  Import took 0.016717 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.015893 seconds.
+  path: Assets/LOUIS/004_MATERIALS/MC
+  artifactKey: Guid(f437968595de75647b171452a0c0d691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/MC using Guid(f437968595de75647b171452a0c0d691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0105dad8efd812aadf33878dbff787a2') in 0.005963 seconds 
+  Import took 0.011399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.121355 seconds.
+  path: Assets/LOUIS/004_MATERIALS/MC/MATERIAL_MC_Frog_L_000.mat
+  artifactKey: Guid(ece75f241bb77ad41bf79dc6dd86a21a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/MC/MATERIAL_MC_Frog_L_000.mat using Guid(ece75f241bb77ad41bf79dc6dd86a21a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68515a27c731569b0d53bf158b6babdb') in 0.011318 seconds 
+  Import took 0.016006 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/LOUIS/004_MATERIALS/MC/MATERIAL_MC_Frog_L_004.mat
+  artifactKey: Guid(2ff324ae3addc6548a1f99a35b859802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/MC/MATERIAL_MC_Frog_L_004.mat using Guid(2ff324ae3addc6548a1f99a35b859802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b328d4bd05dfcd4de66ec8a668d5b9f') in 0.021871 seconds 
+  Import took 0.026010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/LOUIS/004_MATERIALS/MC/MATERIAL_MC_Frog_L_002.mat
+  artifactKey: Guid(8463cc4855014cd4eac57c7d1e082eac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/MC/MATERIAL_MC_Frog_L_002.mat using Guid(8463cc4855014cd4eac57c7d1e082eac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '767af7bcabacae9f9e38137eff90322f') in 0.024069 seconds 
+  Import took 0.028587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/LOUIS/004_MATERIALS/MC/MATERIAL_MC_Frog_L_003.mat
+  artifactKey: Guid(a1a2dc23e985b2a43958b3af2251a4f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/MC/MATERIAL_MC_Frog_L_003.mat using Guid(a1a2dc23e985b2a43958b3af2251a4f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b250f18d1407ff5ffc75f23a115d8178') in 0.020629 seconds 
+  Import took 0.025005 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/LOUIS/004_MATERIALS/MC/MATERIAL_MC_Frog_L_001.mat
+  artifactKey: Guid(50810bcdd1f2e394ebf919ba2b920857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/MC/MATERIAL_MC_Frog_L_001.mat using Guid(50810bcdd1f2e394ebf919ba2b920857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9f8fa18839fadea1cd0f7fc6cd633b7') in 0.019380 seconds 
+  Import took 0.023439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.659784 seconds.
+  path: Assets/LOUIS/002_TEXTURES/MC_FROG/BC_Sauchette/TEX_MC_BASE_Sauchette.png.png
+  artifactKey: Guid(4dc5d1eb6cdaa194486a208f0dd3b725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/MC_FROG/BC_Sauchette/TEX_MC_BASE_Sauchette.png.png using Guid(4dc5d1eb6cdaa194486a208f0dd3b725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad06d046cf1cae5efc2edcc7a87b10a7') in 0.010736 seconds 
+  Import took 0.016122 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/LOUIS/002_TEXTURES/MC_FROG/TEX_MC_FROG_AO.png
+  artifactKey: Guid(054b813c336346240b1de17d197390c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/MC_FROG/TEX_MC_FROG_AO.png using Guid(054b813c336346240b1de17d197390c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17970fb6a92de0e67dabda8469066c1d') in 0.012520 seconds 
+  Import took 0.017155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.788291 seconds.
+  path: Assets/LOUIS/002_TEXTURES/MC_FROG/BC_Clown/TEX_MC_BASE_Clown.png.png
+  artifactKey: Guid(edae5808e0047314485ee6a8c486a1ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/MC_FROG/BC_Clown/TEX_MC_BASE_Clown.png.png using Guid(edae5808e0047314485ee6a8c486a1ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f487abc575a574b06fafe44dc95c723') in 0.012088 seconds 
+  Import took 0.017779 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.835920 seconds.
+  path: Assets/LOUIS/002_TEXTURES/MC_FROG/BC_Ol_timey/TEX_MC_BASE_Ol_timey.png.png
+  artifactKey: Guid(c4602ecf9769e084fb83384b848c6653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/MC_FROG/BC_Ol_timey/TEX_MC_BASE_Ol_timey.png.png using Guid(c4602ecf9769e084fb83384b848c6653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a753c33f7c22123b358c6d458098cad5') in 0.011224 seconds 
+  Import took 0.016367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.346424 seconds.
+  path: Assets/LOUIS/002_TEXTURES/MC_FROG/BC_Gold/TEX_MC_BASE_GOLD.png
+  artifactKey: Guid(1789065358649034b87014c7501114cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/002_TEXTURES/MC_FROG/BC_Gold/TEX_MC_BASE_GOLD.png using Guid(1789065358649034b87014c7501114cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c290e9cad9356cb2ee773490c79f619') in 0.015212 seconds 
+  Import took 0.020936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.141411 seconds.
+  path: Assets/LOUIS/004_MATERIALS/legacy
+  artifactKey: Guid(2b77b2af4e5ea0f49b0ae811956c6617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/legacy using Guid(2b77b2af4e5ea0f49b0ae811956c6617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d52488efb84b2039ea43ec6fb084d56') in 0.006170 seconds 
+  Import took 0.011473 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.081684 seconds.
+  path: Assets/LOUIS/004_MATERIALS/legacy/MATERIAL_KEY_H.mat
+  artifactKey: Guid(1e8fa9c2d5130014ba3726863b048293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/legacy/MATERIAL_KEY_H.mat using Guid(1e8fa9c2d5130014ba3726863b048293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0e367caa3ce72ea7fa71ea24f275315') in 0.014715 seconds 
+  Import took 0.019423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/LOUIS/004_MATERIALS/legacy/MATERIAL_MC_Frog_Hlegacy.mat
+  artifactKey: Guid(76126b03021fec740a39a88b79a934cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/legacy/MATERIAL_MC_Frog_Hlegacy.mat using Guid(76126b03021fec740a39a88b79a934cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3cd3b95fb4e2d0c50b29350a99f2356') in 0.017084 seconds 
+  Import took 0.021134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/LOUIS/004_MATERIALS/legacy/MATERIAL_KEY_Llegacy.mat
+  artifactKey: Guid(ff2c3d432e573fe4eb523e50b7b7c89c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/legacy/MATERIAL_KEY_Llegacy.mat using Guid(ff2c3d432e573fe4eb523e50b7b7c89c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6853db79d8dc84624bbd6e4690d2a8c') in 0.019077 seconds 
+  Import took 0.023762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/LOUIS/004_MATERIALS/legacy/MATERIAL_MC_Frog_H.mat
+  artifactKey: Guid(6bd8cabc256de95489aa62a27ca792e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/legacy/MATERIAL_MC_Frog_H.mat using Guid(6bd8cabc256de95489aa62a27ca792e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f01d92f6af16bf54f977396a6bbca8f5') in 0.016914 seconds 
+  Import took 0.021327 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/LOUIS/004_MATERIALS/legacy/MATERIAL_MC_Frog_Legacy.mat
+  artifactKey: Guid(52defbffd94417346afc630396209cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/legacy/MATERIAL_MC_Frog_Legacy.mat using Guid(52defbffd94417346afc630396209cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc252848b63165fb7fbeb6991849980c') in 0.016864 seconds 
+  Import took 0.021178 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/LOUIS/004_MATERIALS/legacy/MATERIAL_KEY_Hlegacy.mat
+  artifactKey: Guid(ae93daa6a7c29964f94732c93889602b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/004_MATERIALS/legacy/MATERIAL_KEY_Hlegacy.mat using Guid(ae93daa6a7c29964f94732c93889602b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2fbe0cdfda686d1bae217a62ecadd97') in 0.015997 seconds 
+  Import took 0.021465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.195141 seconds.
+  path: Assets/LOUIS/003_SHADER
+  artifactKey: Guid(41d9cf8067bfd7a47aa6d9c63401a005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/003_SHADER using Guid(41d9cf8067bfd7a47aa6d9c63401a005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f88fa7aaa8ed0f15fdd030a1bc790ab') in 0.006661 seconds 
+  Import took 0.012059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.087140 seconds.
+  path: Assets/LOUIS/003_SHADER/MATERIAL_TimeButton.mat
+  artifactKey: Guid(a3fa08aaf209ce341a535260e4dcf08f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/003_SHADER/MATERIAL_TimeButton.mat using Guid(a3fa08aaf209ce341a535260e4dcf08f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d5d2d955d95b0dd8b6d0d50a2406ea3') in 0.016199 seconds 
+  Import took 0.021078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.827722 seconds.
+  path: Assets/LOUIS/003_SHADER/SHADER_H.shadergraph
+  artifactKey: Guid(c9778cfc0bb4e9b4eb984993f4546d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/003_SHADER/SHADER_H.shadergraph using Guid(c9778cfc0bb4e9b4eb984993f4546d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71c5ee40e0e26e2b9244c86fa5b067ef') in 0.007467 seconds 
+  Import took 0.012554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.226915 seconds.
+  path: Assets/LOUIS/003_SHADER/SHADER_L.shadergraph
+  artifactKey: Guid(9dbee5fbd1b83d74d9fd4517e5798b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/003_SHADER/SHADER_L.shadergraph using Guid(9dbee5fbd1b83d74d9fd4517e5798b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f853ca6e17b7a5c376a05aabd4e17941') in 0.006711 seconds 
+  Import took 0.012045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.497662 seconds.
+  path: Assets/LOUIS/003_SHADER/SHADER_L_2S.shadergraph
+  artifactKey: Guid(7d91e763a8a760e44818f6c835e82642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/003_SHADER/SHADER_L_2S.shadergraph using Guid(7d91e763a8a760e44818f6c835e82642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afa7a3ed7b802b2e5f2a99a7db48cafd') in 0.009105 seconds 
+  Import took 0.013650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.791392 seconds.
+  path: Assets/LOUIS/003_SHADER/SHADER_L_Alphaclip.shadergraph
+  artifactKey: Guid(1f0ef60ffe6cad14ea797c1e19c23d83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/003_SHADER/SHADER_L_Alphaclip.shadergraph using Guid(1f0ef60ffe6cad14ea797c1e19c23d83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2128f084eb1c57a2f60d13c64726614a') in 0.006438 seconds 
+  Import took 0.011640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.507732 seconds.
+  path: Assets/LOUIS/003_SHADER/SHADER_Langue.shadergraph
+  artifactKey: Guid(acef521e66e59b6499a9bd6ff69cb53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/003_SHADER/SHADER_Langue.shadergraph using Guid(acef521e66e59b6499a9bd6ff69cb53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98c7ed454220ea93dd4a46f401e9db16') in 0.006276 seconds 
+  Import took 0.011323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.712971 seconds.
+  path: Assets/LOUIS/003_SHADER/SHADER_tadpole_L.shadergraph
+  artifactKey: Guid(854f1d9cacfdc884fb3c39291c3023cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/003_SHADER/SHADER_tadpole_L.shadergraph using Guid(854f1d9cacfdc884fb3c39291c3023cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cc014090eed529a7501f77117f78d70') in 0.006612 seconds 
+  Import took 0.011963 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.451772 seconds.
+  path: Assets/LOUIS/003_SHADER/SHADER_unlit_L.shadergraph
+  artifactKey: Guid(97d2525d6b8a9c848adb0399db13f9b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/003_SHADER/SHADER_unlit_L.shadergraph using Guid(97d2525d6b8a9c848adb0399db13f9b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e16f9dd3d45ae402cf6e3b8e60bccf94') in 0.008417 seconds 
+  Import took 0.013007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11960.463508 seconds.
+  path: Assets/YaPing/002_TEXTURE/LD_Ground_Props_03_DefaultMaterial_BaseColor.png
+  artifactKey: Guid(78acab0429959f44cb62b4dab27bf31f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YaPing/002_TEXTURE/LD_Ground_Props_03_DefaultMaterial_BaseColor.png using Guid(78acab0429959f44cb62b4dab27bf31f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb0ae8ea6f5bcc37a04f3fee24c48938') in 0.027239 seconds 
+  Import took 0.033486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3529.926259 seconds.
+  path: Assets/LOUIS/000_PREFAB
+  artifactKey: Guid(81267516eb10f254c9678d666a527350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB using Guid(81267516eb10f254c9678d666a527350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '904f948cd2cdf7ed6f3de7c3f2e56a05') in 0.006566 seconds 
+  Import took 0.013399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.107620 seconds.
+  path: Assets/LOUIS/000_PREFAB/MESH_KEY_NO.prefab
+  artifactKey: Guid(7e21f9fdcbb54b14a86758358661215e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/MESH_KEY_NO.prefab using Guid(7e21f9fdcbb54b14a86758358661215e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '723318eb185bb686db74995bf0e09a12') in 0.015421 seconds 
+  Import took 0.020810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/LOUIS/000_PREFAB/MESH_KEY_O.prefab
+  artifactKey: Guid(177b78d61ea103b4dbfda0567b46a17a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/MESH_KEY_O.prefab using Guid(177b78d61ea103b4dbfda0567b46a17a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7feeef2c19c1b5692bcdd4307b21bfff') in 0.007867 seconds 
+  Import took 0.012072 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000187 seconds.
-  path: Assets/YaPing/000_PREFAB/LD_Mesh/SM_Pond_Wood.prefab
-  artifactKey: Guid(85fbe9acae6db0d44bc4701fa5e1965e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/LD_Mesh/SM_Pond_Wood.prefab using Guid(85fbe9acae6db0d44bc4701fa5e1965e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '673e12a1ecb9634289036afcf4e3d32d') in 0.011579 seconds 
-  Import took 0.016119 seconds .
+  path: Assets/LOUIS/000_PREFAB/MESH_MC_Frog_NO.prefab
+  artifactKey: Guid(76b113208089258458f3e189d30a9c3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/MESH_MC_Frog_NO.prefab using Guid(76b113208089258458f3e189d30a9c3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3186143cc698f14d53085b849a53ac91') in 0.007904 seconds 
+  Import took 0.012212 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000120 seconds.
-  path: Assets/YaPing/000_PREFAB/LD_Mesh/SM_Livre_Vert.prefab
-  artifactKey: Guid(04712232b33ba6547bf404d6afc208a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/LD_Mesh/SM_Livre_Vert.prefab using Guid(04712232b33ba6547bf404d6afc208a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0ea27a84a7015ad6adb08ee551ecebd') in 0.010734 seconds 
-  Import took 0.014984 seconds .
+  Time since last request: 0.000236 seconds.
+  path: Assets/LOUIS/000_PREFAB/MESH_MC_Frog_O.prefab
+  artifactKey: Guid(c17c6fa2ad83ebd408378cc3a3ad804f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/MESH_MC_Frog_O.prefab using Guid(c17c6fa2ad83ebd408378cc3a3ad804f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '053816c23196aa142e6ffe04acf9ef5f') in 0.008448 seconds 
+  Import took 0.013089 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/YaPing/000_PREFAB/LD_Mesh/SM_Wood_Box.prefab
-  artifactKey: Guid(1ad0ac66c3fc08245bf11e4027e1f51f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/LD_Mesh/SM_Wood_Box.prefab using Guid(1ad0ac66c3fc08245bf11e4027e1f51f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71fa72c1ff9c70353b0bca9ff2a1984b') in 0.012616 seconds 
-  Import took 0.017290 seconds .
+  Time since last request: 2.397198 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD
+  artifactKey: Guid(4c37c1f8e43e6d7488932a370e7b7dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD using Guid(4c37c1f8e43e6d7488932a370e7b7dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e7071c07c60e9fda15136392cd84a81') in 0.008234 seconds 
+  Import took 0.013489 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.366051 seconds.
-  path: Assets/YaPing/000_PREFAB/Prefab_legacy
-  artifactKey: Guid(790775581a84990438c90928b134b4ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/Prefab_legacy using Guid(790775581a84990438c90928b134b4ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a9c84251f51e90977934047b1ca3c25') in 0.007511 seconds 
-  Import took 0.012514 seconds .
+  Time since last request: 23.700688 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chuncks
+  artifactKey: Guid(99c4a140c29c3a84ab7540c41af2ab31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chuncks using Guid(99c4a140c29c3a84ab7540c41af2ab31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efede23cc7e7e617717859de7ebcd424') in 0.005995 seconds 
+  Import took 0.011617 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.046091 seconds.
-  path: Assets/YaPing/000_PREFAB/Prefab_legacy/M_Roue_01.prefab
-  artifactKey: Guid(51d5811727143fd44a2f87416ae81079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/Prefab_legacy/M_Roue_01.prefab using Guid(51d5811727143fd44a2f87416ae81079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb8e4e6b95b5fa53db29dd05b1770099') in 0.015230 seconds 
-  Import took 0.020327 seconds .
+  Time since last request: 14.583919 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks
+  artifactKey: Guid(99c4a140c29c3a84ab7540c41af2ab31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks using Guid(99c4a140c29c3a84ab7540c41af2ab31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6cdd1787989d9b76363d2732dea16c0') in 0.007265 seconds 
+  Import took 0.013124 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000296 seconds.
-  path: Assets/YaPing/000_PREFAB/Prefab_legacy/M_roue_02.prefab
-  artifactKey: Guid(eb3bdb2444f39f04cbc8c6625a4e935c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/Prefab_legacy/M_roue_02.prefab using Guid(eb3bdb2444f39f04cbc8c6625a4e935c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a81bb3d3a7c11631e1fe056d9151b694') in 0.012880 seconds 
-  Import took 0.017160 seconds .
+  Time since last request: 4.757783 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks/SM_CHUNK_Wall_001.prefab
+  artifactKey: Guid(05939c09ac974154691a828a96ef906e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks/SM_CHUNK_Wall_001.prefab using Guid(05939c09ac974154691a828a96ef906e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb36a773cd2d5166767fcf86f2b7dab4') in 0.188690 seconds 
+  Import took 0.194071 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/YaPing/000_PREFAB/Prefab_legacy/SM_Train_Corps.prefab
-  artifactKey: Guid(ca120e84f7280774d9842a6e272eb81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/Prefab_legacy/SM_Train_Corps.prefab using Guid(ca120e84f7280774d9842a6e272eb81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '058a1c7e381bf57cc70f60478b9834bb') in 0.011210 seconds 
-  Import took 0.015915 seconds .
+  Time since last request: 109.116246 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks/SM_CHUNK_Floor_001.prefab
+  artifactKey: Guid(1f236120e100243458ceea68bb18b2b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks/SM_CHUNK_Floor_001.prefab using Guid(1f236120e100243458ceea68bb18b2b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '728e022a72729a1d3b392db593e2d893') in 0.024976 seconds 
+  Import took 0.030762 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/YaPing/000_PREFAB/Prefab_legacy/SM_Voiture.prefab
-  artifactKey: Guid(9b05653e14be15d429ab4e43f15ad7a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/000_PREFAB/Prefab_legacy/SM_Voiture.prefab using Guid(9b05653e14be15d429ab4e43f15ad7a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a535b3b1758c245b63200695284bb5f') in 0.012043 seconds 
-  Import took 0.016601 seconds .
+  Time since last request: 139.271890 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks/SM_CHUNK_Floor_002.prefab
+  artifactKey: Guid(b1a4101ae75b7b648b9b099633da5c7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks/SM_CHUNK_Floor_002.prefab using Guid(b1a4101ae75b7b648b9b099633da5c7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '469409dc2fbc50af47ecf692f1f118ef') in 0.022346 seconds 
+  Import took 0.027944 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.486251 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(f7b66c42ee145314083f073e99178630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(f7b66c42ee145314083f073e99178630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51602336e7d2d10a9dda8c438ed1d26b') in 0.005261 seconds 
-  Import took 0.010322 seconds .
+  Time since last request: 2611.772793 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks/SM_CHUNK_Angle_001.prefab
+  artifactKey: Guid(191f6edbb169c5c4f860b1ea0a9a7e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks/SM_CHUNK_Angle_001.prefab using Guid(191f6edbb169c5c4f860b1ea0a9a7e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c348ab33e197a4e00d400e074a629bf') in 0.073512 seconds 
+  Import took 0.079856 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006442 seconds.
+Registered in 0.135655 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.144 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1145ms)
+		BeginReloadAssembly (125ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (966ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (293ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (413ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (328ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3242 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.6 MB.
+System memory in use after: 149.8 MB.
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 3899.
+Total: 4.612400 ms (FindLiveObjects: 0.261600 ms CreateObjectMapping: 0.150500 ms MarkObjects: 4.115900 ms  DeleteObjects: 0.083100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 285.566779 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks/SM_CHUNK_Floor_003.prefab
+  artifactKey: Guid(5464181c25d37a24e86108d87aa84995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks/SM_CHUNK_Floor_003.prefab using Guid(5464181c25d37a24e86108d87aa84995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d703380461774455e8639a46c3c1dbc') in 0.148050 seconds 
+  Import took 0.153174 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 145.743119 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks/SM_CHUNK_Floor_004.prefab
+  artifactKey: Guid(b17d6e1e8061c6a40905c468b9295d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks/SM_CHUNK_Floor_004.prefab using Guid(b17d6e1e8061c6a40905c468b9295d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33394b84730901847ce12ca273fcd3e4') in 0.015269 seconds 
+  Import took 0.020300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.157908 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks/SM_CHUNK_Floor_005.prefab
+  artifactKey: Guid(fc318033f4cdb3d428a5397e5adf362a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks/SM_CHUNK_Floor_005.prefab using Guid(fc318033f4cdb3d428a5397e5adf362a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da293dcb8a8f3ef6e5c8de4e1c003065') in 0.018705 seconds 
+  Import took 0.023724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.185178 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks/SM_CHUNK_Floor_006.prefab
+  artifactKey: Guid(2c7d6d388b5b3bc45a0473e5212c5117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks/SM_CHUNK_Floor_006.prefab using Guid(2c7d6d388b5b3bc45a0473e5212c5117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c09286c0eda4015965b712376d544c9f') in 0.024140 seconds 
+  Import took 0.029574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 279.226484 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks/SM_CHUNK_ComplexFloor_001.prefab
+  artifactKey: Guid(94e55403da9b33944a17655a2cf1faa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks/SM_CHUNK_ComplexFloor_001.prefab using Guid(94e55403da9b33944a17655a2cf1faa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70dc1b8cef1caebc997ce53361e41bad') in 0.051837 seconds 
+  Import took 0.057308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.402504 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks/SM_CHUNK_ComplexFloor_000.prefab
+  artifactKey: Guid(75b631152884dbf469a5da6a840a3429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks/SM_CHUNK_ComplexFloor_000.prefab using Guid(75b631152884dbf469a5da6a840a3429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '143b8d47538ebbd5f98b680a9e441d14') in 0.026093 seconds 
+  Import took 0.032460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 70.186474 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks/SM_Complement_LD4_Atelier.prefab
+  artifactKey: Guid(8e67ef3dd0e89f848be2f0232403bcba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks/SM_Complement_LD4_Atelier.prefab using Guid(8e67ef3dd0e89f848be2f0232403bcba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9f4473b7e3b2539f2c30b245924b208') in 0.024750 seconds 
+  Import took 0.030744 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004483 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.075 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1075ms)
+		BeginReloadAssembly (120ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (898ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (321ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (316ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (69ms)
+				ProcessInitializeOnLoadAttributes (228ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3242 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.4 MB.
+System memory in use after: 150.6 MB.
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 3937.
+Total: 5.125600 ms (FindLiveObjects: 0.327600 ms CreateObjectMapping: 0.241800 ms MarkObjects: 4.478000 ms  DeleteObjects: 0.077100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004823 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.081 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1081ms)
+		BeginReloadAssembly (117ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (906ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (321ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (320ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (69ms)
+				ProcessInitializeOnLoadAttributes (232ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3242 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.5 MB.
+System memory in use after: 150.6 MB.
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 3939.
+Total: 5.094800 ms (FindLiveObjects: 0.258000 ms CreateObjectMapping: 0.150900 ms MarkObjects: 4.595900 ms  DeleteObjects: 0.088900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004358 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.142 seconds
+- Completed reload, in  0.907 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1145ms)
-		BeginReloadAssembly (259ms)
+	ReloadAssembly (907ms)
+		BeginReloadAssembly (98ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (19ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (83ms)
-		EndReloadAssembly (831ms)
-			LoadAssemblies (109ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (761ms)
+			LoadAssemblies (79ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (308ms)
+			SetupTypeCache (270ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (284ms)
+			SetupLoadedEditorAssemblies (265ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (1ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (61ms)
-				ProcessInitializeOnLoadAttributes (207ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (190ms)
 				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3242 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 149.5 MB.
-System memory in use after: 149.7 MB.
+System memory in use before: 150.5 MB.
+System memory in use after: 150.7 MB.
 
-Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 3900.
-Total: 5.364500 ms (FindLiveObjects: 0.244400 ms CreateObjectMapping: 0.126800 ms MarkObjects: 4.838500 ms  DeleteObjects: 0.153100 ms)
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 3941.
+Total: 6.533600 ms (FindLiveObjects: 0.273600 ms CreateObjectMapping: 0.233800 ms MarkObjects: 5.942700 ms  DeleteObjects: 0.082600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -896,4 +1080,12 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 628.690552 seconds.
+  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/LD1_Atelier_1.prefab
+  artifactKey: Guid(47bf6c5c2308ddf47b53402361651a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/LD1_Atelier_1.prefab using Guid(47bf6c5c2308ddf47b53402361651a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a542924b94edace5efb1237c5b4a4d4d') in 0.169815 seconds 
+  Import took 0.176097 seconds .
+
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
