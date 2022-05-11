@@ -11,6 +11,8 @@ public class ItemBuy : MonoBehaviour
 
     private void OnEnable()
     {
+        PlayerPrefs.SetInt("Item"+1,1);
+
         if (PlayerPrefs.GetInt("Item"+itemNo) == 1 )
         {
             ObjectBoughtUIUpdate();
