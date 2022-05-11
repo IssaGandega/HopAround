@@ -15,11 +15,11 @@ C:/Users/l.lafontaine/Documents/HopAround/HopAround
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62110
+59739
 Successfully changed project path to: C:/Users/l.lafontaine/Documents/HopAround/HopAround
 C:/Users/l.lafontaine/Documents/HopAround/HopAround
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 64.10 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 62.72 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.27f1 (e759542391ea)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2020.3.27f1/Editor/Data/Resources/UnitySubsystems
@@ -35,72 +35,72 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2020.3.27f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity 2020.3.27f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56432
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56156
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2020.3.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001420 seconds.
+Registered in 0.001488 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 57.59 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 53.22 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.512 seconds
+- Completed reload, in  0.499 seconds
 Domain Reload Profiling:
-	ReloadAssembly (513ms)
-		BeginReloadAssembly (50ms)
+	ReloadAssembly (499ms)
+		BeginReloadAssembly (55ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (405ms)
-			LoadAssemblies (48ms)
+		EndReloadAssembly (385ms)
+			LoadAssemblies (54ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (123ms)
+			SetupTypeCache (119ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (170ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (159ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (58ms)
+				RefreshPlugins (53ms)
 				BeforeProcessingInitializeOnLoad (7ms)
-				ProcessInitializeOnLoadAttributes (75ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
+				ProcessInitializeOnLoadAttributes (70ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004525 seconds.
+Registered in 0.004510 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 58.62 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 56.65 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.034 seconds
+- Completed reload, in  1.024 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1035ms)
-		BeginReloadAssembly (125ms)
+	ReloadAssembly (1025ms)
+		BeginReloadAssembly (121ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (857ms)
-			LoadAssemblies (83ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (855ms)
+			LoadAssemblies (80ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (285ms)
+			SetupTypeCache (275ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (343ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (342ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (59ms)
-				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (193ms)
+				RefreshPlugins (57ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (196ms)
 				ProcessInitializeOnLoadMethodAttributes (7ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
@@ -109,15 +109,15 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3394 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 153.5 MB.
 System memory in use after: 153.7 MB.
 
 Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 3817.
-Total: 4.604500 ms (FindLiveObjects: 0.259800 ms CreateObjectMapping: 0.185000 ms MarkObjects: 4.077400 ms  DeleteObjects: 0.081300 ms)
+Total: 4.691400 ms (FindLiveObjects: 0.243400 ms CreateObjectMapping: 0.195800 ms MarkObjects: 4.173400 ms  DeleteObjects: 0.077900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,129 +131,91 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/ART/Louis/006_RENDERPIPELINE/UniversalRenderPipelineAsset.asset
-  artifactKey: Guid(eed9f5ab89968514f9b9d85284d9258b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ART/Louis/006_RENDERPIPELINE/UniversalRenderPipelineAsset.asset using Guid(eed9f5ab89968514f9b9d85284d9258b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a0d9b1b8e48d9bc6202bc35c2d0fadd') in 0.025226 seconds 
-  Import took 0.029605 seconds .
+  path: Assets/ART/Louis
+  artifactKey: Guid(d6289b6e9fdc7024eb7d999847567c8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ART/Louis using Guid(d6289b6e9fdc7024eb7d999847567c8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73e7a1fd3c462f382cf7e1bd1ef010ff') in 0.011076 seconds 
+  Import took 0.015410 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/ART/Louis/006_RENDERPIPELINE
-  artifactKey: Guid(1fd34dac78f8de147b0922c13c92484b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ART/Louis/006_RENDERPIPELINE using Guid(1fd34dac78f8de147b0922c13c92484b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe4a611e19d1005e319b75a127a39f6a') in 0.007705 seconds 
-  Import took 0.012174 seconds .
+  Time since last request: 57.038955 seconds.
+  path: Assets/Main Camera Profile.asset
+  artifactKey: Guid(2136ff5501a32a049883c64382fd5d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Main Camera Profile.asset using Guid(2136ff5501a32a049883c64382fd5d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99f57c14051b79802c08693ea29b2292') in 0.029070 seconds 
+  Import took 0.034459 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 52.211447 seconds.
-  path: Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png
-  artifactKey: Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png using Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a98a6f6cb214bf475367ce8143b462f') in 0.033888 seconds 
-  Import took 0.038722 seconds .
+  Time since last request: 19.186445 seconds.
+  path: Assets/LOUIS/010_PostProcess
+  artifactKey: Guid(50d39e2e3787166469fb272feb3b8dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/010_PostProcess using Guid(50d39e2e3787166469fb272feb3b8dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d3cd74dcc94b6831c57c156d5da70bc') in 0.007782 seconds 
+  Import took 0.014516 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.921578 seconds.
-  path: Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png
-  artifactKey: Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png using Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd998111994d9a6bf067a12322abdb87f') in 0.041647 seconds 
-  Import took 0.046225 seconds .
+  Time since last request: 26.554995 seconds.
+  path: Assets/LOUIS/010_PostProcess/PostProcess_Day.asset
+  artifactKey: Guid(2136ff5501a32a049883c64382fd5d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LOUIS/010_PostProcess/PostProcess_Day.asset using Guid(2136ff5501a32a049883c64382fd5d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f74a8b051ced4b23714c47728f7cce7e') in 0.006744 seconds 
+  Import took 0.011524 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 97.984221 seconds.
-  path: Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png
-  artifactKey: Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png using Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0503a6800a762e5676060997ecbd7a9c') in 0.019324 seconds 
-  Import took 0.024480 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005196 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.938 seconds
+Domain Reload Profiling:
+	ReloadAssembly (938ms)
+		BeginReloadAssembly (103ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (785ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (281ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (284ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (206ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3246 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 141.6 MB.
+System memory in use after: 141.8 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 9.478529 seconds.
-  path: Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png
-  artifactKey: Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png using Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28b3bdb83d26167c77449eaf31afa0ce') in 0.016488 seconds 
-  Import took 0.021083 seconds .
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 3819.
+Total: 4.550300 ms (FindLiveObjects: 0.241200 ms CreateObjectMapping: 0.131700 ms MarkObjects: 4.087100 ms  DeleteObjects: 0.089200 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 2.947820 seconds.
-  path: Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png
-  artifactKey: Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png using Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '313bfba4f6f507e58f7aa8be608383b9') in 0.017375 seconds 
-  Import took 0.021970 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.962825 seconds.
-  path: Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png
-  artifactKey: Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png using Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '217b773c48fc8e79e623077f1a0a0bd5') in 0.019452 seconds 
-  Import took 0.024071 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.118022 seconds.
-  path: Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png
-  artifactKey: Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png using Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e80f259df444ea190af693569608db5b') in 0.016274 seconds 
-  Import took 0.021117 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.744813 seconds.
-  path: Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png
-  artifactKey: Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png using Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3f10f28a2143564e62111ab94b65da4') in 0.020475 seconds 
-  Import took 0.025214 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.073982 seconds.
-  path: Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png
-  artifactKey: Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png using Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c85ce712e9ddbc6056869f2813d0c858') in 0.019741 seconds 
-  Import took 0.024235 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.211955 seconds.
-  path: Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png
-  artifactKey: Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png using Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43c75b71a5bea11ecd43568dcb145ddf') in 0.018614 seconds 
-  Import took 0.024144 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.385408 seconds.
-  path: Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png
-  artifactKey: Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png using Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8d76791e0a4a859356603f8f49b7f43') in 0.022212 seconds 
-  Import took 0.027270 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.415956 seconds.
-  path: Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png
-  artifactKey: Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png using Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86fe8d5046f3e228c8d822d9bbb85385') in 0.018878 seconds 
-  Import took 0.023537 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.145946 seconds.
-  path: Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png
-  artifactKey: Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png using Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddb1a8af4e0481d9cc338eeb10015f11') in 0.020518 seconds 
-  Import took 0.026350 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.759124 seconds.
-  path: Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png
-  artifactKey: Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ART/Louis/007_SPRITE/Texture_Background_512X256.png using Guid(12de408da3e21754c93d36b14670ad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '290d609e96bfb117fdf9eb304dd30583') in 0.020689 seconds 
-  Import took 0.025587 seconds .
-
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
