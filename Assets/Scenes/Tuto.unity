@@ -166,7 +166,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1011170511}
+  - {fileID: 4457234287275328998}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5117,12 +5117,6 @@ PrefabInstance:
 --- !u!1 &1011170510 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4457234288151755051, guid: 006db85591ba06a4f99ceaef3e187a7f,
-    type: 3}
-  m_PrefabInstance: {fileID: 4457234287275328997}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &1011170511 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4457234288151755050, guid: 006db85591ba06a4f99ceaef3e187a7f,
     type: 3}
   m_PrefabInstance: {fileID: 4457234287275328997}
   m_PrefabAsset: {fileID: 0}
@@ -18344,6 +18338,11 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 963194227}
+    - target: {fileID: 3314515447334205155, guid: af91097a6259da24f8055902aaa14a2d,
+        type: 3}
+      propertyPath: m_TranslationOffsets.Array.data[0].x
+      value: 0.0017113686
+      objectReference: {fileID: 0}
     - target: {fileID: 3705289844060961321, guid: af91097a6259da24f8055902aaa14a2d,
         type: 3}
       propertyPath: m_Name
@@ -18545,6 +18544,12 @@ PrefabInstance:
       objectReference: {fileID: 963194227}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 006db85591ba06a4f99ceaef3e187a7f, type: 3}
+--- !u!4 &4457234287275328998 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4784546737435764826, guid: 006db85591ba06a4f99ceaef3e187a7f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4457234287275328997}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7678925373591978721
 PrefabInstance:
   m_ObjectHideFlags: 0
