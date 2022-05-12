@@ -7,6 +7,7 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager instance;
     [SerializeField] private AudioSource musicSource, effectsSource;
+    [SerializeField] private AudioClip frogStart;
 
     private void Awake()
     {
@@ -19,6 +20,11 @@ public class SoundManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private void Start()
+    {
+        PlaySound(frogStart);
     }
 
     public void PlaySound(AudioClip clip)

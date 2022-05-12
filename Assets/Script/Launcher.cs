@@ -1,32 +1,36 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
-public class Jumper : MonoBehaviour
+public class Launcher : MonoBehaviour
 {
     public Animator animator;
     public float force;
     [SerializeField] private float speedInTime;
+    [SerializeField] private Transform launcherTransform;
     [SerializeField]private Transform[] waypoints;
     private Transform currentWaypoint;
     private int currentWaypointNo;
     private float distance;
+    private bool cD;
     [SerializeField] private bool move = false;
-    public bool playerIsEjected;
     [SerializeField] private Transform playerAnimPos;
-    [SerializeField] private JumperAnimatorEvent animatorEvent;
     public GameObject player;
+    
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Player"))
+        if (col.CompareTag("Player") && (cD == false))
         {
+            move = false;
+            player = col.gameObject;
+            launcherTransform.DOKill(false);
+            player.transform.DOMove(playerAnimPos.position,0.4f);
             ChangeState();
             animator.SetInteger("State" ,1);
-            player = col.gameObject;
-            playerIsEjected = true;
-            animatorEvent.player = player;
+            StartCoroutine(CD());
         }
     }
 
@@ -40,11 +44,13 @@ public class Jumper : MonoBehaviour
     }
 
 
-    private IEnumerator CD()
+    public IEnumerator CD()
     {
+        cD = true;
         yield return new WaitForSeconds(1f);
         animator.SetInteger("State" ,0);
-        ChangeState();
+        cD = false;
+        move = true;
     }
     
     private void OnEnable()
@@ -56,14 +62,9 @@ public class Jumper : MonoBehaviour
     {
         if (move)
         {
-            transform.DOMove(currentWaypoint.position, speedInTime);
+            launcherTransform.DOMove(currentWaypoint.position, speedInTime);
         }
 
-        if (playerIsEjected)
-        {
-            player.transform.position = playerAnimPos.position;
-        }
-        
         distance = Vector3.Distance(currentWaypoint.position, transform.position);
 
         if (distance < 1)
@@ -86,11 +87,11 @@ public class Jumper : MonoBehaviour
         currentWaypoint = waypoints[currentWaypointNo];
         if (currentWaypoint.transform.position.x < transform.position.x)
         {
-            transform.rotation = new Quaternion(0,0,0,0);
+            launcherTransform.DORotate(new Vector3(0,90,0),0.1f);
         }
         else
         {
-            transform.rotation = new Quaternion(0,180,0,0);
+            launcherTransform.DORotate(new Vector3(0,-90,0),0.1f);
         }
  
     }
@@ -99,6 +100,7 @@ public class Jumper : MonoBehaviour
     {
         move = !move;
     }
+  
 
 
 
