@@ -585,6 +585,12 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 7629882184154148915}
   m_PrefabAsset: {fileID: 0}
+--- !u!137 &6987627798017603447 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 656332704931710788, guid: ac22ce391f380eb46adf007bdee6f735,
+    type: 3}
+  m_PrefabInstance: {fileID: 7629882184154148915}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1773428102 &3314515447334205155
 ParentConstraint:
   m_ObjectHideFlags: 0
@@ -624,3 +630,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 7197252360270333283}
+--- !u!114 &7893911972508886708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597169232387166824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a2e850c3891cd469c720bae11cf125, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mesh: {fileID: 6987627798017603447}
+  material:
+  - {fileID: 2100000, guid: 2c3fe38ec88e5754fbd43aedd4328b30, type: 2}
+  - {fileID: 2100000, guid: 2c3fe38ec88e5754fbd43aedd4328b30, type: 2}
+  - {fileID: 2100000, guid: 8463cc4855014cd4eac57c7d1e082eac, type: 2}
+  - {fileID: 2100000, guid: 50810bcdd1f2e394ebf919ba2b920857, type: 2}
+  - {fileID: 2100000, guid: a1a2dc23e985b2a43958b3af2251a4f4, type: 2}
+  - {fileID: 2100000, guid: 2ff324ae3addc6548a1f99a35b859802, type: 2}
