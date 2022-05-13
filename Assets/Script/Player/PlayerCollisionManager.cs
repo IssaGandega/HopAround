@@ -6,6 +6,11 @@ public class PlayerCollisionManager : MonoBehaviour
     [SerializeField] private Player player;
     [SerializeField] private Transform lastCheckpointPos;
     private Vector3 spawnPoint;
+    
+    [SerializeField] private AudioClip frogDeath;
+    [SerializeField] private AudioClip frogContact;
+    [SerializeField] private AudioClip checkpoint;
+    
 
     private void Start()
     {
@@ -17,6 +22,7 @@ public class PlayerCollisionManager : MonoBehaviour
        
         if (other.gameObject.CompareTag("FallZone"))
         {
+            SoundManager.instance.PlaySound(frogDeath);
             if (lastCheckpointPos)
             {
                 player.transform.position = lastCheckpointPos.position;
@@ -28,6 +34,7 @@ public class PlayerCollisionManager : MonoBehaviour
         }
         else if (other.gameObject.layer == 6)
         {
+            SoundManager.instance.PlaySound(frogContact);
             player.isJumping = false;
         }
     }
@@ -36,6 +43,7 @@ public class PlayerCollisionManager : MonoBehaviour
     {
         if (other.gameObject.CompareTag("CheckPoint"))
         {
+            SoundManager.instance.PlaySound(checkpoint);
             lastCheckpointPos = other.gameObject.transform;
             other.gameObject.GetComponent<BoxCollider2D>().enabled = false;
             other.gameObject.GetComponentInChildren<Animator>().SetBool("Go",true);

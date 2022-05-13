@@ -75,12 +75,9 @@ public class Player : MonoBehaviour
     #region Sounds
 
     [Space] [Header("Sounds")]
-    [SerializeField] private AudioClip frogDeath;
     [SerializeField] private AudioClip frogJump;
     [SerializeField] private AudioClip frogWalking;
-    [SerializeField] private AudioClip frogContact;
     [SerializeField] private AudioClip frogTongue;
-    [SerializeField] private AudioClip frogMecanism;
     
     #endregion
     
@@ -237,7 +234,6 @@ public class Player : MonoBehaviour
         //Reset Tongue
         if (Input.GetTouch(0).phase == TouchPhase.Began)
         {
-            Debug.Log("Sheeesh");
             point = cam.ScreenPointToRay(Input.GetTouch(0).position).GetPoint(10);
             hit = Physics2D.Raycast(transform.position, point-transform.position,7,layer);
             //Debug.DrawRay(transform.position,(point-transform.position).normalized * 7,Color.magenta,3f);
