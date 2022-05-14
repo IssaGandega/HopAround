@@ -1,22 +1,37 @@
-using System.Collections;
-using System.Collections.Generic;
-using DG.Tweening;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemBuy : MonoBehaviour
 {
     [SerializeField] private int itemNo;
     [SerializeField] private int price;
-    [SerializeField] private GameObject canvasConfirmBuy;
-    [SerializeField] private ItemLoader loader;
+    [SerializeField] private Sprite itemBoughtSprite;
+    [SerializeField] private Image bgSpriteRenderer;
+    [SerializeField] private GameObject priceText;
 
-
-    public void OpenConfirmWindow()
+    private void OnEnable()
     {
-        canvasConfirmBuy.SetActive(true);
-        loader.SetItem(price,itemNo);
-        canvasConfirmBuy.transform.localScale = Vector3.zero;
-        canvasConfirmBuy.transform.DOScale(1, 0.5f);
-     
-    }   
+        PlayerPrefs.SetInt("Item"+1,1);
+
+        if (PlayerPrefs.GetInt("Item"+itemNo) == 1 )
+        {
+            ObjectBoughtUIUpdate();
+        }
+    }
+
+    public void Buy()
+    {
+        if (price < PlayerPrefs.GetInt("Coins"))
+        {
+            PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins")-price);
+            PlayerPrefs.SetInt("Item"+itemNo, 1);
+            ObjectBoughtUIUpdate();
+        }
+    }
+
+    private void ObjectBoughtUIUpdate()
+    {
+        bgSpriteRenderer.sprite = itemBoughtSprite;
+        priceText.SetActive(false);
+    }
 }
