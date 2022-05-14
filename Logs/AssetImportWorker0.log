@@ -15,11 +15,11 @@ C:/uni/Hop Around/HopAround
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59561
+61129
 Successfully changed project path to: C:/uni/Hop Around/HopAround
 C:/uni/Hop Around/HopAround
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 73.00 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 77.37 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.27f1 (e759542391ea)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Resources/UnitySubsystems
@@ -35,31 +35,31 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56744
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56984
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001409 seconds.
+Registered in 0.001442 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 66.15 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 66.17 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.476 seconds
+- Completed reload, in  0.480 seconds
 Domain Reload Profiling:
-	ReloadAssembly (477ms)
-		BeginReloadAssembly (48ms)
+	ReloadAssembly (481ms)
+		BeginReloadAssembly (47ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (375ms)
-			LoadAssemblies (46ms)
+		EndReloadAssembly (379ms)
+			LoadAssemblies (45ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
 			SetupTypeCache (114ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (22ms)
-			SetupLoadedEditorAssemblies (160ms)
+			SetupLoadedEditorAssemblies (162ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
@@ -73,34 +73,34 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005217 seconds.
+Registered in 0.005222 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 68.43 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 69.44 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.058 seconds
+- Completed reload, in  1.057 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1059ms)
-		BeginReloadAssembly (120ms)
+	ReloadAssembly (1058ms)
+		BeginReloadAssembly (116ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (889ms)
-			LoadAssemblies (89ms)
+		EndReloadAssembly (894ms)
+			LoadAssemblies (87ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (276ms)
+			SetupTypeCache (273ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (386ms)
+			SetupLoadedEditorAssemblies (397ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (68ms)
-				BeforeProcessingInitializeOnLoad (85ms)
-				ProcessInitializeOnLoadAttributes (193ms)
+				RefreshPlugins (69ms)
+				BeforeProcessingInitializeOnLoad (86ms)
+				ProcessInitializeOnLoadAttributes (202ms)
 				ProcessInitializeOnLoadMethodAttributes (32ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
@@ -109,15 +109,15 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3984 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 171.7 MB.
-System memory in use after: 171.9 MB.
+System memory in use before: 171.8 MB.
+System memory in use after: 172.0 MB.
 
 Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 4382.
-Total: 5.450600 ms (FindLiveObjects: 0.273700 ms CreateObjectMapping: 0.157100 ms MarkObjects: 4.905300 ms  DeleteObjects: 0.113600 ms)
+Total: 6.030300 ms (FindLiveObjects: 0.296900 ms CreateObjectMapping: 0.142300 ms MarkObjects: 5.474700 ms  DeleteObjects: 0.115500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,32 +131,48 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/YaPing/005_SCENE/LVL4 Test DA 1.unity
-  artifactKey: Guid(12d647967e094fa419962b7ca2c0324d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YaPing/005_SCENE/LVL4 Test DA 1.unity using Guid(12d647967e094fa419962b7ca2c0324d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '874db0ab5067fc7a84297c490a5b83cd') in 0.014991 seconds 
-  Import took 0.019832 seconds .
+  path: Assets/YaPing/000_PREFAB/Chunks/Chunk_haut_plateau.prefab
+  artifactKey: Guid(53789e5283d3f52488e16254d22aa392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YaPing/000_PREFAB/Chunks/Chunk_haut_plateau.prefab using Guid(53789e5283d3f52488e16254d22aa392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baae7ec245dc24bcc49aafa015311355') in 0.168410 seconds 
+  Import took 0.173810 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 444.652982 seconds.
-  path: Assets/LOUIS/001_MESH
-  artifactKey: Guid(03d06ca1f76789e4cbcf344258cb6c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/001_MESH using Guid(03d06ca1f76789e4cbcf344258cb6c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5036aa572cdcd4cdd7df689eeec44111') in 0.005627 seconds 
-  Import took 0.011435 seconds .
+  Time since last request: 61.403096 seconds.
+  path: Assets/YaPing/000_PREFAB/Chunks/SM_Chunk_haute_plateforme.prefab
+  artifactKey: Guid(bbaa059e03d46b04fab123f362a157bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YaPing/000_PREFAB/Chunks/SM_Chunk_haute_plateforme.prefab using Guid(bbaa059e03d46b04fab123f362a157bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a857384e975e21caca51bd69285b5023') in 0.016774 seconds 
+  Import took 0.023599 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.610175 seconds.
-  path: Assets/LOUIS/003_SHADER
-  artifactKey: Guid(41d9cf8067bfd7a47aa6d9c63401a005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/003_SHADER using Guid(41d9cf8067bfd7a47aa6d9c63401a005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f88fa7aaa8ed0f15fdd030a1bc790ab') in 0.011926 seconds 
-  Import took 0.017390 seconds .
+  Time since last request: 334.833811 seconds.
+  path: Assets/YaPing/000_PREFAB/Decors/SM_coffe_cup.prefab
+  artifactKey: Guid(974894385690bab469f6a2f7d0fbcd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YaPing/000_PREFAB/Decors/SM_coffe_cup.prefab using Guid(974894385690bab469f6a2f7d0fbcd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da9bf4157c0fa7b0da3c5eab44d0adc5') in 0.015142 seconds 
+  Import took 0.021020 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.586644 seconds.
-  path: Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks
-  artifactKey: Guid(99c4a140c29c3a84ab7540c41af2ab31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LOUIS/000_PREFAB/Prefab_Enviro_LD/Chunks using Guid(99c4a140c29c3a84ab7540c41af2ab31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5af1113c033f93d726298964a8f857e1') in 0.004999 seconds 
-  Import took 0.010105 seconds .
+  Time since last request: 36.406639 seconds.
+  path: Assets/YaPing/000_PREFAB/Decors/SM_Nuage.prefab
+  artifactKey: Guid(c071ea781b04c954094e8f814b264804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YaPing/000_PREFAB/Decors/SM_Nuage.prefab using Guid(c071ea781b04c954094e8f814b264804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bd220aa6033e8d8cbd87744a2e7bf76') in 0.010983 seconds 
+  Import took 0.016514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.498971 seconds.
+  path: Assets/YaPing/000_PREFAB/Decors/SM_etoile.prefab
+  artifactKey: Guid(f5ec2c47d7854b143b376d26d8c657b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YaPing/000_PREFAB/Decors/SM_etoile.prefab using Guid(f5ec2c47d7854b143b376d26d8c657b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b6f94a536b406c1abedec14ad9f2abf') in 0.011348 seconds 
+  Import took 0.016875 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1176.148523 seconds.
+  path: Assets/YaPing/000_PREFAB/Chunks/SM_chunk_haute_plateforme_double.prefab
+  artifactKey: Guid(48ce69fea879ef240adb8c02e45c09f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YaPing/000_PREFAB/Chunks/SM_chunk_haute_plateforme_double.prefab using Guid(48ce69fea879ef240adb8c02e45c09f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36497b2b9d4f412e7adfb1503316ae54') in 0.024011 seconds 
+  Import took 0.030775 seconds .
 
