@@ -91,6 +91,7 @@ public class Player : MonoBehaviour
     private float xAxisAccel;
     private float coyoteTimeCounter;
     private float bufferTimeCounter;
+    [SerializeField] private GameObject laboule;
 
     private void OnEnable()
     {
@@ -243,7 +244,7 @@ public class Player : MonoBehaviour
         {
             point = cam.ScreenPointToRay(Input.GetTouch(0).position).GetPoint(10);
             point.z = transform.position.z;
-            Collider2D hit = Physics2D.OverlapPoint(point,layer);
+            Collider2D hit = Physics2D.OverlapCircle(point,2,layer);
             //Debug.DrawRay(transform.position,(point-transform.position).normalized * 7,Color.magenta,3f);
             
             if (hit != false)
