@@ -62,6 +62,7 @@ public class Tongue : MonoBehaviour
                 line.enabled = false;
                 if (pointCanMove)
                 {
+                    PlayerAnimatorManager.instance.AnimatorStateChange(4);
                     transform.parent = touchedObj;
                     transform.position = touchedObj.position;
                     rb.gravityScale = 0;

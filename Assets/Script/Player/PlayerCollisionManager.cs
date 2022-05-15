@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class PlayerCollisionManager : MonoBehaviour
@@ -17,14 +18,11 @@ public class PlayerCollisionManager : MonoBehaviour
        
         if (other.gameObject.CompareTag("FallZone"))
         {
-            if (lastCheckpointPos)
-            {
-                player.transform.position = lastCheckpointPos.position;
-            }
-            else
-            {
-                player.transform.position = spawnPoint;
-            }
+            SoundManager.instance.PlaySound(player.frogDeath);
+            player.enabled = false;
+            PlayerAnimatorManager.instance.AnimatorStateChange(3);
+            StartCoroutine(PlayerRestart());
+
         }
         else if (other.gameObject.layer == 6)
         {
@@ -40,5 +38,21 @@ public class PlayerCollisionManager : MonoBehaviour
             other.gameObject.GetComponent<BoxCollider2D>().enabled = false;
             other.gameObject.GetComponentInChildren<Animator>().SetBool("Go",true);
         }
+    }
+
+    public IEnumerator PlayerRestart()
+    {
+        yield return new WaitForSeconds(1.4f);
+        player.enabled = true;
+        PlayerAnimatorManager.instance.AnimatorStateChange(0);
+        if (lastCheckpointPos != null)
+        {
+            player.transform.position = lastCheckpointPos.position;
+        }
+        else
+        {
+            player.transform.position = spawnPoint;
+        }
+
     }
 }

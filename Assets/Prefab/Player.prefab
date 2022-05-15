@@ -134,7 +134,6 @@ MonoBehaviour:
   accelPower: 1
   stopPower: 0.5
   turnPower: 1
-  frogStart: {fileID: 8300000, guid: c2ced61e5d9e75348b8fc2e96ba61a49, type: 3}
   frogDeath: {fileID: 8300000, guid: 8488588bbbcf28342bce5e9ffa9c4f6d, type: 3}
   frogJump: {fileID: 8300000, guid: e0672571e724bc849b26adbda937217b, type: 3}
   frogWalking: {fileID: 8300000, guid: a8a7916ef56e03c4f83d4e2e6262be03, type: 3}
@@ -199,13 +198,6 @@ MonoBehaviour:
   playerContainer: {fileID: 3705289844060961324}
   player: {fileID: 978449559491475704}
   touchedObj: {fileID: 0}
-  tongueProgressionCurve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  tongueProgressionSpeed: 0
   frogReachedPoint: 0
 --- !u!114 &2546195356535171387
 MonoBehaviour:
@@ -603,7 +595,7 @@ ParentConstraint:
   m_TranslationAtRest: {x: 0.001711607, y: -0.53499985, z: 0.0026064864}
   m_RotationAtRest: {x: 0, y: 180, z: 0}
   m_TranslationOffsets:
-  - {x: 0.001711607, y: -0.53499985, z: 0.0026064864}
+  - {x: 0.0017113686, y: -0.53499985, z: 0.002606511}
   m_RotationOffsets:
   - {x: 0, y: 180, z: 0}
   m_AffectTranslationX: 1
@@ -644,8 +636,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mesh: {fileID: 6987627798017603447}
   material:
-  - {fileID: 2100000, guid: 2c3fe38ec88e5754fbd43aedd4328b30, type: 2}
-  - {fileID: 2100000, guid: 2c3fe38ec88e5754fbd43aedd4328b30, type: 2}
+  - {fileID: 2100000, guid: ece75f241bb77ad41bf79dc6dd86a21a, type: 2}
+  - {fileID: 2100000, guid: ece75f241bb77ad41bf79dc6dd86a21a, type: 2}
   - {fileID: 2100000, guid: 8463cc4855014cd4eac57c7d1e082eac, type: 2}
   - {fileID: 2100000, guid: 50810bcdd1f2e394ebf919ba2b920857, type: 2}
   - {fileID: 2100000, guid: a1a2dc23e985b2a43958b3af2251a4f4, type: 2}

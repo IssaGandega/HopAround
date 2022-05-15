@@ -75,7 +75,7 @@ public class Player : MonoBehaviour
     #region Sounds
 
     [Space] [Header("Sounds")]
-    [SerializeField] private AudioClip frogDeath;
+    public AudioClip frogDeath;
     [SerializeField] private AudioClip frogJump;
     [SerializeField] private AudioClip frogWalking;
     [SerializeField] private AudioClip frogContact;
