@@ -11,6 +11,11 @@ public class WorldMapMvm : MonoBehaviour
 
     private Vector2 beginTouchPos, endTouchPos;
 
+    private void Start()
+    {
+        SoundManager.instance.PlayMapMusic();
+    }
+
     private void Update()
     {
         if (Input.touchCount > 0)

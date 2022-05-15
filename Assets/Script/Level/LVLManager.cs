@@ -16,6 +16,7 @@ public class LVLManager : MonoBehaviour
     public void Start()
     {
         instance = this;
+        SoundManager.instance.PlayLevelMusic();
     }
 
     public void AddToad()
