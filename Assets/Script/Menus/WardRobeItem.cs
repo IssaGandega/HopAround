@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,7 +11,9 @@ public class WardRobeItem : MonoBehaviour
     [SerializeField] private GameObject Selected;
     [SerializeField] private SkinnedMeshRenderer frogDisplay;
     [SerializeField] private Material itemMaterial;
-    
+
+
+
     void OnEnable()
     {
         if (PlayerPrefs.GetInt("SkinEquip") == itemID)

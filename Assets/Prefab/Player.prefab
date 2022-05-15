@@ -137,6 +137,7 @@ MonoBehaviour:
   frogJump: {fileID: 8300000, guid: e0672571e724bc849b26adbda937217b, type: 3}
   frogWalking: {fileID: 8300000, guid: a8a7916ef56e03c4f83d4e2e6262be03, type: 3}
   frogTongue: {fileID: 8300000, guid: 7ddec160a0eb9974aa877e769cd5e107, type: 3}
+  frogStart: {fileID: 8300000, guid: c2ced61e5d9e75348b8fc2e96ba61a49, type: 3}
 --- !u!50 &978449559491475708
 Rigidbody2D:
   serializedVersion: 4
@@ -232,9 +233,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.07}
+  m_Offset: {x: 0, y: 0.02}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.59
 --- !u!1 &3705289844060961321
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,7 +599,7 @@ ParentConstraint:
   m_TranslationAtRest: {x: 0.001711607, y: -0.53499985, z: 0.0026064864}
   m_RotationAtRest: {x: 0, y: 180, z: 0}
   m_TranslationOffsets:
-  - {x: 0.0017089844, y: -0.53499985, z: 0.002606511}
+  - {x: 0.001711607, y: -0.53499985, z: 0.0026064864}
   m_RotationOffsets:
   - {x: 0, y: 180, z: 0}
   m_AffectTranslationX: 1

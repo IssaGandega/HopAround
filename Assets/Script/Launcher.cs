@@ -11,6 +11,9 @@ public class Launcher : MonoBehaviour
     [SerializeField] private float speedInTime;
     [SerializeField] private Transform launcherTransform;
     [SerializeField]private Transform[] waypoints;
+    [SerializeField] private AudioClip springSound;
+    [SerializeField] private AudioClip launcherSound;
+    [SerializeField] private AudioClip launcherWalking;
     private Transform currentWaypoint;
     private int currentWaypointNo;
     private float distance;
@@ -24,6 +27,7 @@ public class Launcher : MonoBehaviour
     {
         if (col.CompareTag("Player") && (cD == false))
         {
+            SoundManager.instance.PlaySound(launcherSound);
             move = false;
             player = col.gameObject;
             launcherTransform.DOKill(false);
@@ -34,7 +38,7 @@ public class Launcher : MonoBehaviour
         }
     }
 
-
+    
 
     public void Tongued()
     {
@@ -53,7 +57,7 @@ public class Launcher : MonoBehaviour
         move = true;
     }
     
-    private void OnEnable()
+    private void Start()
     {
         ChangeWaypoint();
     }
@@ -87,10 +91,12 @@ public class Launcher : MonoBehaviour
         currentWaypoint = waypoints[currentWaypointNo];
         if (currentWaypoint.transform.position.x < transform.position.x)
         {
+            //SoundManager.instance.PlaySound(launcherWalking);
             launcherTransform.DORotate(new Vector3(0,90,0),0.1f);
         }
         else
         {
+            //SoundManager.instance.PlaySound(launcherWalking);
             launcherTransform.DORotate(new Vector3(0,-90,0),0.1f);
         }
  

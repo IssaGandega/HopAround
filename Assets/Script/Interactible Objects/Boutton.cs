@@ -15,7 +15,6 @@ public class Boutton : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log(col.gameObject.name);
         if (col.gameObject.CompareTag("Player"))
         {
             if (!once)

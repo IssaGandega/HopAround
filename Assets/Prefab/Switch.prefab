@@ -58,7 +58,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 1}
+  m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
 --- !u!50 &1088812732731502981
 Rigidbody2D:
@@ -100,6 +100,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   animator: {fileID: 8453946203256599268}
+  switchSound: {fileID: 8300000, guid: 490fa95f06b751e4f8263ce9d1ad1b09, type: 3}
 --- !u!1001 &549310327708637766
 PrefabInstance:
   m_ObjectHideFlags: 0
