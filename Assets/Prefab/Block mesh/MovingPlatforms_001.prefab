@@ -69,7 +69,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 839453622454363292}
-  - component: {fileID: 839453622454363290}
   - component: {fileID: 839453622454363291}
   - component: {fileID: 839453622454363287}
   m_Layer: 6
@@ -94,14 +93,6 @@ Transform:
   m_Father: {fileID: 839453622791722750}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &839453622454363290
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 839453622454363293}
-  m_Mesh: {fileID: 0}
 --- !u!61 &839453622454363291
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -305,6 +296,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MI_MovingPlateforme
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677919957393314594, guid: 93670252c7916fc45b78409c35ea40d5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6157103201704453039, guid: 93670252c7916fc45b78409c35ea40d5,
         type: 3}
