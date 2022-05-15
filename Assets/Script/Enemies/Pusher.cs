@@ -18,12 +18,14 @@ public class Pusher : MonoBehaviour, ITonguable
     private int currentWaypointNo;
     private float distance;
     [SerializeField] private bool move = false;
+    [SerializeField] private AudioClip pusherSound;
 
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Player"))
         {
             ChangeState();
+            SoundManager.instance.PlaySound(pusherSound);
             animator.SetInteger("State" ,1);
             if (isFacingLeft)
             {
