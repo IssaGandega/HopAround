@@ -10,16 +10,18 @@ public class Boutton : MonoBehaviour
     [SerializeField] private bool hastTime;
     [SerializeField] private float time;
     [SerializeField] private Animator animator;
+    [SerializeField] private AudioClip buttonSound;
+    [SerializeField] private AudioClip buttonSoundTime;
     private bool once;
     
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log(col.gameObject.name);
         if (col.gameObject.CompareTag("Player"))
         {
             if (!once)
             {
+                SoundManager.instance.PlaySound(buttonSound);
                 eventsOnPressed.Invoke();
                 animator.SetBool("Go",true);
 
@@ -27,6 +29,7 @@ public class Boutton : MonoBehaviour
         
             if (hastTime)
             {
+                SoundManager.instance.PlaySound(buttonSoundTime);
                 StartCoroutine(Wait());
             }
             else

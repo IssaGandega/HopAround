@@ -9,11 +9,13 @@ public class Switch : MonoBehaviour
     [SerializeField] private UnityEvent eventsOn;
     [SerializeField] private UnityEvent eventsOff;
     [SerializeField] private Animator animator;
+    [SerializeField] private AudioClip switchSound;
     private bool On;
     
 
     public void TongueTouched()
     {
+        SoundManager.instance.PlaySound(switchSound);
         if (On)
         {
             eventsOff.Invoke();

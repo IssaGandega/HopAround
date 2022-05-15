@@ -9,6 +9,8 @@ public class ItemBuy : MonoBehaviour
     [SerializeField] private Image bgSpriteRenderer;
     [SerializeField] private GameObject priceText;
 
+    
+    
     private void OnEnable()
     {
         PlayerPrefs.SetInt("Item"+1,1);

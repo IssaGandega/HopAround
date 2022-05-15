@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
@@ -75,12 +76,10 @@ public class Player : MonoBehaviour
     #region Sounds
 
     [Space] [Header("Sounds")]
-    public AudioClip frogDeath;
     [SerializeField] private AudioClip frogJump;
     [SerializeField] private AudioClip frogWalking;
-    [SerializeField] private AudioClip frogContact;
     [SerializeField] private AudioClip frogTongue;
-    [SerializeField] private AudioClip frogMecanism;
+    [SerializeField] private AudioClip frogStart;
     
     #endregion
     
@@ -99,6 +98,11 @@ public class Player : MonoBehaviour
         isFacingRight = true;
         cam.GetComponent<CameraController>().playerController = gameObject;
         tongue = gameObject.GetComponent<Tongue>();
+    }
+
+    private void Start()
+    {
+        SoundManager.instance.PlaySound(frogStart);
     }
 
     private void Update()
@@ -237,18 +241,21 @@ public class Player : MonoBehaviour
         //Reset Tongue
         if (Input.GetTouch(0).phase == TouchPhase.Began)
         {
-            Debug.Log("Sheeesh");
             point = cam.ScreenPointToRay(Input.GetTouch(0).position).GetPoint(10);
-            hit = Physics2D.Raycast(transform.position, point-transform.position,7,layer);
+            point.z = transform.position.z;
+            Collider2D hit = Physics2D.OverlapPoint(point,layer);
             //Debug.DrawRay(transform.position,(point-transform.position).normalized * 7,Color.magenta,3f);
             
-            point.z = transform.position.z;
-            if (hit != false && hit.collider != null)
+            if (hit != false)
             {
-                if (hit.collider.gameObject.layer == 7)
+                if (hit.gameObject.layer == 7 && !tongue.frogReachedPoint)
                 {
                     SoundManager.instance.PlaySound(frogTongue);
                     tongue.TongueStart(hit);
+                }
+                else if (tongue.frogReachedPoint)
+                {
+                    tongue.StartCoroutine(tongue.TongueReset());
                 }
                 else if (coyoteTimeCounter > 0f || isJumping)
                 {

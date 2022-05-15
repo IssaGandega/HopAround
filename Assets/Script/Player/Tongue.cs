@@ -8,22 +8,57 @@ public class Tongue : MonoBehaviour
 {
     private Transform objectMovePose;
     private Vector3 newPoint;
-    public bool isGrabing;
-    [SerializeField] private float range = 10;
-    [SerializeField] private LineRenderer line;
-    [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private float timeToReachPoint =0.5f;
-    [SerializeField] private Transform pointTr;
-    [SerializeField] private Transform playerContainer;
-    [SerializeField] private Player player;
-    public Transform touchedObj;
     private bool tongueReachedPoint;
     private bool tongueCd;
     private bool pointCanMove;
     private bool pointIsAnInteractable;
-    public bool frogReachedPoint;
     private float distance;
 
+    #region External objects
+
+    [Header("Objects")]
+    [Space(5)]
+    
+    [SerializeField] private Transform pointTr;
+    [SerializeField] private Transform playerContainer;
+    [SerializeField] private Player player;
+    [SerializeField] private LineRenderer line;
+    [SerializeField] private Rigidbody2D rb;
+
+    #endregion
+
+    #region Parameters
+    
+    [Header("Setters")]
+    [Space(5)]
+    
+    [SerializeField] private float range = 10;
+    [SerializeField] private float timeToReachPoint =0.5f;
+    [SerializeField] private Vector2 jumpOutVector;
+    [SerializeField] private float inertiaStrength;
+
+    #endregion
+
+    #region External Infos
+
+    [Header("Informations")]
+    [Space(5)]
+    
+    public Transform touchedObj;
+    public bool isGrabing;
+    public bool frogReachedPoint;
+
+    #endregion
+
+    #region Sounds
+
+    [Header("Sounds")] 
+    [Space(5)] 
+    
+    [SerializeField] private AudioClip tongueMecanism;
+
+    #endregion
+    
     private void OnEnable()
     {
         line.enabled = false;;
@@ -90,7 +125,7 @@ public class Tongue : MonoBehaviour
         }
     }
 
-    public void TongueStart(RaycastHit2D hit)
+    public void TongueStart(Collider2D hit)
     {
         if (!tongueCd)
         {
@@ -101,7 +136,7 @@ public class Tongue : MonoBehaviour
                 isGrabing = true;
 
 
-                if (Vector3.Distance(transform.position, hit.point) < range)
+                if (Vector3.Distance(transform.position, hit.transform.position) < range)
                 {
                     distance = 999;
                     pointTr.position = touchedObj.transform.position;
@@ -112,7 +147,7 @@ public class Tongue : MonoBehaviour
                         line.enabled = true;
                         pointIsAnInteractable = true;
                     }
-                    else if (hit.collider.GetComponent<Rigidbody2D>().bodyType == RigidbodyType2D.Dynamic)
+                    else if (hit.GetComponent<Rigidbody2D>().bodyType == RigidbodyType2D.Dynamic)
                     {
                         pointCanMove = true;
                     }
@@ -140,7 +175,7 @@ public class Tongue : MonoBehaviour
         {
             Vector3 inertia = touchedObj.gameObject.GetComponentInChildren<ObjMovement>().rb.velocity;
             
-            player.rb.AddForce((player.jumpForce*Vector2.up)* (20 * Math.Abs(inertia.x)));
+            player.rb.AddForce((player.jumpForce*jumpOutVector)* (inertiaStrength * Math.Abs(inertia.x)));
             pointCanMove = false;
             touchedObj = null;
         }
@@ -157,6 +192,7 @@ public class Tongue : MonoBehaviour
         tongueReachedPoint = true;
         if (pointIsAnInteractable)
         {
+            SoundManager.instance.PlaySound(tongueMecanism);
             touchedObj.GetComponent<Switch>().TongueTouched();
             StartCoroutine(TongueReset());
         }
