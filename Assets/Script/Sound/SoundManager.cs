@@ -7,7 +7,8 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager instance;
     [SerializeField] private AudioSource musicSource, effectsSource;
-    [SerializeField] private AudioClip frogStart;
+    [SerializeField] private AudioClip mapMusic;
+    [SerializeField] private AudioClip lvlMusic;
 
     private void Awake()
     {
@@ -22,14 +23,25 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        PlaySound(frogStart);
-    }
-
     public void PlaySound(AudioClip clip)
     {
         effectsSource.PlayOneShot(clip);
+    }
+
+    public void PlayMusic(AudioClip clip)
+    {
+        musicSource.clip = clip;
+        musicSource.Play();
+    }
+
+    public void PlayMapMusic()
+    {
+        PlayMusic(mapMusic);
+    }
+
+    public void PlayLevelMusic()
+    {
+        PlayMusic(lvlMusic);
     }
 
     public void ChangeMasterVolume(float value)

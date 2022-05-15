@@ -41,10 +41,10 @@ GameObject:
   - component: {fileID: 978449559491475707}
   - component: {fileID: 978449559491475704}
   - component: {fileID: 978449559491475708}
-  - component: {fileID: 978449559491475711}
   - component: {fileID: 46944316089728092}
   - component: {fileID: 2546195356535171387}
   - component: {fileID: 8928806866864601919}
+  - component: {fileID: 1917882432135746974}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -134,13 +134,10 @@ MonoBehaviour:
   accelPower: 1
   stopPower: 0.5
   turnPower: 1
-  frogStart: {fileID: 8300000, guid: c2ced61e5d9e75348b8fc2e96ba61a49, type: 3}
-  frogDeath: {fileID: 8300000, guid: 8488588bbbcf28342bce5e9ffa9c4f6d, type: 3}
   frogJump: {fileID: 8300000, guid: e0672571e724bc849b26adbda937217b, type: 3}
   frogWalking: {fileID: 8300000, guid: a8a7916ef56e03c4f83d4e2e6262be03, type: 3}
-  frogContact: {fileID: 8300000, guid: 880c740a40411bf45aad31b5eaff1978, type: 3}
   frogTongue: {fileID: 8300000, guid: 7ddec160a0eb9974aa877e769cd5e107, type: 3}
-  frogMecanism: {fileID: 8300000, guid: 4a0a3f828261b194f90bae031f0a0590, type: 3}
+  frogStart: {fileID: 8300000, guid: c2ced61e5d9e75348b8fc2e96ba61a49, type: 3}
 --- !u!50 &978449559491475708
 Rigidbody2D:
   serializedVersion: 4
@@ -161,23 +158,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!58 &978449559491475711
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 978449559491475710}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: d8141a433d241484cad3921089456481, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.6
+  m_Constraints: 4
 --- !u!114 &46944316089728092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,23 +171,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf76eeb3d405f124591da9b4de2ecddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isGrabing: 0
-  range: 10
-  line: {fileID: 2250381785973608105}
-  rb: {fileID: 978449559491475708}
-  timeToReachPoint: 0.5
   pointTr: {fileID: 140284558}
   playerContainer: {fileID: 3705289844060961324}
   player: {fileID: 978449559491475704}
+  line: {fileID: 2250381785973608105}
+  rb: {fileID: 978449559491475708}
+  range: 10
+  timeToReachPoint: 0.5
+  jumpOutVector: {x: 1, y: 0.5}
+  inertiaStrength: 10
   touchedObj: {fileID: 0}
-  tongueProgressionCurve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  tongueProgressionSpeed: 0
+  isGrabing: 0
   frogReachedPoint: 0
+  tongueMecanism: {fileID: 8300000, guid: 7ddec160a0eb9974aa877e769cd5e107, type: 3}
 --- !u!114 &2546195356535171387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,6 +198,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 978449559491475704}
   lastCheckpointPos: {fileID: 0}
+  frogDeath: {fileID: 8300000, guid: 8488588bbbcf28342bce5e9ffa9c4f6d, type: 3}
+  frogContact: {fileID: 8300000, guid: 880c740a40411bf45aad31b5eaff1978, type: 3}
+  checkpoint: {fileID: 8300000, guid: 5d11b2f893a44b34e87cf8d54c97235a, type: 3}
 --- !u!114 &8928806866864601919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +220,22 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+--- !u!58 &1917882432135746974
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978449559491475710}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: d8141a433d241484cad3921089456481, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.02}
+  serializedVersion: 2
+  m_Radius: 0.59
 --- !u!1 &3705289844060961321
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,7 +599,7 @@ ParentConstraint:
   m_TranslationAtRest: {x: 0.001711607, y: -0.53499985, z: 0.0026064864}
   m_RotationAtRest: {x: 0, y: 180, z: 0}
   m_TranslationOffsets:
-  - {x: 0.001711607, y: -0.53499985, z: 0.0026064864}
+  - {x: 0.0017113686, y: -0.53499985, z: 0.002606511}
   m_RotationOffsets:
   - {x: 0, y: 180, z: 0}
   m_AffectTranslationX: 1
@@ -644,8 +640,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mesh: {fileID: 6987627798017603447}
   material:
-  - {fileID: 2100000, guid: 2c3fe38ec88e5754fbd43aedd4328b30, type: 2}
-  - {fileID: 2100000, guid: 2c3fe38ec88e5754fbd43aedd4328b30, type: 2}
+  - {fileID: 2100000, guid: ece75f241bb77ad41bf79dc6dd86a21a, type: 2}
+  - {fileID: 2100000, guid: ece75f241bb77ad41bf79dc6dd86a21a, type: 2}
   - {fileID: 2100000, guid: 8463cc4855014cd4eac57c7d1e082eac, type: 2}
   - {fileID: 2100000, guid: 50810bcdd1f2e394ebf919ba2b920857, type: 2}
   - {fileID: 2100000, guid: a1a2dc23e985b2a43958b3af2251a4f4, type: 2}

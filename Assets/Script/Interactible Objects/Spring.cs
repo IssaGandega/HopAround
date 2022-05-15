@@ -8,10 +8,12 @@ public class Spring : MonoBehaviour
     [SerializeField] private Vector2 dir;
     [SerializeField] private float force;
     [SerializeField] private Animator animator;
+    [SerializeField] private AudioClip springSound;
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.GetComponent<Rigidbody2D>())
         {
+            SoundManager.instance.PlaySound(springSound);
             other.gameObject.GetComponent<Rigidbody2D>().AddForce(dir*force,ForceMode2D.Impulse);
             animator.SetBool("Go",true);
             StartCoroutine(CD());

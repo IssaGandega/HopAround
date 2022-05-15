@@ -18,12 +18,13 @@ public class Toad : MonoBehaviour
     [SerializeField] private Material idle;
     [SerializeField] private MeshRenderer mR;
     [SerializeField] private GameObject toadParticleSystem;
-
+    [SerializeField] private AudioClip tadpoleUnlock;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if ((other.gameObject.CompareTag("Player")) && (currTarget == null))
         {
+            SoundManager.instance.PlaySound(tadpoleUnlock);
             playerTr = other.gameObject.transform;
             currTarget = playerTr.GetComponent<ToadTarget>();
             toadParticleSystem.SetActive(false);

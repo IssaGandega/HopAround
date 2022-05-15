@@ -77,6 +77,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 5498696710105949104}
   - {fileID: 5498696709279534997}
+  springSound: {fileID: 8300000, guid: c06ed54f18921ed49b7c4b961e15c311, type: 3}
+  launcherSound: {fileID: 8300000, guid: 019c7bb24e09e6142b8687a8496eb058, type: 3}
+  launcherWalking: {fileID: 8300000, guid: bd63d5bba69ba534e88d2526566f1557, type: 3}
   move: 1
   playerAnimPos: {fileID: 5498696710647020151}
   player: {fileID: 0}
@@ -189,6 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 9038089247105039466}
   launcherBrain: {fileID: 5498696708954200971}
+  springSound: {fileID: 8300000, guid: c06ed54f18921ed49b7c4b961e15c311, type: 3}
 --- !u!61 &5498696709855764230
 BoxCollider2D:
   m_ObjectHideFlags: 0
