@@ -46,6 +46,7 @@ public class Pusher : MonoBehaviour, ITonguable
     public void Tongued()
     {
         animator.SetInteger("State" ,2);
+        transform.DOKill();
         ChangeState();
         StartCoroutine(CD());
     }

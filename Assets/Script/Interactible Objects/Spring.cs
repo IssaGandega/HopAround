@@ -20,6 +20,14 @@ public class Spring : MonoBehaviour
         }
     }
 
+    private void OnCollisionStay2D(Collision2D other)
+    {
+        if (other.gameObject.GetComponent<Rigidbody2D>())
+        {
+            other.gameObject.GetComponent<Rigidbody2D>().AddForce((dir*force)/5,ForceMode2D.Impulse);
+        }
+    }
+
 
     private IEnumerator CD()
     {

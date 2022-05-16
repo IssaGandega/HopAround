@@ -142,7 +142,7 @@ public class Tongue : MonoBehaviour
                     pointTr.position = touchedObj.transform.position;
                     CheckPosition();
                     
-                    if (touchedObj.GetComponent<Switch>())
+                    if (touchedObj.GetComponent<Switch>() || (touchedObj.GetComponent<Launcher>()) || touchedObj.GetComponent<Pusher>())
                     {
                         line.enabled = true;
                         pointIsAnInteractable = true;
@@ -192,8 +192,24 @@ public class Tongue : MonoBehaviour
         tongueReachedPoint = true;
         if (pointIsAnInteractable)
         {
-            SoundManager.instance.PlaySound(tongueMecanism);
-            touchedObj.GetComponent<Switch>().TongueTouched();
+            if(touchedObj.GetComponent<Switch>())
+            {
+                touchedObj.GetComponent<Switch>().TongueTouched();
+                SoundManager.instance.PlaySound(tongueMecanism);
+            }
+            /*else if (touchedObj.GetComponent<Launcher>())
+            {
+                touchedObj.GetComponent<Launcher>().Tongued();
+            }
+            else if (touchedObj.GetComponent<Pusher>())
+            {
+                touchedObj.GetComponent<Pusher>().Tongued();
+            }*/
+            
+          
+
+       
+            
             StartCoroutine(TongueReset());
         }
     }
