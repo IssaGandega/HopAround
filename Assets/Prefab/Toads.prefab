@@ -51,7 +51,7 @@ MonoBehaviour:
   walk: {fileID: 2100000, guid: daecc5cb96220a745a41b597dea0666c, type: 2}
   idle: {fileID: 2100000, guid: d610bda4a64d90e4ab818a86e3e2e04a, type: 2}
   mR: {fileID: 8279607878445055647}
-  toadParticleSystem: {fileID: 0}
+  toadParticleSystem: {fileID: 586711753503303341}
   tadpoleUnlock: {fileID: 8300000, guid: e179148dcebd17e479a8b141d9acf38c, type: 3}
 --- !u!58 &8885153645215679930
 CircleCollider2D:
@@ -120,7 +120,7 @@ MonoBehaviour:
   walk: {fileID: 2100000, guid: 49e47367c42d1aa4e81faca6db7300b5, type: 2}
   idle: {fileID: 2100000, guid: d93d3e25630ac39418c92e285cbf46bf, type: 2}
   mR: {fileID: 3162575207078015061}
-  toadParticleSystem: {fileID: 0}
+  toadParticleSystem: {fileID: 3113976617925448493}
   tadpoleUnlock: {fileID: 8300000, guid: e179148dcebd17e479a8b141d9acf38c, type: 3}
 --- !u!58 &8885153645657140998
 CircleCollider2D:
@@ -189,7 +189,7 @@ MonoBehaviour:
   walk: {fileID: 2100000, guid: 5f7c0ccbabc58ec49aba8c8b6962d8ab, type: 2}
   idle: {fileID: 2100000, guid: 0ec16b2fc222f224d87723fb9f0a7c0b, type: 2}
   mR: {fileID: 6809122401737008111}
-  toadParticleSystem: {fileID: 0}
+  toadParticleSystem: {fileID: 2654874419951987120}
   tadpoleUnlock: {fileID: 8300000, guid: e179148dcebd17e479a8b141d9acf38c, type: 3}
 --- !u!58 &8885153646065255413
 CircleCollider2D:
@@ -339,6 +339,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70be8b317f8d6354ab382331bf1ce23f, type: 3}
+--- !u!1 &586711753503303341 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2674107192342319188, guid: 70be8b317f8d6354ab382331bf1ce23f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3258421855878248185}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7110127881663137264 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5734211295811220233, guid: 70be8b317f8d6354ab382331bf1ce23f,
@@ -495,9 +501,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6474779349850783112}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &6809122401737008111 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 551080983253982823, guid: 060fd11c225891a4caf19fad0bc11aa7,
+--- !u!1 &2654874419951987120 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9008056579846673464, guid: 060fd11c225891a4caf19fad0bc11aa7,
+    type: 3}
+  m_PrefabInstance: {fileID: 6474779349850783112}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7027047283409004517 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4061718851104299629, guid: 060fd11c225891a4caf19fad0bc11aa7,
     type: 3}
   m_PrefabInstance: {fileID: 6474779349850783112}
   m_PrefabAsset: {fileID: 0}
@@ -507,9 +519,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6474779349850783112}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &7027047283409004517 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 4061718851104299629, guid: 060fd11c225891a4caf19fad0bc11aa7,
+--- !u!23 &6809122401737008111 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 551080983253982823, guid: 060fd11c225891a4caf19fad0bc11aa7,
     type: 3}
   m_PrefabInstance: {fileID: 6474779349850783112}
   m_PrefabAsset: {fileID: 0}
@@ -645,6 +657,12 @@ GameObject:
 --- !u!95 &4182011010526979610 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6824102838115835734, guid: f70ed5c35c03eae4097fd0be55cca90e,
+    type: 3}
+  m_PrefabInstance: {fileID: 7259074428176873804}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3113976617925448493 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5731525997934357089, guid: f70ed5c35c03eae4097fd0be55cca90e,
     type: 3}
   m_PrefabInstance: {fileID: 7259074428176873804}
   m_PrefabAsset: {fileID: 0}
