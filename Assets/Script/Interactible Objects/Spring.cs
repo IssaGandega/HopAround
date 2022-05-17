@@ -9,29 +9,35 @@ public class Spring : MonoBehaviour
     [SerializeField] private float force;
     [SerializeField] private Animator animator;
     [SerializeField] private AudioClip springSound;
-    private void OnCollisionEnter2D(Collision2D other)
+    
+    /*private void OnCollisionEnter2D(Collision2D other)
     {
+        Debug.Log("A");
         if (other.gameObject.GetComponent<Rigidbody2D>())
         {
-            SoundManager.instance.PlaySound(springSound);
             other.gameObject.GetComponent<Rigidbody2D>().AddForce(dir*force,ForceMode2D.Impulse);
-            animator.SetBool("Go",true);
-            StartCoroutine(CD());
+            SoundManager.instance.PlaySound(springSound);
+            animator.Play("003_Interaction");
+        }
+    }*/
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.GetComponent<Rigidbody2D>())
+        {
+            other.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            other.GetComponent<Rigidbody2D>().AddForce(dir*force,ForceMode2D.Impulse);
+            SoundManager.instance.PlaySound(springSound);
+            animator.Play("003_Interaction");
         }
     }
 
+    /*
     private void OnCollisionStay2D(Collision2D other)
     {
         if (other.gameObject.GetComponent<Rigidbody2D>())
         {
-            other.gameObject.GetComponent<Rigidbody2D>().AddForce((dir*force)/5,ForceMode2D.Impulse);
+            other.gameObject.GetComponent<Rigidbody2D>().AddForce((dir*force),ForceMode2D.Impulse);
         }
-    }
-
-
-    private IEnumerator CD()
-    {
-        yield return new WaitForSeconds(0.1f);
-        animator.SetBool("Go", false);
-    }
+    }*/
 }

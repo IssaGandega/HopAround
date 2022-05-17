@@ -43,20 +43,13 @@ public class Pusher : MonoBehaviour, ITonguable
         }
     }
 
-    public void Tongued()
-    {
-        animator.SetInteger("State" ,2);
-        transform.DOKill();
-        ChangeState();
-        StartCoroutine(CD());
-    }
-
-
     private IEnumerator CD()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         animator.SetInteger("State" ,0);
         ChangeState();
+        gameObject.GetComponents<BoxCollider2D>()[0].enabled = true;
+        gameObject.GetComponents<BoxCollider2D>()[1].enabled = true;
     }
     
     private void OnEnable()
@@ -109,4 +102,14 @@ public class Pusher : MonoBehaviour, ITonguable
         move = !move;
     }
 
+    public void Tongued(Tongue tongue)
+    {
+        transform.DOMove(transform.position, speedInTime);
+        animator.SetInteger("State" ,2);
+        tongue.pointIsAnInteractable = true;
+        ChangeState();
+        gameObject.GetComponents<BoxCollider2D>()[0].enabled = false;
+        gameObject.GetComponents<BoxCollider2D>()[1].enabled = false;
+        StartCoroutine(CD());
+    }
 }

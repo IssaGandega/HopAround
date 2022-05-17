@@ -5,5 +5,5 @@ using UnityEngine;
 
     public interface ITonguable
     {
-        void Tongued();
+        void Tongued(Tongue tongue);
     }

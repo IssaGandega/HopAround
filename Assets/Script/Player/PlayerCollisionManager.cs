@@ -24,9 +24,9 @@ public class PlayerCollisionManager : MonoBehaviour
         if (other.gameObject.CompareTag("FallZone"))
         {
             SoundManager.instance.PlaySound(frogDeath);
-            PlayerAnimatorManager.instance.AnimatorStateChange(4);
+            PlayerAnimatorManager.instance.AnimatorStateChange(3);
             player.enabled = false;
-            StartCoroutine(WaitForDeath());
+            StartCoroutine(PlayerRestart());
 
         }
         else if (other.gameObject.layer == 6)
@@ -49,25 +49,18 @@ public class PlayerCollisionManager : MonoBehaviour
 
     public IEnumerator PlayerRestart()
     {
+        player.targetSpeed = 0;
+        player.currentSpeed = 0;
+        player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         yield return new WaitForSeconds(1.4f);
         player.enabled = true;
+        if (player.transform.position.y != 0)
+        {
+            player.Flip();
+        }
         PlayerAnimatorManager.instance.AnimatorStateChange(0);
+        
         if (lastCheckpointPos != null)
-        {
-            player.transform.position = lastCheckpointPos.position;
-        }
-        else
-        {
-            player.transform.position = spawnPoint;
-        }
-
-    }
-
-    private IEnumerator WaitForDeath()
-    {
-        yield return new WaitForSeconds(1.4f);
-        player.enabled = true;
-        if (lastCheckpointPos)
         {
             player.transform.position = lastCheckpointPos.position;
         }

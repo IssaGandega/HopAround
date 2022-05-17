@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 8321381586749816965}
   - component: {fileID: 8321381586749816964}
   - component: {fileID: 8611961835559843282}
-  m_Layer: 6
+  - component: {fileID: 1481577219408177446}
+  m_Layer: 0
   m_Name: Spring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +60,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.000056236982, y: -0.14252098}
@@ -75,6 +76,32 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0894129, y: 0.41030034}
   m_EdgeRadius: 0
+--- !u!61 &1481577219408177446
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8321381586749816966}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03751895, y: -0.30354208}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2794151, y: 0.39291584}
+  m_EdgeRadius: 0
 --- !u!1001 &9208272123393911538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85,7 +112,7 @@ PrefabInstance:
     - target: {fileID: 68160215779900670, guid: 9d1161db07810c64cbf26b661b73bc64,
         type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2685881214918772511, guid: 9d1161db07810c64cbf26b661b73bc64,
         type: 3}
@@ -95,12 +122,12 @@ PrefabInstance:
     - target: {fileID: 5014441545646335367, guid: 9d1161db07810c64cbf26b661b73bc64,
         type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5084373986208741851, guid: 9d1161db07810c64cbf26b661b73bc64,
         type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5382760266239463285, guid: 9d1161db07810c64cbf26b661b73bc64,
         type: 3}
@@ -180,7 +207,7 @@ PrefabInstance:
     - target: {fileID: 8210681015936977421, guid: 9d1161db07810c64cbf26b661b73bc64,
         type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d1161db07810c64cbf26b661b73bc64, type: 3}
