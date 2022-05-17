@@ -4,16 +4,14 @@ using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
-public class Launcher : MonoBehaviour
+public class Launcher : MonoBehaviour, ITonguable
 {
     public Animator animator;
     public float force;
     [SerializeField] private float speedInTime;
     [SerializeField] private Transform launcherTransform;
     [SerializeField]private Transform[] waypoints;
-    [SerializeField] private AudioClip springSound;
     [SerializeField] private AudioClip launcherSound;
-    [SerializeField] private AudioClip launcherWalking;
     private Transform currentWaypoint;
     private int currentWaypointNo;
     private float distance;
@@ -34,16 +32,15 @@ public class Launcher : MonoBehaviour
             player.transform.DOMove(playerAnimPos.position,0.4f);
             ChangeState();
             animator.SetInteger("State" ,1);
-            StartCoroutine(CD());
         }
     }
 
-    
-
-    public void Tongued()
+    public void Tongued(Tongue tongue)
     {
+        tongue.pointIsAnInteractable = true;
+        move = false;
+        launcherTransform.DOKill(false);
         animator.SetInteger("State" ,2);
-        ChangeState();
         StartCoroutine(CD());
     }
 

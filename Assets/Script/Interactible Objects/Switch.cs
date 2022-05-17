@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Switch : MonoBehaviour
+public class Switch : MonoBehaviour, ITonguable
 {
     [SerializeField] private UnityEvent eventsOn;
     [SerializeField] private UnityEvent eventsOff;
@@ -29,5 +29,13 @@ public class Switch : MonoBehaviour
             On = true;
         }
     }
+    
 
+    public void Tongued(Tongue tongue)
+    {
+        tongue.line.enabled = true;
+        tongue.pointIsAnInteractable = true;
+    }
+    
+    
 }

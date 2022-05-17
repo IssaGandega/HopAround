@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5498696708954200970}
   - component: {fileID: 5498696708954200972}
   - component: {fileID: 5498696708954200971}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LauncherTongue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5968394, y: 0.20094097}
+  m_Offset: {x: 0.05360478, y: 0.2566105}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -56,7 +56,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.81678677, y: 0.22479743}
+  m_Size: {x: 1.9032365, y: 0.33613655}
   m_EdgeRadius: 0
 --- !u!114 &5498696708954200971
 MonoBehaviour:
@@ -77,9 +77,7 @@ MonoBehaviour:
   waypoints:
   - {fileID: 5498696710105949104}
   - {fileID: 5498696709279534997}
-  springSound: {fileID: 8300000, guid: c06ed54f18921ed49b7c4b961e15c311, type: 3}
   launcherSound: {fileID: 8300000, guid: 019c7bb24e09e6142b8687a8496eb058, type: 3}
-  launcherWalking: {fileID: 8300000, guid: bd63d5bba69ba534e88d2526566f1557, type: 3}
   move: 1
   playerAnimPos: {fileID: 5498696710647020151}
   player: {fileID: 0}
@@ -384,7 +382,7 @@ PrefabInstance:
     - target: {fileID: 3540662524603149643, guid: 2965a0389765bfa4a8523bc6b80b87fe,
         type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5476363892005913545, guid: 2965a0389765bfa4a8523bc6b80b87fe,
         type: 3}

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjMovement : MonoBehaviour
+public class ObjMovement : MonoBehaviour, ITonguable
 {
     public Rigidbody2D rb;
     [SerializeField] private float speed;
@@ -16,6 +16,10 @@ public class ObjMovement : MonoBehaviour
             rb.velocity = Vector3.zero;
         }
         rb.velocity = new Vector3(xAxisAccel * speed, rb.velocity.y, 0);
+    }
 
+    public void Tongued(Tongue tongue)
+    {
+        tongue.pointCanMove = true;
     }
 }
