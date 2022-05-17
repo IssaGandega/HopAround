@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Security.Permissions;
 using DG.Tweening;
+using UnityEditor;
 using UnityEngine;
 
 public class Tongue : MonoBehaviour
@@ -10,8 +11,8 @@ public class Tongue : MonoBehaviour
     private Vector3 newPoint;
     private bool tongueReachedPoint;
     private bool tongueCd;
-    private bool pointCanMove;
-    private bool pointIsAnInteractable;
+    public bool pointCanMove;
+    public bool pointIsAnInteractable;
     private float distance;
 
     #region External objects
@@ -22,7 +23,7 @@ public class Tongue : MonoBehaviour
     [SerializeField] private Transform pointTr;
     [SerializeField] private Transform playerContainer;
     [SerializeField] private Player player;
-    [SerializeField] private LineRenderer line;
+    public LineRenderer line;
     [SerializeField] private Rigidbody2D rb;
 
     #endregion
@@ -141,20 +142,13 @@ public class Tongue : MonoBehaviour
                     distance = 999;
                     pointTr.position = touchedObj.transform.position;
                     CheckPosition();
-                    
-                    if (touchedObj.GetComponent<Switch>() || (touchedObj.GetComponent<Launcher>()) || touchedObj.GetComponent<Pusher>())
+                    if (touchedObj.GetComponent<ITonguable>() != null)
                     {
-                        line.enabled = true;
-                        pointIsAnInteractable = true;
-                    }
-                    else if (hit.GetComponent<Rigidbody2D>().bodyType == RigidbodyType2D.Dynamic)
-                    {
-                        pointCanMove = true;
+                        touchedObj.GetComponent<ITonguable>().Tongued(this);
                     }
                 }
             }
         }
-    
     }
 
     public IEnumerator TongueReset()
@@ -186,7 +180,7 @@ public class Tongue : MonoBehaviour
     }
     
 
-        private IEnumerator WaitForTongue()
+    private IEnumerator WaitForTongue()
     {
         yield return new WaitForSeconds(0.2f);
         tongueReachedPoint = true;
@@ -197,38 +191,27 @@ public class Tongue : MonoBehaviour
                 touchedObj.GetComponent<Switch>().TongueTouched();
                 SoundManager.instance.PlaySound(tongueMecanism);
             }
-            /*else if (touchedObj.GetComponent<Launcher>())
-            {
-                touchedObj.GetComponent<Launcher>().Tongued();
-            }
-            else if (touchedObj.GetComponent<Pusher>())
-            {
-                touchedObj.GetComponent<Pusher>().Tongued();
-            }*/
-            
-          
-
-       
             
             StartCoroutine(TongueReset());
         }
     }
-        private void UpdateLR()
-        {
-            Vector3 target = pointTr.position;
-            // diviser z et x par ce qu'il faut pour aligner points
-            target.z = target.x - transform.position.x;
-            target.y -= transform.position.y; 
-            target.x = 0;
+        
+    private void UpdateLR()
+    {
+        Vector3 target = pointTr.position;
+        // diviser z et x par ce qu'il faut pour aligner points
+        target.z = target.x - transform.position.x;
+        target.y -= transform.position.y; 
+        target.x = 0;
 
-            if (!player.isFacingRight)
-            {
-                target.z *= -1;
-            }
-            
-            line.SetPosition(4, target);
-            line.SetPosition(3, target * 0.75f);
-            line.SetPosition(2, target * 0.5f);
-            line.SetPosition(1, target * 0.25f);
+        if (!player.isFacingRight)
+        {
+            target.z *= -1;
         }
+        
+        line.SetPosition(4, target);
+        line.SetPosition(3, target * 0.75f);
+        line.SetPosition(2, target * 0.5f);
+        line.SetPosition(1, target * 0.25f);
+    }
 }
