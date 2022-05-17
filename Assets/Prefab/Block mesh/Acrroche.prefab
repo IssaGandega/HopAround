@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 7938921207799777573}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -30.19, y: 21.64, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 7312514584995810349}
   m_Father: {fileID: 0}
@@ -138,6 +138,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7938921207799777572}
     m_Modifications:
+    - target: {fileID: 1870021759799667268, guid: 07e0377bb7885554d92e991184a535f9,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1870021759799667268, guid: 07e0377bb7885554d92e991184a535f9,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1870021759799667268, guid: 07e0377bb7885554d92e991184a535f9,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2427634312035675201, guid: 07e0377bb7885554d92e991184a535f9,
         type: 3}
       propertyPath: m_RootOrder
@@ -208,6 +223,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2919574993216730439, guid: 07e0377bb7885554d92e991184a535f9,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919574993216730439, guid: 07e0377bb7885554d92e991184a535f9,
+        type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3097174893525989115, guid: 07e0377bb7885554d92e991184a535f9,
         type: 3}
       propertyPath: m_Name
@@ -218,10 +243,40 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5065170516428804036, guid: 07e0377bb7885554d92e991184a535f9,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5065170516428804036, guid: 07e0377bb7885554d92e991184a535f9,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5065170516428804036, guid: 07e0377bb7885554d92e991184a535f9,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7721065689401653203, guid: 07e0377bb7885554d92e991184a535f9,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8591978183213093063, guid: 07e0377bb7885554d92e991184a535f9,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8591978183213093063, guid: 07e0377bb7885554d92e991184a535f9,
+        type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8591978183213093063, guid: 07e0377bb7885554d92e991184a535f9,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07e0377bb7885554d92e991184a535f9, type: 3}
