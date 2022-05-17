@@ -9,6 +9,7 @@ public class WinLauncher : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            PlayerAnimatorManager.instance.gameObject.SetActive(false);
             LVLManager.instance.Win();
         }
     }
