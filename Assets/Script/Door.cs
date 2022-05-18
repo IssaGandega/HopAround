@@ -5,15 +5,14 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    [SerializeField] private Vector3 openRotation;
-    [SerializeField] private Vector3 closeRotation;
+    [SerializeField] private Animator animator;
     public void DoorOpenRotation()
     {
-        transform.DORotate(openRotation, 1f);
+        animator.Play("003_Interaction_ON");
     }
 
     public void DoorCloseRotation()
     {
-        transform.DORotate(closeRotation, 1f);
+        animator.Play("003_Interaction_OFF");
     }
 }
