@@ -95,7 +95,8 @@ public class Tongue : MonoBehaviour
     private IEnumerator DoTongue()
     {
         var twSpeed = 22.2f;
-        
+        PlayerAnimatorManager.instance.AnimatorStateChange(5,true);
+
         //Debug.Log("DoTongue");
         isGrabing = true;
         

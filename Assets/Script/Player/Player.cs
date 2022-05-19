@@ -138,13 +138,13 @@ public class Player : MonoBehaviour
             {
                 rb.velocity = Vector3.zero;
                 currentSpeed = 0;
-                PlayerAnimatorManager.instance.AnimatorStateChange(0);
+                PlayerAnimatorManager.instance.AnimatorStateChange(0,false);
             }
         
             //Moving animation
             else 
             {
-                PlayerAnimatorManager.instance.AnimatorStateChange(1);
+                PlayerAnimatorManager.instance.AnimatorStateChange(1,false);
             }
         }
 
@@ -289,7 +289,7 @@ public class Player : MonoBehaviour
             bufferTimeCounter = 0;
             coyoteTimeCounter = 0;
             
-            PlayerAnimatorManager.instance.AnimatorStateChange(2);
+            PlayerAnimatorManager.instance.AnimatorStateChange(2,false);
         }
     }
     

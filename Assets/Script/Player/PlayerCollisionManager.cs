@@ -24,7 +24,7 @@ public class PlayerCollisionManager : MonoBehaviour
         if (other.gameObject.CompareTag("FallZone"))
         {
             SoundManager.instance.PlaySound(frogDeath);
-            PlayerAnimatorManager.instance.AnimatorStateChange(3);
+            PlayerAnimatorManager.instance.AnimatorStateChange(3,false);
             player.enabled = false;
             StartCoroutine(PlayerRestart());
 
@@ -58,7 +58,7 @@ public class PlayerCollisionManager : MonoBehaviour
         {
             player.Flip();
         }
-        PlayerAnimatorManager.instance.AnimatorStateChange(0);
+        PlayerAnimatorManager.instance.AnimatorStateChange(0,false);
         
         if (lastCheckpointPos != null)
         {
