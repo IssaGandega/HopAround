@@ -83,9 +83,12 @@ MonoBehaviour:
   rb: {fileID: 978449559491475708}
   mesh: {fileID: 1597169232387166824}
   groundedCheckerPos: {fileID: 6742946012387395781}
-  layer:
+  groundLayer:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 64
+  tongueLayer:
+    serializedVersion: 2
+    m_Bits: 128
   accelCurve:
     serializedVersion: 2
     m_Curve:
@@ -110,14 +113,12 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  colliders: []
   jumpForce: 7
   coyoteTime: 0.1
   bufferTime: 0.1
   fallMultiplier: 2.5
   lowJumpMultiplier: 2
   isGrounded: 0
-  isTouched: 0
   currentSpeed: 0
   isFacingRight: 0
   isJumping: 0
@@ -138,6 +139,7 @@ MonoBehaviour:
   frogWalking: {fileID: 8300000, guid: a8a7916ef56e03c4f83d4e2e6262be03, type: 3}
   frogTongue: {fileID: 8300000, guid: 7ddec160a0eb9974aa877e769cd5e107, type: 3}
   frogStart: {fileID: 8300000, guid: c2ced61e5d9e75348b8fc2e96ba61a49, type: 3}
+  laboule: {fileID: 0}
 --- !u!50 &978449559491475708
 Rigidbody2D:
   serializedVersion: 4
@@ -171,6 +173,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf76eeb3d405f124591da9b4de2ecddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointCanMove: 0
+  pointIsAnInteractable: 0
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 0
   pointTr: {fileID: 140284558}
   playerContainer: {fileID: 3705289844060961324}
   player: {fileID: 978449559491475704}
@@ -599,7 +606,7 @@ ParentConstraint:
   m_TranslationAtRest: {x: 0.001711607, y: -0.53499985, z: 0.0026064864}
   m_RotationAtRest: {x: 0, y: 180, z: 0}
   m_TranslationOffsets:
-  - {x: 0.0017113686, y: -0.53499985, z: 0.002606511}
+  - {x: 0.001711607, y: -0.53499985, z: 0.0026064864}
   m_RotationOffsets:
   - {x: 0, y: 180, z: 0}
   m_AffectTranslationX: 1
