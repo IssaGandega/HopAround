@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5498696708954200970}
   - component: {fileID: 5498696708954200972}
   - component: {fileID: 5498696708954200971}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: LauncherTongue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,6 +191,7 @@ MonoBehaviour:
   animator: {fileID: 9038089247105039466}
   launcherBrain: {fileID: 5498696708954200971}
   springSound: {fileID: 8300000, guid: c06ed54f18921ed49b7c4b961e15c311, type: 3}
+  player: {fileID: 0}
 --- !u!61 &5498696709855764230
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -382,7 +383,7 @@ PrefabInstance:
     - target: {fileID: 3540662524603149643, guid: 2965a0389765bfa4a8523bc6b80b87fe,
         type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5476363892005913545, guid: 2965a0389765bfa4a8523bc6b80b87fe,
         type: 3}
