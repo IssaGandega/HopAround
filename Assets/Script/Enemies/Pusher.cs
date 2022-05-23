@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using DG.Tweening;
 using UnityEngine;
@@ -18,6 +19,27 @@ public class Pusher : MonoBehaviour, ITonguable
     [SerializeField] private bool move = false;
     [SerializeField] private AudioClip pusherSound;
 
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.collider.CompareTag("Player"))
+        {
+            ChangeState();
+            SoundManager.instance.PlaySound(pusherSound);
+            animator.SetInteger("State" ,1);
+            if (isFacingLeft)
+            {
+                col.collider.GetComponent<Player>().AddForceToPlayer(Vector2.left, force);
+            }
+            else
+            {
+                col.collider.GetComponent<Player>().AddForceToPlayer(Vector2.right, force);
+            }
+    
+            StartCoroutine(CD());
+        }
+    }
+
+    //Le Trigger fait des bêtises jsp pourquoi
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Player"))
@@ -32,9 +54,6 @@ public class Pusher : MonoBehaviour, ITonguable
             else
             {
                 col.GetComponent<Player>().AddForceToPlayer(Vector2.right, force);
-
-                Debug.Log(Vector2.right*force);
-
             }
     
             StartCoroutine(CD());
