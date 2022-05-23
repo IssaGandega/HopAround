@@ -127,6 +127,7 @@ MonoBehaviour:
   accelRate: 0
   velPower: 0
   movement: 0
+  rollingSpeed: 1
   maxSpeed: 10
   speedAccel: 5
   speedDeccel: 1
@@ -137,8 +138,8 @@ MonoBehaviour:
   turnPower: 1
   frogJump: {fileID: 8300000, guid: e0672571e724bc849b26adbda937217b, type: 3}
   frogWalking: {fileID: 8300000, guid: a8a7916ef56e03c4f83d4e2e6262be03, type: 3}
-  frogTongue: {fileID: 8300000, guid: 7ddec160a0eb9974aa877e769cd5e107, type: 3}
   frogStart: {fileID: 8300000, guid: c2ced61e5d9e75348b8fc2e96ba61a49, type: 3}
+  xAxisAccel: 0
   laboule: {fileID: 0}
 --- !u!50 &978449559491475708
 Rigidbody2D:
@@ -185,8 +186,9 @@ MonoBehaviour:
   rb: {fileID: 978449559491475708}
   range: 10
   timeToReachPoint: 0.5
-  jumpOutVector: {x: 1, y: 0.5}
-  inertiaStrength: 10
+  jumpOutVector: {x: 5, y: 100}
+  inertiaStrength: 100
+  frogTongue: {fileID: 8300000, guid: 7ddec160a0eb9974aa877e769cd5e107, type: 3}
   touchedObj: {fileID: 0}
   isGrabing: 0
   frogReachedPoint: 0
@@ -653,3 +655,4 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 50810bcdd1f2e394ebf919ba2b920857, type: 2}
   - {fileID: 2100000, guid: a1a2dc23e985b2a43958b3af2251a4f4, type: 2}
   - {fileID: 2100000, guid: 2ff324ae3addc6548a1f99a35b859802, type: 2}
+  fxGolden: {fileID: 0}

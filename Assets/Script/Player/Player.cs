@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
+using TreeEditor;
 using Unity.Mathematics;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
@@ -60,7 +62,7 @@ public class Player : MonoBehaviour
 
     #region Move
 
-    [Header("Run")]
+    [Header("Run")] 
     public float maxSpeed;
     public float speedAccel;
     public float speedDeccel;
@@ -78,7 +80,6 @@ public class Player : MonoBehaviour
     [Space] [Header("Sounds")]
     [SerializeField] private AudioClip frogJump;
     [SerializeField] private AudioClip frogWalking;
-    [SerializeField] private AudioClip frogTongue;
     [SerializeField] private AudioClip frogStart;
     
     #endregion
@@ -88,10 +89,9 @@ public class Player : MonoBehaviour
     private Tongue tongue;
     private RaycastHit2D hit;
     
-    private float xAxisAccel;
+    public float xAxisAccel;
     private float coyoteTimeCounter;
     private float bufferTimeCounter;
-    [SerializeField] private GameObject laboule;
 
     private void OnEnable()
     {
@@ -259,10 +259,10 @@ public class Player : MonoBehaviour
 
             foreach (Collider2D touchedColl in touchedColliders)
             {
-                Debug.Log(touchedColl);
+                //Debug.Log(touchedColl);
                 if (tongue.TongueStart(touchedColl.transform))
                 {
-                    SoundManager.instance.PlaySound(frogTongue);
+                    
                     break;
                 }
             }

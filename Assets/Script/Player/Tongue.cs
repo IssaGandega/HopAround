@@ -37,6 +37,8 @@ public class Tongue : MonoBehaviour
     [SerializeField] private float timeToReachPoint =0.5f;
     [SerializeField] private Vector2 jumpOutVector;
     [SerializeField] private float inertiaStrength;
+    [SerializeField] private AudioClip frogTongue;
+
 
     #endregion
 
@@ -70,6 +72,7 @@ public class Tongue : MonoBehaviour
     {
         if (!tongueCd)
         {
+            SoundManager.instance.PlaySound(frogTongue);
             if (isGrabing == false)
             {
                 touchedObj = tObj;
@@ -98,9 +101,7 @@ public class Tongue : MonoBehaviour
         
         //Debug.Log("DoTongue");
         isGrabing = true;
-        
         line.enabled = true;
-        
         pointTr.position = line.transform.position;
 
         rb.velocity = Vector3.zero;
@@ -139,6 +140,15 @@ public class Tongue : MonoBehaviour
         rb.isKinematic = false;
         rb.gravityScale = 1f;
         isGrabing = false;
+        
+        if (pointCanMove)
+        {
+            var launchForce = new Vector2(jumpOutVector.x * player.xAxisAccel * inertiaStrength, jumpOutVector.y);
+            Debug.Log("Launching Frog: " + launchForce);
+            player.rb.AddForce(launchForce);
+            pointCanMove = false;
+        }
+        
         //Debug.Log("EndTongue");
     }
 
