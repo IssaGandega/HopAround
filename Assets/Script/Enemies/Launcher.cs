@@ -63,7 +63,7 @@ public class Launcher : MonoBehaviour, ITonguable
     {
         if (move)
         {
-            launcherTransform.DOMove(currentWaypoint.position, speedInTime);
+            launcherTransform.DOMove(currentWaypoint.position, speedInTime).SetEase(Ease.Linear);
         }
 
         distance = Vector3.Distance(currentWaypoint.position, transform.position);

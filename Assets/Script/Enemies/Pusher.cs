@@ -78,7 +78,7 @@ public class Pusher : MonoBehaviour, ITonguable
     {
         if (move)
         {
-            transform.DOMove(currentWaypoint.position, speedInTime);
+            transform.DOMove(currentWaypoint.position, speedInTime).SetEase(Ease.Linear);
         }
         
         distance = Vector3.Distance(currentWaypoint.position, transform.position);
