@@ -11,10 +11,12 @@ public class Switch : MonoBehaviour, ITonguable
     [SerializeField] private Animator animator;
     [SerializeField] private AudioClip switchSound;
     private bool On;
-    
 
-    public void TongueTouched()
+
+    public void Tongued(Tongue tongue)
     {
+        tongue.line.enabled = true;
+        tongue.pointIsAnInteractable = true;
         SoundManager.instance.PlaySound(switchSound);
         if (On)
         {
@@ -28,13 +30,6 @@ public class Switch : MonoBehaviour, ITonguable
             animator.SetBool("Go", true);
             On = true;
         }
-    }
-    
-
-    public void Tongued(Tongue tongue)
-    {
-        tongue.line.enabled = true;
-        tongue.pointIsAnInteractable = true;
     }
     
     

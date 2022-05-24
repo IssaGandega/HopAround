@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
@@ -15,9 +16,9 @@ public class Player : MonoBehaviour
     public GameObject mesh;
     
     [SerializeField] private Transform groundedCheckerPos;
-    [SerializeField] private LayerMask layer;
+    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private LayerMask tongueLayer;
     [SerializeField] private AnimationCurve accelCurve;
-    [SerializeField] private List<Collider2D> colliders;
     
     #endregion
 
@@ -43,7 +44,6 @@ public class Player : MonoBehaviour
     [Space]
     [Header("Visualizers")]
     public bool isGrounded;
-    public bool isTouched;
     public float currentSpeed;
     public bool isFacingRight;
     public bool isJumping;
@@ -122,7 +122,7 @@ public class Player : MonoBehaviour
 
         if (!isJumping)
         {
-            isGrounded = Physics2D.OverlapCircle(groundedCheckerPos.position, 0.3f, layer);
+            isGrounded = Physics2D.OverlapCircle(groundedCheckerPos.position, 0.3f, groundLayer);
         }
     }
 
@@ -134,17 +134,17 @@ public class Player : MonoBehaviour
             coyoteTimeCounter = coyoteTime;
             
             //Not moving if not tilted enough / Touched
-            if (xAxisAccel > -0.2f && xAxisAccel < 0.2f || isTouched)
+            if (xAxisAccel > -0.2f && xAxisAccel < 0.2f)
             {
                 rb.velocity = Vector3.zero;
                 currentSpeed = 0;
-                PlayerAnimatorManager.instance.AnimatorStateChange(0);
+                PlayerAnimatorManager.instance.AnimatorStateChange(0,false);
             }
         
             //Moving animation
             else 
             {
-                PlayerAnimatorManager.instance.AnimatorStateChange(1);
+                PlayerAnimatorManager.instance.AnimatorStateChange(1,false);
             }
         }
 
@@ -160,7 +160,7 @@ public class Player : MonoBehaviour
             currentSpeed = 0;
         }
         
-        if ((!tongue.isGrabing) && (!isTouched))
+        if ((!tongue.isGrabing))
         {
             //Return speed after being to 0
             if (currentSpeed == 0)
@@ -242,51 +242,36 @@ public class Player : MonoBehaviour
         //Reset Tongue
         if (Input.GetTouch(0).phase == TouchPhase.Began)
         {
-            point = cam.ScreenPointToRay(Input.GetTouch(0).position).GetPoint(10);
-            point.z = transform.position.z;
-            Collider2D hit = Physics2D.OverlapCircle(point,1,layer);
-            //Debug.DrawRay(transform.position,(point-transform.position).normalized * 7,Color.magenta,3f);
+            var screenTouch = Input.GetTouch(0).position;
             
-            if (hit != false)
+            var worldTouch = cam.ScreenToWorldPoint(screenTouch);
+            
+            RaycastHit rayHit;
+            if (Physics.Raycast(cam.ScreenPointToRay(screenTouch), out rayHit, Mathf.Infinity, ~10))
             {
-                if (hit.gameObject.layer == 7 && !tongue.frogReachedPoint)
+                worldTouch = rayHit.point;
+            }
+            
+            Collider2D[] touchedColliders = Physics2D.OverlapCircleAll(worldTouch,1f,tongueLayer);
+
+            // TODO: instantiate a nice VFX !!
+            //Instantiate(laboule, point, Quaternion.identity);
+
+            foreach (Collider2D touchedColl in touchedColliders)
+            {
+                Debug.Log(touchedColl);
+                if (tongue.TongueStart(touchedColl.transform))
                 {
                     SoundManager.instance.PlaySound(frogTongue);
-                    tongue.TongueStart(hit);
-                }
-                else if (tongue.frogReachedPoint)
-                {
-                    tongue.StartCoroutine(tongue.TongueReset());
-                }
-                else if (coyoteTimeCounter > 0f || isJumping)
-                {
-                    //Buffer the jump
-                    bufferTimeCounter = bufferTime;
-                }
-                else if (tongue.isGrabing)
-                {
-                    tongue.StartCoroutine(tongue.TongueReset());
-                }
-                else
-                {
-                    CheckPlayerTouch();
+                    break;
                 }
             }
-            else if (coyoteTimeCounter > 0f || isJumping)
+            
+            if (coyoteTimeCounter > 0f || isJumping)
             {
                 //Buffer the jump
                 bufferTimeCounter = bufferTime;
             }
-            else
-            {
-                CheckPlayerTouch();
-            }
-        }
-
-        if (Input.GetTouch(0).phase == TouchPhase.Ended)
-        {
-            isTouched = false;
-            colliders.Clear();
         }
     }
 
@@ -304,7 +289,7 @@ public class Player : MonoBehaviour
             bufferTimeCounter = 0;
             coyoteTimeCounter = 0;
             
-            PlayerAnimatorManager.instance.AnimatorStateChange(2);
+            PlayerAnimatorManager.instance.AnimatorStateChange(2,false);
         }
     }
     
@@ -332,24 +317,5 @@ public class Player : MonoBehaviour
     {
         yield return new WaitForSeconds(0.3f);
         //isTakingAHit = false;
-    }
-
-    private void CheckPlayerTouch()
-    {
-        colliders.Add(Physics2D.OverlapCircle(point,1f));
-        if (colliders.Count != 0)
-        {
-            foreach (Collider2D col in colliders)
-            {
-                if (col != null)
-                {
-                    if (col.gameObject == gameObject)
-                    {
-                        isTouched = true;
-                        break;
-                    }
-                }
-            }
-        }
     }
 }
