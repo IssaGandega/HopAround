@@ -21,7 +21,6 @@ public class LVLManager : MonoBehaviour
 
     public void AddToad()
     {
-        UiInGameManager.instance.UpdateCurrentToadImg();
         currentToad++;
     }
 
