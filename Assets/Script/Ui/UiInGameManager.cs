@@ -21,8 +21,8 @@ public class UiInGameManager : MonoBehaviour
         textCoins.text = "x " + LVLManager.instance.currentCoins;
     }
 
-    public void UpdateCurrentToadImg()
+    public void UpdateCurrentToadImg(int color)
     {
-        toadsUiInGame[LVLManager.instance.currentToad].SetActive(true);
+        toadsUiInGame[color].SetActive(true);
     }
 }

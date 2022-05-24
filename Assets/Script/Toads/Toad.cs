@@ -19,6 +19,7 @@ public class Toad : MonoBehaviour
     [SerializeField] private MeshRenderer mR;
     [SerializeField] private GameObject toadParticleSystem;
     [SerializeField] private AudioClip tadpoleUnlock;
+    [SerializeField] private int colorInt;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -38,6 +39,8 @@ public class Toad : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         LVLManager.instance.AddToad();
+        UiInGameManager.instance.UpdateCurrentToadImg(colorInt);
+
         toadsFollowingPlayer.Add(this);
     }
 
@@ -62,7 +65,23 @@ public class Toad : MonoBehaviour
 
                }
            }
+
+           if (playerTr.position.x > transform.position.x)
+           {
+               Flip(0f);
+           }
+           else
+           {
+               Flip(180f);
+           }
        }
+   }
+   
+   public void Flip(float rot)
+   {
+       Vector3 localRotate = transform.localEulerAngles;
+       localRotate.y = rot;
+       transform.localEulerAngles = localRotate;
    }
 
 

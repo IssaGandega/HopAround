@@ -1782,7 +1782,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &274723383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10137,6 +10137,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954875176}
     m_Modifications:
+    - target: {fileID: 1395316469026981097, guid: ffbf1d35941d98d48b847d6e52f5e0e0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1395316469026981098, guid: ffbf1d35941d98d48b847d6e52f5e0e0,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -10172,6 +10177,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -103
       objectReference: {fileID: 0}
+    - target: {fileID: 1395316470222190400, guid: ffbf1d35941d98d48b847d6e52f5e0e0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395316470611878112, guid: ffbf1d35941d98d48b847d6e52f5e0e0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395316470628663809, guid: ffbf1d35941d98d48b847d6e52f5e0e0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1395316470628663811, guid: ffbf1d35941d98d48b847d6e52f5e0e0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -10206,6 +10226,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395316470755709294, guid: ffbf1d35941d98d48b847d6e52f5e0e0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4338065936178495703, guid: ffbf1d35941d98d48b847d6e52f5e0e0,
         type: 3}
@@ -13377,7 +13402,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1954875175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14078,8 +14103,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -148, y: 133}
-  m_SizeDelta: {x: 278.66666, y: 245.33331}
+  m_AnchoredPosition: {x: -165.3, y: 158.8}
+  m_SizeDelta: {x: 310, y: 296}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2087106310
 MonoBehaviour:
@@ -14181,7 +14206,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 08b8bb3882d602b40a895b32d4a73608, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c41ad46a0e51a214599709a9103b2d26, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
