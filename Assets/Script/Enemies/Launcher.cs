@@ -12,6 +12,9 @@ public class Launcher : MonoBehaviour, ITonguable
     [SerializeField] private Transform launcherTransform;
     [SerializeField]private Transform[] waypoints;
     [SerializeField] private AudioClip launcherSound;
+    [SerializeField] private Collider2D tongueCollider;
+    [SerializeField] private Collider2D springCollider;
+    
     private Transform currentWaypoint;
     private int currentWaypointNo;
     private float distance;
@@ -41,6 +44,8 @@ public class Launcher : MonoBehaviour, ITonguable
         move = false;
         launcherTransform.DOKill(false);
         animator.SetInteger("State" ,2);
+        tongueCollider.enabled = false;
+        springCollider.enabled = false;
         StartCoroutine(CD());
     }
 
@@ -50,6 +55,8 @@ public class Launcher : MonoBehaviour, ITonguable
         cD = true;
         yield return new WaitForSeconds(1f);
         animator.SetInteger("State" ,0);
+        tongueCollider.enabled = true;
+        springCollider.enabled = true;
         cD = false;
         move = true;
     }
