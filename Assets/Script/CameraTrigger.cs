@@ -1,18 +1,32 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private Vector2 zoneOffset;
+    private CameraController camController;
+    
+    
     void Start()
     {
-        
+        camController = Camera.main.GetComponent<CameraController>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            camController.ChangeOffset(zoneOffset);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            camController.ResetOffset();
+        }
     }
 }
