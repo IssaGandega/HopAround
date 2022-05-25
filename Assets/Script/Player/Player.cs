@@ -116,8 +116,7 @@ public class Player : MonoBehaviour
 
         if (!isJumping)
         {
-            isGrounded = Physics2D.OverlapCircle(groundedCheckerPos.position, 0.3f, groundLayer) ||
-                Physics2D.OverlapCircle(groundedCheckerPos.position, 0.3f, tongueLayer);
+            isGrounded = Physics2D.OverlapCircle(groundedCheckerPos.position, 0.3f, groundLayer);
         }
     }
 
@@ -129,7 +128,7 @@ public class Player : MonoBehaviour
             coyoteTimeCounter = coyoteTime;
             
             //Not moving if not tilted enough / Touched
-            if (xAxisAccel > -0.2f*rotateMaxValue && xAxisAccel < 0.2f * rotateMaxValue)
+            if (xAxisAccel > -0.2f && xAxisAccel < 0.2f)
             {
                 rb.velocity = Vector3.zero;
                 currentSpeed = 0;
@@ -164,7 +163,7 @@ public class Player : MonoBehaviour
             }
             
             //Reset speed and turn
-            if ((isFacingRight && xAxisAccel < -0.1 * rotateMaxValue || !isFacingRight && xAxisAccel > 0.1 * rotateMaxValue))
+            if ((isFacingRight && xAxisAccel < -0.1 || !isFacingRight && xAxisAccel > 0.1))
             {
                 if (isGrounded)
                 {
