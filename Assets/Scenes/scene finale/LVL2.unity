@@ -19412,7 +19412,7 @@ PrefabInstance:
     - target: {fileID: 5498696709718008374, guid: c11031c602130b64e807a2c8d6df9226,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5498696709718008374, guid: c11031c602130b64e807a2c8d6df9226,
         type: 3}
@@ -21253,6 +21253,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784546736925122085, guid: 006db85591ba06a4f99ceaef3e187a7f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4784546737435764826, guid: 006db85591ba06a4f99ceaef3e187a7f,
         type: 3}
@@ -44338,6 +44343,38 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &1479721594 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8475476887176254324, guid: 7801c416e5dc96f4593cd7b793573f34,
+    type: 3}
+  m_PrefabInstance: {fileID: 110084710}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1479721598
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479721594}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.23407319, y: 0.029159613}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.6624165, y: 0.058319263}
+  m_EdgeRadius: 0
 --- !u!43 &1480290044
 Mesh:
   m_ObjectHideFlags: 0
@@ -44646,38 +44683,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de7e0f224299baa4db428405ef18cda2, type: 3}
---- !u!1 &1507680305 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5498696709855764228, guid: c11031c602130b64e807a2c8d6df9226,
-    type: 3}
-  m_PrefabInstance: {fileID: 1223189006}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &1507680307
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507680305}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.39, y: 0.33}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.21, y: 0.24}
-  m_EdgeRadius: 0
 --- !u!1001 &1522119657
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55841,6 +55846,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 978449559491475704, guid: af91097a6259da24f8055902aaa14a2d,
+        type: 3}
+      propertyPath: maxSpeed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 978449559491475704, guid: af91097a6259da24f8055902aaa14a2d,
+        type: 3}
+      propertyPath: accelInAir
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 978449559491475704, guid: af91097a6259da24f8055902aaa14a2d,
+        type: 3}
+      propertyPath: deccelInAir
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 978449559491475704, guid: af91097a6259da24f8055902aaa14a2d,
+        type: 3}
+      propertyPath: rotateMaxValue
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3314515447334205155, guid: af91097a6259da24f8055902aaa14a2d,
         type: 3}
       propertyPath: m_TranslationOffsets.Array.data[0].x
@@ -55849,7 +55874,7 @@ PrefabInstance:
     - target: {fileID: 3314515447334205155, guid: af91097a6259da24f8055902aaa14a2d,
         type: 3}
       propertyPath: m_TranslationOffsets.Array.data[0].z
-      value: 0.0026064864
+      value: 0.002606511
       objectReference: {fileID: 0}
     - target: {fileID: 3705289844060961321, guid: af91097a6259da24f8055902aaa14a2d,
         type: 3}
@@ -61199,7 +61224,7 @@ PrefabInstance:
     - target: {fileID: 340703426440505865, guid: fb134c7776d5e0c4886f2a80e0e93ff0,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 839453622063484303, guid: fb134c7776d5e0c4886f2a80e0e93ff0,
         type: 3}
