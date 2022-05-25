@@ -8,11 +8,11 @@ public class Door : MonoBehaviour
     [SerializeField] private Animator animator;
     public void DoorOpenRotation()
     {
-        animator.Play("003_Interaction_ON");
+        animator.Play("003_Interaction_OFF");
     }
 
     public void DoorCloseRotation()
     {
-        animator.Play("003_Interaction_OFF");
+        animator.Play("003_Interaction_ON");
     }
 }
