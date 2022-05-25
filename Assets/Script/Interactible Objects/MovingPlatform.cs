@@ -9,6 +9,7 @@ public class MovingPlatform : MonoBehaviour
     private int currentWaypointNo;
     private float distance;
     [SerializeField] private bool move = false;
+    [SerializeField] private bool stopWhenWaypointIsReached = false;
 
     private void OnEnable()
     {
@@ -20,6 +21,10 @@ public class MovingPlatform : MonoBehaviour
         if (move)
         {
             transform.Translate(direction*speed);
+            if ((stopWhenWaypointIsReached = true) && (distance < 1))
+            {
+                move = false;
+            }
         }
         
     
