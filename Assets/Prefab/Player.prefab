@@ -127,7 +127,7 @@ MonoBehaviour:
   accelRate: 0
   velPower: 0
   movement: 0
-  rotateMaxValue: 1
+  rotateMaxValue: 0.3
   maxSpeed: 18
   speedAccel: 5
   speedDeccel: 1
@@ -177,7 +177,7 @@ MonoBehaviour:
   pointIsAnInteractable: 0
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   pointTr: {fileID: 140284558}
   playerContainer: {fileID: 3705289844060961324}
   player: {fileID: 978449559491475704}
@@ -607,7 +607,7 @@ ParentConstraint:
   m_TranslationAtRest: {x: 0.001711607, y: -0.53499985, z: 0.002606511}
   m_RotationAtRest: {x: 0, y: 180, z: 0}
   m_TranslationOffsets:
-  - {x: 0.0017113686, y: -0.53499985, z: 0.002606511}
+  - {x: 0.001711607, y: -0.53499985, z: 0.002606511}
   m_RotationOffsets:
   - {x: 0, y: 180, z: 0}
   m_AffectTranslationX: 1
