@@ -40077,6 +40077,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 46944316089728092, guid: af91097a6259da24f8055902aaa14a2d,
+        type: 3}
+      propertyPath: inertiaStrength
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 46944316089728092, guid: af91097a6259da24f8055902aaa14a2d,
+        type: 3}
+      propertyPath: jumpOutVector.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 46944316089728092, guid: af91097a6259da24f8055902aaa14a2d,
+        type: 3}
+      propertyPath: jumpOutVector.y
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 978449559491475704, guid: af91097a6259da24f8055902aaa14a2d,
         type: 3}
       propertyPath: laboule
@@ -40087,6 +40102,11 @@ PrefabInstance:
         type: 3}
       propertyPath: isGrounded
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 978449559491475704, guid: af91097a6259da24f8055902aaa14a2d,
+        type: 3}
+      propertyPath: rotateMaxValue
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2117140807796295890, guid: af91097a6259da24f8055902aaa14a2d,
         type: 3}

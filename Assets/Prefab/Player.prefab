@@ -127,12 +127,12 @@ MonoBehaviour:
   accelRate: 0
   velPower: 0
   movement: 0
-  rotateMaxValue: 0.5
-  maxSpeed: 15
+  rotateMaxValue: 0.3
+  maxSpeed: 18
   speedAccel: 5
   speedDeccel: 1
-  accelInAir: 0.7
-  deccelInAir: 0.7
+  accelInAir: 1
+  deccelInAir: 1
   accelPower: 1
   stopPower: 0.5
   turnPower: 1
@@ -185,8 +185,8 @@ MonoBehaviour:
   rb: {fileID: 978449559491475708}
   range: 10
   timeToReachPoint: 0.5
-  jumpOutVector: {x: 5, y: 100}
-  inertiaStrength: 100
+  jumpOutVector: {x: 10, y: 200}
+  inertiaStrength: 50
   frogTongue: {fileID: 8300000, guid: 7ddec160a0eb9974aa877e769cd5e107, type: 3}
   touchedObj: {fileID: 0}
   isGrabing: 0
@@ -527,7 +527,7 @@ PrefabInstance:
     - target: {fileID: 8395643410047334625, guid: ac22ce391f380eb46adf007bdee6f735,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0026064864
+      value: 0.002606511
       objectReference: {fileID: 0}
     - target: {fileID: 8395643410047334625, guid: ac22ce391f380eb46adf007bdee6f735,
         type: 3}
@@ -604,10 +604,10 @@ ParentConstraint:
   m_GameObject: {fileID: 1597169232387166824}
   m_Enabled: 1
   m_Weight: 1
-  m_TranslationAtRest: {x: 0.001711607, y: -0.53499985, z: 0.0026064864}
+  m_TranslationAtRest: {x: 0.001711607, y: -0.53499985, z: 0.002606511}
   m_RotationAtRest: {x: 0, y: 180, z: 0}
   m_TranslationOffsets:
-  - {x: 0.001711607, y: -0.53499985, z: 0.0026064864}
+  - {x: 0.0017113686, y: -0.53499985, z: 0.002606511}
   m_RotationOffsets:
   - {x: 0, y: 180, z: 0}
   m_AffectTranslationX: 1
