@@ -116,7 +116,8 @@ public class Player : MonoBehaviour
 
         if (!isJumping)
         {
-            isGrounded = Physics2D.OverlapCircle(groundedCheckerPos.position, 0.3f, groundLayer);
+            isGrounded = Physics2D.OverlapCircle(groundedCheckerPos.position, 0.3f, groundLayer) ||
+                Physics2D.OverlapCircle(groundedCheckerPos.position, 0.3f, tongueLayer);
         }
     }
 
