@@ -55,6 +55,7 @@ public class Player : MonoBehaviour
     #region Move
 
     [Header("Run")] 
+    [Range(0,1)]public float rotateMaxValue;
     public float maxSpeed;
     public float speedAccel;
     public float speedDeccel;
@@ -109,7 +110,8 @@ public class Player : MonoBehaviour
             JumpForces();
         }
 
-        xAxisAccel = Mathf.Clamp(Input.acceleration.x, -1f, 1f);
+        xAxisAccel = Mathf.Clamp(Input.acceleration.x, -rotateMaxValue, rotateMaxValue);
+        
         bufferTimeCounter -= Time.deltaTime;
 
         if (!isJumping)
