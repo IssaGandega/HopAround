@@ -34,6 +34,11 @@ public class SoundManager : MonoBehaviour
         musicSource.Play();
     }
 
+    public void StopMusic()
+    {
+        musicSource.Stop();
+    }
+
     public void PlayMapMusic()
     {
         PlayMusic(mapMusic);

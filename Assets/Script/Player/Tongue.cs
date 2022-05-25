@@ -77,7 +77,7 @@ public class Tongue : MonoBehaviour
             {
                 touchedObj = tObj;
                 var distanceCheck = Vector3.Distance(transform.position, touchedObj.position) < range;
-                var lineCheck = !Physics.Linecast(player.transform.position, touchedObj.position, obstacleLayer);
+                var lineCheck = !Physics2D.Linecast(player.transform.position, touchedObj.position, obstacleLayer);
                 //Debug.Log("distanceCheck=" + distanceCheck + " lineCheck=" + lineCheck);
                 if (distanceCheck && lineCheck)
                 {
@@ -145,7 +145,7 @@ public class Tongue : MonoBehaviour
         if (pointCanMove)
         {
             var launchForce = new Vector2(jumpOutVector.x * player.xAxisAccel * inertiaStrength, jumpOutVector.y);
-            Debug.Log("Launching Frog: " + launchForce);
+            //Debug.Log("Launching Frog: " + launchForce);
             player.rb.AddForce(launchForce);
             pointCanMove = false;
         }
