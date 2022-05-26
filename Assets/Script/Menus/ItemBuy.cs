@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -5,7 +6,7 @@ public class ItemBuy : MonoBehaviour
 {
     [SerializeField] private int itemNo;
     [SerializeField] private int price;
-    [SerializeField] private Image bgSpriteRenderer;
+    [SerializeField] private TextMeshProUGUI currentCoinsText;
     [SerializeField] private GameObject priceText;
     [SerializeField] private GameObject fly;
     [SerializeField] private GameObject greenBand;
@@ -29,6 +30,7 @@ public class ItemBuy : MonoBehaviour
             PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins")-price);
             PlayerPrefs.SetInt("Item"+itemNo, 1);
             ObjectBoughtUIUpdate();
+            currentCoinsText.text = PlayerPrefs.GetInt("Coins").ToString();
         }
     }
 

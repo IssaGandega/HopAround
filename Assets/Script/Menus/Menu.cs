@@ -23,6 +23,13 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public void GoToMainMenu()
+    {
+        Time.timeScale = 1f;
+        PlayerPrefs.SetInt("loadFromLVL", 1);
+        SceneManager.LoadScene("MainMenu");
+    }
+
     public void Restart()
     {
         Time.timeScale = 1f;

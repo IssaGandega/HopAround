@@ -2130,7 +2130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemNo: 4
   price: 10
-  bgSpriteRenderer: {fileID: 0}
+  currentCoinsText: {fileID: 0}
   priceText: {fileID: 0}
   fly: {fileID: 0}
   greenBand: {fileID: 0}
@@ -2259,6 +2259,7 @@ GameObject:
   - component: {fileID: 274723384}
   - component: {fileID: 274723383}
   - component: {fileID: 274723385}
+  - component: {fileID: 274723386}
   m_Layer: 0
   m_Name: MainTitle
   m_TagString: Untagged
@@ -2311,6 +2312,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 46c5350b63ac4924881e41edc687f483, type: 3}
+--- !u!114 &274723386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274723382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75860e3eca9da524c86af679eaf5cef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lvlSelection: {fileID: 1954875174}
 --- !u!1 &283456850
 GameObject:
   m_ObjectHideFlags: 0
@@ -2769,7 +2783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemNo: 1
   price: 70
-  bgSpriteRenderer: {fileID: 319720282}
+  currentCoinsText: {fileID: 1648561764}
   priceText: {fileID: 1339683451}
   fly: {fileID: 1915503295}
   greenBand: {fileID: 1598688627}
@@ -7338,7 +7352,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemNo: 5
   price: 125
-  bgSpriteRenderer: {fileID: 982384236}
+  currentCoinsText: {fileID: 1648561764}
   priceText: {fileID: 621249378}
   fly: {fileID: 1538585313}
   greenBand: {fileID: 2127649198}
@@ -9479,7 +9493,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemNo: 4
   price: 70
-  bgSpriteRenderer: {fileID: 1169901412}
+  currentCoinsText: {fileID: 1648561764}
   priceText: {fileID: 1769466080}
   fly: {fileID: 1082473995}
   greenBand: {fileID: 1977203144}
@@ -9784,7 +9798,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemNo: 2
   price: 70
-  bgSpriteRenderer: {fileID: 1174644998}
+  currentCoinsText: {fileID: 1648561764}
   priceText: {fileID: 1501410393}
   fly: {fileID: 1802703761}
   greenBand: {fileID: 67971853}
@@ -13167,7 +13181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemNo: 3
   price: 70
-  bgSpriteRenderer: {fileID: 1500631812}
+  currentCoinsText: {fileID: 1648561764}
   priceText: {fileID: 1820536078}
   fly: {fileID: 1875020755}
   greenBand: {fileID: 673279860}
