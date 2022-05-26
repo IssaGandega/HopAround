@@ -5,9 +5,10 @@ public class ItemBuy : MonoBehaviour
 {
     [SerializeField] private int itemNo;
     [SerializeField] private int price;
-    [SerializeField] private Sprite itemBoughtSprite;
     [SerializeField] private Image bgSpriteRenderer;
     [SerializeField] private GameObject priceText;
+    [SerializeField] private GameObject fly;
+    [SerializeField] private GameObject greenBand;
 
     
     
@@ -33,7 +34,9 @@ public class ItemBuy : MonoBehaviour
 
     private void ObjectBoughtUIUpdate()
     {
-        bgSpriteRenderer.sprite = itemBoughtSprite;
         priceText.SetActive(false);
+        fly.SetActive(false);
+        greenBand.SetActive(true);
+
     }
 }
