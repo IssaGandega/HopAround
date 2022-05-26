@@ -21,7 +21,7 @@ public class MovingPlatform : MonoBehaviour
         if (move)
         {
             transform.Translate(direction*speed);
-            if ((stopWhenWaypointIsReached = true) && (distance < 1))
+            if ((stopWhenWaypointIsReached) && (distance < 0.1f))
             {
                 move = false;
             }
