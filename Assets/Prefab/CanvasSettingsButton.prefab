@@ -428,6 +428,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4338065936178495703}
     m_Modifications:
+    - target: {fileID: 1630339166483505472, guid: cb3333a3216f9c243ae67e1b7adc7346,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630339166483505472, guid: cb3333a3216f9c243ae67e1b7adc7346,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1630339167678665450, guid: cb3333a3216f9c243ae67e1b7adc7346,
         type: 3}
       propertyPath: m_IsActive
@@ -440,13 +450,23 @@ PrefabInstance:
       objectReference: {fileID: 4338065937101543733}
     - target: {fileID: 1630339168069371209, guid: cb3333a3216f9c243ae67e1b7adc7346,
         type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 93
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630339168069371209, guid: cb3333a3216f9c243ae67e1b7adc7346,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 95
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630339168069371209, guid: cb3333a3216f9c243ae67e1b7adc7346,
+        type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1630339168069371209, guid: cb3333a3216f9c243ae67e1b7adc7346,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1630339168069371209, guid: cb3333a3216f9c243ae67e1b7adc7346,
         type: 3}
@@ -638,7 +658,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 9025962287341611748, guid: cb3333a3216f9c243ae67e1b7adc7346,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 130
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025962287341611748, guid: cb3333a3216f9c243ae67e1b7adc7346,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 130
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8238525609760577289, guid: cb3333a3216f9c243ae67e1b7adc7346, type: 3}
+    - {fileID: 2297163046562411622, guid: cb3333a3216f9c243ae67e1b7adc7346, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cb3333a3216f9c243ae67e1b7adc7346, type: 3}
 --- !u!224 &8700849866712621217 stripped
 RectTransform:
