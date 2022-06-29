@@ -11,10 +11,12 @@ public class PlayerMaterialSetter : MonoBehaviour
     private void OnEnable()
     {
         mesh.material = material[PlayerPrefs.GetInt("SkinEquip")];
+        Debug.Log("");
 
         if (PlayerPrefs.GetInt("SkinEquip") == 5)
         {
             fxGolden.SetActive(true);
+            fxGolden.GetComponent<ParticleSystem>().Play();
         }
         else
         {
