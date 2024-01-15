@@ -1,4 +1,4 @@
-![LogoHopAround](https://github.com/IssaGandega/HopAround/assets/60429644/68b17dd3-37b2-4c34-8c20-a0d12328eeef)
+![LogoHopAroundCropped](https://github.com/IssaGandega/HopAround/assets/60429644/1a5c44c6-10a7-45d0-873a-55d4d7a15e06)
 
 <div align="center">
 
@@ -17,7 +17,7 @@ Hop Around is a mobile game that uses gyroscope technology to allow a small frog
 
 As a project created for mobile, we had to rethink the way the game was played, and the choice to use the gyroscope came rather quickly and enabled the game to take shape. By tilting the phone, players can therefore tilt the world around their character to move through the game's levels.
 
-![Untitled_Project_V2](https://github.com/IssaGandega/HopAround/assets/60429644/77abfedd-2fc4-4f72-9c9e-47aa201e683a)
+![Animation](https://github.com/IssaGandega/HopAround/assets/60429644/56f4beb8-de37-4785-b5ef-4be58b17450d)
 
 ## List of mechanics
 
