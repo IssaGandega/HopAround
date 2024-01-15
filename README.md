@@ -21,7 +21,6 @@ As a project created for mobile, we had to rethink the way the game was played, 
 
 ## List of mechanics
 
-
 | Name             | Description     |
 | :--:|:------:|
 | **Gyroscope** | The gyroscope allows the player to move from left to right simply by tilting the phone. They can also tap the phone screen to jump. |
