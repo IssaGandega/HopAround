@@ -35,5 +35,5 @@ As a project created for mobile, we had to rethink the way the game was played, 
 
 ## Feedback
 
-If you have any feedback, please reach out to us at fake@fake.com
+If you have any feedback, please reach out to me at issagndega94@gmail.com
 
